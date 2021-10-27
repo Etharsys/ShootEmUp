@@ -1,0 +1,190 @@
+\hypertarget{_moove_8h}{}\section{include/\+Moove.h File Reference}
+\label{_moove_8h}\index{include/\+Moove.\+h@{include/\+Moove.\+h}}
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$M\+L\+V/\+M\+L\+V\+\_\+all.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../include/\+Values.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/\+Collision.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/\+Entity.\+h\char`\"{}}\newline
+Include dependency graph for Moove.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_moove_8h_aaa1d4a8983e4929dbf18eee1505a0bd4}{move\+\_\+entity} (\hyperlink{_entity_8h_a1589a38510abb7e93ad03d8a9a736d9a}{Entity} $\ast$\hyperlink{structentity}{entity}, float velocity\+\_\+x, float velocity\+\_\+y)
+\item 
+int \hyperlink{_moove_8h_aa6e766d811d43f53db5e095e507601a6}{moove\+\_\+ship} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$ship, float velocity\+\_\+x, float velocity\+\_\+y, int hitbox\+\_\+size)
+\item 
+float \hyperlink{_moove_8h_ace9034859242fa4e89299739d70a7ff2}{path\+\_\+process} (float x, float y, float target\+\_\+x, float target\+\_\+y, float velocity)
+\item 
+int \hyperlink{_moove_8h_aa4762592446fa96d614eab390dd060b5}{moove\+\_\+ennemy} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$ennemy, \hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} ship)
+\item 
+int \hyperlink{_moove_8h_ad0fc8961bd0536369a0444035caea070}{manage\+\_\+moove} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$ship, \hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$ennemy, \hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$shot, M\+L\+V\+\_\+\+Keyboard\+\_\+button keysym)
+\item 
+int \hyperlink{_moove_8h_ad5d19d2708e2b61764ab82456a3e3718}{manage\+\_\+event\+\_\+moove} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$ship, M\+L\+V\+\_\+\+Keyboard\+\_\+button keysym)
+\item 
+int \hyperlink{_moove_8h_a73197bf296509feafe9339f385e1cafa}{moove\+\_\+shot} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$shot, \hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} ship)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_moove_8h_ad5d19d2708e2b61764ab82456a3e3718}\label{_moove_8h_ad5d19d2708e2b61764ab82456a3e3718}} 
+\index{Moove.\+h@{Moove.\+h}!manage\+\_\+event\+\_\+moove@{manage\+\_\+event\+\_\+moove}}
+\index{manage\+\_\+event\+\_\+moove@{manage\+\_\+event\+\_\+moove}!Moove.\+h@{Moove.\+h}}
+\subsubsection{\texorpdfstring{manage\+\_\+event\+\_\+moove()}{manage\_event\_moove()}}
+{\footnotesize\ttfamily int manage\+\_\+event\+\_\+moove (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{ship,  }\item[{M\+L\+V\+\_\+\+Keyboard\+\_\+button}]{keysym }\end{DoxyParamCaption})}
+
+Manage movement with player actions 
+\begin{DoxyParams}{Parameters}
+{\em ship} & The ship to move \\
+\hline
+{\em keysym} & The value of keyboard \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the ship is not null, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 109 of file Moove.\+c.
+
+\mbox{\Hypertarget{_moove_8h_ad0fc8961bd0536369a0444035caea070}\label{_moove_8h_ad0fc8961bd0536369a0444035caea070}} 
+\index{Moove.\+h@{Moove.\+h}!manage\+\_\+moove@{manage\+\_\+moove}}
+\index{manage\+\_\+moove@{manage\+\_\+moove}!Moove.\+h@{Moove.\+h}}
+\subsubsection{\texorpdfstring{manage\+\_\+moove()}{manage\_moove()}}
+{\footnotesize\ttfamily int manage\+\_\+moove (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{ship,  }\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{ennemy,  }\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{shot,  }\item[{M\+L\+V\+\_\+\+Keyboard\+\_\+button}]{keysym }\end{DoxyParamCaption})}
+
+Manage movement for all entity on map (ship, shot, ennemy) 
+\begin{DoxyParams}{Parameters}
+{\em ship} & The ship to move \\
+\hline
+{\em ennemy} & The list of ennemys to move \\
+\hline
+{\em shot} & The list of shots to move \\
+\hline
+{\em keysym} & The value of keyboard \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the ship, the list of ennemys and the list of shots are not null, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 156 of file Moove.\+c.
+
+\mbox{\Hypertarget{_moove_8h_aa4762592446fa96d614eab390dd060b5}\label{_moove_8h_aa4762592446fa96d614eab390dd060b5}} 
+\index{Moove.\+h@{Moove.\+h}!moove\+\_\+ennemy@{moove\+\_\+ennemy}}
+\index{moove\+\_\+ennemy@{moove\+\_\+ennemy}!Moove.\+h@{Moove.\+h}}
+\subsubsection{\texorpdfstring{moove\+\_\+ennemy()}{moove\_ennemy()}}
+{\footnotesize\ttfamily int moove\+\_\+ennemy (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{ennemy,  }\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities}}]{ship }\end{DoxyParamCaption})}
+
+Move ennemys in cartesian plan respecting ship conditions 
+\begin{DoxyParams}{Parameters}
+{\em ship} & The ship to apply ship rules on ennemys \\
+\hline
+{\em ennemy} & The list of ennemys \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the list of ennemys is not null, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 49 of file Moove.\+c.
+
+\mbox{\Hypertarget{_moove_8h_aa6e766d811d43f53db5e095e507601a6}\label{_moove_8h_aa6e766d811d43f53db5e095e507601a6}} 
+\index{Moove.\+h@{Moove.\+h}!moove\+\_\+ship@{moove\+\_\+ship}}
+\index{moove\+\_\+ship@{moove\+\_\+ship}!Moove.\+h@{Moove.\+h}}
+\subsubsection{\texorpdfstring{moove\+\_\+ship()}{moove\_ship()}}
+{\footnotesize\ttfamily int moove\+\_\+ship (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{ship,  }\item[{float}]{velocity\+\_\+x,  }\item[{float}]{velocity\+\_\+y,  }\item[{int}]{hitbox\+\_\+size }\end{DoxyParamCaption})}
+
+Move the ship in cartesian plan respecting ship movement conditions 
+\begin{DoxyParams}{Parameters}
+{\em ship} & The ship to move \\
+\hline
+{\em velocity\+\_\+x} & The deplacement in x \\
+\hline
+{\em velocity\+\_\+y} & The deplacement in x \\
+\hline
+{\em hitbox\+\_\+size} & The hitbox of the ship \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the ship is not null, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 95 of file Moove.\+c.
+
+\mbox{\Hypertarget{_moove_8h_a73197bf296509feafe9339f385e1cafa}\label{_moove_8h_a73197bf296509feafe9339f385e1cafa}} 
+\index{Moove.\+h@{Moove.\+h}!moove\+\_\+shot@{moove\+\_\+shot}}
+\index{moove\+\_\+shot@{moove\+\_\+shot}!Moove.\+h@{Moove.\+h}}
+\subsubsection{\texorpdfstring{moove\+\_\+shot()}{moove\_shot()}}
+{\footnotesize\ttfamily int moove\+\_\+shot (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{shot,  }\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities}}]{ship }\end{DoxyParamCaption})}
+
+Move shots in cartesian plan respecting ship conditions 
+\begin{DoxyParams}{Parameters}
+{\em ship} & The ship to apply ship rules on ennemys \\
+\hline
+{\em shot} & The list of shots \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the list of shots is not null, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 16 of file Moove.\+c.
+
+\mbox{\Hypertarget{_moove_8h_aaa1d4a8983e4929dbf18eee1505a0bd4}\label{_moove_8h_aaa1d4a8983e4929dbf18eee1505a0bd4}} 
+\index{Moove.\+h@{Moove.\+h}!move\+\_\+entity@{move\+\_\+entity}}
+\index{move\+\_\+entity@{move\+\_\+entity}!Moove.\+h@{Moove.\+h}}
+\subsubsection{\texorpdfstring{move\+\_\+entity()}{move\_entity()}}
+{\footnotesize\ttfamily int move\+\_\+entity (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_a1589a38510abb7e93ad03d8a9a736d9a}{Entity} $\ast$}]{entity,  }\item[{float}]{velocity\+\_\+x,  }\item[{float}]{velocity\+\_\+y }\end{DoxyParamCaption})}
+
+Move a entity in cartesian plan 
+\begin{DoxyParams}{Parameters}
+{\em entity} & The entity to move \\
+\hline
+{\em velocity\+\_\+x} & The deplacement in x \\
+\hline
+{\em velocity\+\_\+y} & The deplacement in x \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the entity is not null (dont exist), 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 3 of file Moove.\+c.
+
+\mbox{\Hypertarget{_moove_8h_ace9034859242fa4e89299739d70a7ff2}\label{_moove_8h_ace9034859242fa4e89299739d70a7ff2}} 
+\index{Moove.\+h@{Moove.\+h}!path\+\_\+process@{path\+\_\+process}}
+\index{path\+\_\+process@{path\+\_\+process}!Moove.\+h@{Moove.\+h}}
+\subsubsection{\texorpdfstring{path\+\_\+process()}{path\_process()}}
+{\footnotesize\ttfamily float path\+\_\+process (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{target\+\_\+x,  }\item[{float}]{target\+\_\+y,  }\item[{float}]{velocity }\end{DoxyParamCaption})}
+
+Calcul a movement to apply to a coordonate to go on an other coordonate 
+\begin{DoxyParams}{Parameters}
+{\em x} & The first position x \\
+\hline
+{\em y} & The first position y \\
+\hline
+{\em target\+\_\+x} & The second position x \\
+\hline
+{\em target\+\_\+y} & The second position y \\
+\hline
+{\em velocity} & The velocity for the movement \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the direction to go for the coordonate x,y 
+\end{DoxyReturn}
+
+
+Definition at line 12 of file Moove.\+c.
+

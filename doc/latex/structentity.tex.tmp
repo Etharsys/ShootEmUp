@@ -1,0 +1,59 @@
+\hypertarget{structentity}{}\section{entity Struct Reference}
+\label{structentity}\index{entity@{entity}}
+
+
+Collaboration diagram for entity\+:
+% FIG 0
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structentity_ad0da36b2558901e21e7a30f6c227a45e}\label{structentity_ad0da36b2558901e21e7a30f6c227a45e}} 
+float {\bfseries x}
+\item 
+\mbox{\Hypertarget{structentity_aa4f0d3eebc3c443f9be81bf48561a217}\label{structentity_aa4f0d3eebc3c443f9be81bf48561a217}} 
+float {\bfseries y}
+\item 
+\mbox{\Hypertarget{structentity_a9aa790f93d2d067a4f5608fdb8409f94}\label{structentity_a9aa790f93d2d067a4f5608fdb8409f94}} 
+int {\bfseries hp}
+\item 
+\mbox{\Hypertarget{structentity_ac46e821ae08930cc9e257642e34275a3}\label{structentity_ac46e821ae08930cc9e257642e34275a3}} 
+float {\bfseries velocity}
+\item 
+\mbox{\Hypertarget{structentity_af6120b55f42d5cb6044788bba68b9521}\label{structentity_af6120b55f42d5cb6044788bba68b9521}} 
+int {\bfseries cooldown}
+\item 
+\mbox{\Hypertarget{structentity_af3f30fa8b50e44df12b56cd7b0033da0}\label{structentity_af3f30fa8b50e44df12b56cd7b0033da0}} 
+int {\bfseries clan}
+\item 
+\mbox{\Hypertarget{structentity_ac765329451135abec74c45e1897abf26}\label{structentity_ac765329451135abec74c45e1897abf26}} 
+int {\bfseries type}
+\item 
+\mbox{\Hypertarget{structentity_a8f54e9f41016004732115c10e844deb8}\label{structentity_a8f54e9f41016004732115c10e844deb8}} 
+float {\bfseries direction}
+\item 
+\mbox{\Hypertarget{structentity_a9b39867abc3f09243fcdc739bd9e6c90}\label{structentity_a9b39867abc3f09243fcdc739bd9e6c90}} 
+int {\bfseries damage}
+\item 
+\mbox{\Hypertarget{structentity_a003db4878d2160d7c60c600d716094b2}\label{structentity_a003db4878d2160d7c60c600d716094b2}} 
+struct \hyperlink{structentity}{entity} $\ast$ {\bfseries next}
+\item 
+\mbox{\Hypertarget{structentity_abdec4e7d3433b984eebbdbb4606e293a}\label{structentity_abdec4e7d3433b984eebbdbb4606e293a}} 
+struct \hyperlink{structentity}{entity} $\ast$ {\bfseries previous}
+\item 
+\mbox{\Hypertarget{structentity_aef160b7437d94056f1dc59646cd5b87d}\label{structentity_aef160b7437d94056f1dc59646cd5b87d}} 
+int {\bfseries score}
+\item 
+\mbox{\Hypertarget{structentity_adf58bef654884ab6c521153b0f99a82e}\label{structentity_adf58bef654884ab6c521153b0f99a82e}} 
+int {\bfseries hitbox}
+\item 
+\mbox{\Hypertarget{structentity_a42715f65f02da52edc5b22021d8ae670}\label{structentity_a42715f65f02da52edc5b22021d8ae670}} 
+int {\bfseries time}
+\item 
+\mbox{\Hypertarget{structentity_ac6032b9a092ec0123e235376f915abf7}\label{structentity_ac6032b9a092ec0123e235376f915abf7}} 
+Bonus\+\_\+type {\bfseries bonus}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Entity.\+h\end{DoxyCompactItemize}

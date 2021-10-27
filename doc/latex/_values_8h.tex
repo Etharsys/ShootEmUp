@@ -1,0 +1,1878 @@
+\hypertarget{_values_8h}{}\section{include/\+Values.h File Reference}
+\label{_values_8h}\index{include/\+Values.\+h@{include/\+Values.\+h}}
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$M\+L\+V/\+M\+L\+V\+\_\+all.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for Values.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_values_8h_a241aeeb764887ae5e3de58b98f04b16d}{W\+I\+D\+TH}~(M\+L\+V\+\_\+get\+\_\+desktop\+\_\+width())
+\item 
+\#define \hyperlink{_values_8h_aed89bd71aee8be823e8a20ec4e093c1e}{H\+E\+I\+G\+HT}~(M\+L\+V\+\_\+get\+\_\+desktop\+\_\+height())
+\item 
+\#define \hyperlink{_values_8h_a84142cd3e3bf14c4ecd4b6707a808c39}{F\+R\+E\+Q\+U\+E\+N\+CY}~60
+\item 
+\#define \hyperlink{_values_8h_a598a3330b3c21701223ee0ca14316eca}{PI}~3.\+14159
+\item 
+\#define \hyperlink{_values_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{T\+R\+UE}~1
+\item 
+\#define \hyperlink{_values_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\+A\+L\+SE}~0
+\item 
+\#define \hyperlink{_values_8h_a4bb1b05f2dff9824e5b844bf07ebbc07}{A\+L\+L\+Y\+\_\+\+C\+L\+AN}~0
+\item 
+\#define \hyperlink{_values_8h_aba3015842818b8b181b0590cecbfcaeb}{E\+N\+N\+E\+M\+Y\+\_\+\+C\+L\+AN}~1
+\item 
+\#define \hyperlink{_values_8h_af2655d7fd2d58c80a683f72bed649e9b}{I\+T\+E\+M\+\_\+\+C\+L\+AN}~30
+\item 
+\#define \hyperlink{_values_8h_acb4c529f7ae988b2912f05ac254b2cba}{S\+H\+OT}~7
+\item 
+\#define \hyperlink{_values_8h_a7a21998f1c72fc84d22075ad141cad6e}{E\+N\+N\+E\+MY}~1
+\item 
+\#define \hyperlink{_values_8h_a96a9822fa134450197dd454b1478a193}{B\+O\+N\+US}~30
+\item 
+\#define \hyperlink{_values_8h_a655c84af1b0034986ff56e12e84f983d}{N\+O\+NE}~-\/1
+\item 
+\#define \hyperlink{_values_8h_a3c600f26b1d8c4acd4f82102473569bb}{S\+H\+IP}~0
+\item 
+\#define \hyperlink{_values_8h_a7a85be4cf839a2f34e64fb00f3d7d358}{S\+B\+I\+RE}~1
+\item 
+\#define \hyperlink{_values_8h_a425e624419b9a0bf090b79f0a4fc8e30}{S\+I\+N\+US}~2
+\item 
+\#define \hyperlink{_values_8h_a479041a42773c50c855b3de46d4c024c}{S\+N\+I\+P\+ER}~3
+\item 
+\#define \hyperlink{_values_8h_a5b726f13483f65046a6f572fdbe482bc}{B\+O\+M\+B\+ER}~4
+\item 
+\#define \hyperlink{_values_8h_ae140e7c9dbec484f931895a7e769f321}{G\+A\+T\+L\+I\+NG}~5
+\item 
+\#define \hyperlink{_values_8h_aae56dbc42850117ca0ec29ad0043b37b}{C\+O\+M\+ET}~6
+\item 
+\#define \hyperlink{_values_8h_a735b0d6e7d5b4d45ad6d9bf4f1c133ed}{S\+H\+I\+P\+\_\+\+S\+H\+OT}~7
+\item 
+\#define \hyperlink{_values_8h_aca8fc7469f5e29d49aba2f50b0cb3e70}{S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}~8
+\item 
+\#define \hyperlink{_values_8h_a23279d273bddc9ffa323b2598b323715}{S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}~9
+\item 
+\#define \hyperlink{_values_8h_a0466fc2e11d286d23392ad34f2b4e358}{S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}~10
+\item 
+\#define \hyperlink{_values_8h_ad3f87cc0f456827b15ba7fa3a563358c}{G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}~11
+\item 
+\#define \hyperlink{_values_8h_a78a87d092595473bcb2a60d4ac6a622b}{B\+O\+SS}~25
+\item 
+\#define \hyperlink{_values_8h_a0baae6eae682ed77fe9c35aafe1a3e0b}{H\+P\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}~1
+\item 
+\#define \hyperlink{_values_8h_ae641fcf7e70a136bdc9b70c4ad93af1b}{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}~4
+\item 
+\#define \hyperlink{_values_8h_a8cfbc3b2365cf646c44892e53fb23e4d}{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}~0
+\item 
+\#define \hyperlink{_values_8h_a04a67f3624d2fbfb3a6a865126c48c51}{D\+A\+M\+A\+G\+E\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}~1
+\item 
+\#define \hyperlink{_values_8h_a704cbb57612b4bc4fb01545d3ad20aae}{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}~\hyperlink{_values_8h_a655c84af1b0034986ff56e12e84f983d}{N\+O\+NE}
+\item 
+\#define \hyperlink{_values_8h_a094c54fa87f4d3d321500722f1a8697a}{H\+P\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}~1
+\item 
+\#define \hyperlink{_values_8h_a7215f954dee500f1af2f8e76dd577cbd}{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}~5
+\item 
+\#define \hyperlink{_values_8h_abe78b1830b52e3d5e821a0fd3d2c7bf2}{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}~0
+\item 
+\#define \hyperlink{_values_8h_a9edb4c2df31bdc6043513545c80ed974}{D\+A\+M\+A\+G\+E\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}~1
+\item 
+\#define \hyperlink{_values_8h_ad32e1595b3f30efd2b680e1ca9975d20}{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}~\hyperlink{_values_8h_a655c84af1b0034986ff56e12e84f983d}{N\+O\+NE}
+\item 
+\#define \hyperlink{_values_8h_a6b01dc57f3b82a8d2c06fe0f61a9a51b}{H\+P\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}~1
+\item 
+\#define \hyperlink{_values_8h_a1b28fab832578ebbacd737ef33672882}{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}~8
+\item 
+\#define \hyperlink{_values_8h_a937d7d549d632ca11e011a9a9cf87ebc}{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}~0
+\item 
+\#define \hyperlink{_values_8h_a80701af477cd524e790522f18589a8f2}{D\+A\+M\+A\+G\+E\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}~1
+\item 
+\#define \hyperlink{_values_8h_af60732a89347e96ec017b95675b481fb}{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}~\hyperlink{_values_8h_a655c84af1b0034986ff56e12e84f983d}{N\+O\+NE}
+\item 
+\#define \hyperlink{_values_8h_a2c531238a2af56fe75a04108fc5bf05f}{H\+P\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}~1
+\item 
+\#define \hyperlink{_values_8h_a9621eb109424394406187aca5601fa3d}{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}~2
+\item 
+\#define \hyperlink{_values_8h_aa3a917e04671c85f375d320e6d164520}{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}~100
+\item 
+\#define \hyperlink{_values_8h_a4bc91b7320158815d2efbfdfe69df640}{D\+A\+M\+A\+G\+E\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}~1
+\item 
+\#define \hyperlink{_values_8h_aa9476a6ab113d0fc93e4bccce79227d6}{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}~\hyperlink{_values_8h_a655c84af1b0034986ff56e12e84f983d}{N\+O\+NE}
+\item 
+\#define \hyperlink{_values_8h_ac0a5e0555cc1dbda17eea240eea588ef}{H\+P\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}~1
+\item 
+\#define \hyperlink{_values_8h_a31ae739ba152ec4b4bef772173f0c5a6}{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}~8
+\item 
+\#define \hyperlink{_values_8h_ab944ac8b66f903b45070c341ea9c65b1}{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}~0
+\item 
+\#define \hyperlink{_values_8h_a307432b5363a14fb4c1e24db8286d60c}{D\+A\+M\+A\+G\+E\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}~1
+\item 
+\#define \hyperlink{_values_8h_af449373a200616b0c037a56d90720d24}{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}~(-\/\hyperlink{_values_8h_a598a3330b3c21701223ee0ca14316eca}{PI}/2)
+\item 
+\#define \hyperlink{_values_8h_a7f69274ae1fac82bf9d8141095152781}{H\+P\+\_\+\+S\+B\+I\+RE}~1
+\item 
+\#define \hyperlink{_values_8h_a1649a9330211879e9b73b73ee8121bb6}{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+B\+I\+RE}~1
+\item 
+\#define \hyperlink{_values_8h_ac3fad480163be45f034d832a24c7bdc4}{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+B\+I\+RE}~50
+\item 
+\#define \hyperlink{_values_8h_a544d052a69d4ae4508a55a8ebcc67ee8}{D\+A\+M\+A\+G\+E\+\_\+\+S\+B\+I\+RE}~1
+\item 
+\#define \hyperlink{_values_8h_addc01da2c5bc3a2890881c9988e853ad}{H\+P\+\_\+\+S\+I\+N\+US}~3
+\item 
+\#define \hyperlink{_values_8h_a3df884e0d87edad6f69509de8378a6d2}{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+I\+N\+US}~1
+\item 
+\#define \hyperlink{_values_8h_a193ab799325d69724cc0f75bf2739442}{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+I\+N\+US}~50
+\item 
+\#define \hyperlink{_values_8h_aed644547929015faa39048ddfa88a9c2}{D\+A\+M\+A\+G\+E\+\_\+\+S\+I\+N\+US}~1
+\item 
+\#define \hyperlink{_values_8h_aa51ecfaa18ac33f012de98521a5fbf12}{H\+P\+\_\+\+S\+N\+I\+P\+ER}~1
+\item 
+\#define \hyperlink{_values_8h_a01ee470f95b61f5f319e9ebb8a4a2638}{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+N\+I\+P\+ER}~2
+\item 
+\#define \hyperlink{_values_8h_aa56aac525bdbbedbb606be2024bc82d0}{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+N\+I\+P\+ER}~50
+\item 
+\#define \hyperlink{_values_8h_a79322922eef1b0834521911bb39ee8a5}{D\+A\+M\+A\+G\+E\+\_\+\+S\+N\+I\+P\+ER}~1
+\item 
+\#define \hyperlink{_values_8h_a7e3df374d7c0b91f09498f8e56fa2cee}{H\+P\+\_\+\+B\+O\+M\+B\+ER}~1
+\item 
+\#define \hyperlink{_values_8h_a08f9b7d4215e0a76a4533be7eef6e955}{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+B\+O\+M\+B\+ER}~2
+\item 
+\#define \hyperlink{_values_8h_a71895bb7ecc1bdc1e04e0d7e2dfc2fe3}{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+B\+O\+M\+B\+ER}~0
+\item 
+\#define \hyperlink{_values_8h_a0832f7df9033a483785bb38dc7eeca3c}{D\+A\+M\+A\+G\+E\+\_\+\+B\+O\+M\+B\+ER}~2
+\item 
+\#define \hyperlink{_values_8h_a47d2dc1993e18b0bc7791828480708ea}{R\+A\+N\+G\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+B\+O\+M\+B\+ER}~(\hyperlink{_values_8h_a241aeeb764887ae5e3de58b98f04b16d}{W\+I\+D\+TH} / 2)
+\item 
+\#define \hyperlink{_values_8h_a806714ea8905edbaffc646348b6ed8b0}{H\+P\+\_\+\+G\+A\+T\+L\+I\+NG}~1
+\item 
+\#define \hyperlink{_values_8h_a28094b35982b9dffc00e4d02ce8c5220}{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+G\+A\+T\+L\+I\+NG}~2
+\item 
+\#define \hyperlink{_values_8h_a02aef5e587b1a1365157aa36d8bf8169}{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+G\+A\+T\+L\+I\+NG}~50
+\item 
+\#define \hyperlink{_values_8h_a24fc336188c4ae6a933d311b34cee5a8}{D\+A\+M\+A\+G\+E\+\_\+\+G\+A\+T\+L\+I\+NG}~1
+\item 
+\#define \hyperlink{_values_8h_ad682a1b61c7d5893775d99857d8ba0cc}{H\+P\+\_\+\+C\+O\+M\+ET}~3
+\item 
+\#define \hyperlink{_values_8h_aa1415acc7982d17cca9ac78eb7e43de5}{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+C\+O\+M\+ET}~2
+\item 
+\#define \hyperlink{_values_8h_abfa103cf2ef52c845fe447d55fad8fbd}{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+C\+O\+M\+ET}~0
+\item 
+\#define \hyperlink{_values_8h_a7cd5524cef238cf466f50889b9338498}{D\+A\+M\+A\+G\+E\+\_\+\+C\+O\+M\+ET}~1
+\item 
+\#define \hyperlink{_values_8h_ae0e6c44a2b15ead43f5011f4e63a9dd5}{H\+P\+\_\+\+B\+O\+SS}~20
+\item 
+\#define \hyperlink{_values_8h_a378fa77c2014f89faea5d61f572eb253}{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+B\+O\+S\+S\+\_\+\+P\+H\+A\+S\+E\+\_\+1}~1
+\item 
+\#define \hyperlink{_values_8h_a6f91f2ac36e7eb4a59f93c8ea14e5880}{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+B\+O\+S\+S\+\_\+\+P\+H\+A\+S\+E\+\_\+2}~0
+\item 
+\#define \hyperlink{_values_8h_a1cc56078dcf47d6793247aa0dfdf5eb4}{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+1}~40
+\item 
+\#define \hyperlink{_values_8h_a3d85996e1734ca43a8183399be4424f6}{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+2}~20
+\item 
+\#define \hyperlink{_values_8h_a95c0d67a97a5108bfca38e85f67ad47a}{D\+A\+M\+A\+G\+E\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+1}~1
+\item 
+\#define \hyperlink{_values_8h_ac86d81e2a037841b8b19cf293d6122dc}{D\+A\+M\+A\+G\+E\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+2}~2
+\item 
+\#define \hyperlink{_values_8h_a2b335160f45acc4784c8b1484a6a660f}{S\+H\+I\+P\+\_\+X}~100
+\item 
+\#define \hyperlink{_values_8h_a089f3a92ac976f064f3d5dd12c0a7647}{S\+H\+I\+P\+\_\+Y}~100
+\item 
+\#define \hyperlink{_values_8h_aa8f113c0791961413962e01b5d6a7568}{S\+H\+I\+P\+\_\+\+HP}~10
+\item 
+\#define \hyperlink{_values_8h_a557d2870d09c1fddd11260a36397e35d}{S\+H\+I\+P\+\_\+\+V\+E\+L\+O\+C\+I\+TY}~5
+\item 
+\#define \hyperlink{_values_8h_aa2f64ccbdca397f15a34e71a0f976185}{S\+H\+I\+P\+\_\+\+C\+O\+O\+L\+D\+O\+WN}~5
+\item 
+\#define \hyperlink{_values_8h_a46ae7736840eb130ff7cb23587679745}{S\+H\+I\+P\+\_\+\+D\+A\+M\+A\+GE}~1
+\item 
+\#define \hyperlink{_values_8h_aefb16b63302add31f45987d9a2294ef5}{I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+Z}~0.\+3
+\item 
+\#define \hyperlink{_values_8h_aeb88ce45cc1df26777ee4dc0f2c6e020}{I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+S}~0.\+3
+\item 
+\#define \hyperlink{_values_8h_a2ff6c865fc94a66f0e2f71acbff955d6}{I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+Q}~0.\+3
+\item 
+\#define \hyperlink{_values_8h_a92d4823d7ffcecaa938fbc4c99d300d3}{I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+D}~0.\+3
+\item 
+\#define \hyperlink{_values_8h_a755074b1866b13e4f3fbc82fd5ef0824}{M\+A\+X\+\_\+\+I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+H\+IP}~10
+\item 
+\#define \hyperlink{_values_8h_a416fffc7f9564cff9abf18d22648bb73}{V\+O\+I\+D\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON}~-\/1
+\item 
+\#define \hyperlink{_values_8h_ac385c6517b88a49b4ff12a58b734d31d}{V\+A\+L\+I\+D\+\_\+\+R\+E\+T\+U\+RN}~1
+\item 
+\#define \hyperlink{_values_8h_ac91445e4ad0b40fc554754bb1aa20317}{E\+R\+R\+O\+R\+\_\+\+R\+E\+T\+U\+RN}~0
+\item 
+\#define \hyperlink{_values_8h_a4169f443ac4d16a319740e0fdfbfd9cc}{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+IP}~32
+\item 
+\#define \hyperlink{_values_8h_ad721de7f9e75853658d1cec3931d7a31}{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+B\+I\+RE}~32
+\item 
+\#define \hyperlink{_values_8h_a338344cce9d6c045c6e1b0d3d8584442}{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+I\+N\+US}~48
+\item 
+\#define \hyperlink{_values_8h_a328ad3bbc17e68dc3a1fe8eb4ba90031}{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+N\+I\+P\+ER}~48
+\item 
+\#define \hyperlink{_values_8h_a401b907dce13b4b990ddf51b7aa60d25}{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+B\+O\+M\+B\+ER}~16
+\item 
+\#define \hyperlink{_values_8h_a6757c7c5506b6fb582cbf0937ab84cf9}{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}~16
+\item 
+\#define \hyperlink{_values_8h_a517546231c88ea67bc2e98190dca9748}{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}~16
+\item 
+\#define \hyperlink{_values_8h_af5b0f446113ca46f495e8cd64032bbe5}{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}~24
+\item 
+\#define \hyperlink{_values_8h_a8a85146c2eb2803c66bb7403e720b1b5}{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}~8
+\item 
+\#define \hyperlink{_values_8h_a5f96c236f7d70daa4751c6a1c1327c8c}{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+G\+A\+T\+L\+I\+NG}~56
+\item 
+\#define \hyperlink{_values_8h_a4465c962eb1ca11ccdf03553d38c921c}{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+C\+O\+M\+ET}~64
+\item 
+\#define \hyperlink{_values_8h_a8922964e72621f61a3cea47d9c2d1a5e}{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}~16
+\item 
+\#define \hyperlink{_values_8h_a5dbc70159f2ee2232f031109eccb64ac}{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+H\+E\+AL}~56
+\item 
+\#define \hyperlink{_values_8h_ac8270f787de0e5fc07f7c3e17ff08a85}{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+E\+LD}~56
+\item 
+\#define \hyperlink{_values_8h_a60da50e7020cf8e95e0edb831de313c3}{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+S\+H\+OT}~56
+\item 
+\#define \hyperlink{_values_8h_a7816b2d2e0c417ce9a4c88740c94bc64}{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+N\+I\+T\+RO}~56
+\item 
+\#define \hyperlink{_values_8h_afa5e9a3453367ad8e25ec221058e818f}{H\+I\+T\+B\+O\+X\+\_\+\+S\+H\+IP}~8
+\item 
+\#define \hyperlink{_values_8h_a46755735cfa3d33d048e98dbd9adc06e}{H\+I\+T\+B\+O\+X\+\_\+\+S\+B\+I\+RE}~16
+\item 
+\#define \hyperlink{_values_8h_a8f9564ec4dd5ee46a1fed906bca19a8b}{H\+I\+T\+B\+O\+X\+\_\+\+S\+I\+N\+US}~32
+\item 
+\#define \hyperlink{_values_8h_a6ff7f7b05559a6642f7bb3f8781b9173}{H\+I\+T\+B\+O\+X\+\_\+\+S\+N\+I\+P\+ER}~16
+\item 
+\#define \hyperlink{_values_8h_a3f443554f181e44da650f9328c076a0c}{H\+I\+T\+B\+O\+X\+\_\+\+B\+O\+M\+B\+ER}~24
+\item 
+\#define \hyperlink{_values_8h_a0ba8cd1574537ae7b4fe8b60c31c2af6}{H\+I\+T\+B\+O\+X\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}~16
+\item 
+\#define \hyperlink{_values_8h_adc2c0d1ffa5b2c110d8512ffd5df5ffe}{H\+I\+T\+B\+O\+X\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}~16
+\item 
+\#define \hyperlink{_values_8h_ae6b7add0821945acfca81550d986528c}{H\+I\+T\+B\+O\+X\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}~16
+\item 
+\#define \hyperlink{_values_8h_a56bf2c8d9e86d80a80c5b2e169eb1e85}{H\+I\+T\+B\+O\+X\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}~8
+\item 
+\#define \hyperlink{_values_8h_a8ad81e9d56e283a3da6a1cf7f003029a}{H\+I\+T\+B\+O\+X\+\_\+\+G\+A\+T\+L\+I\+NG}~16
+\item 
+\#define \hyperlink{_values_8h_ade2024415d0a6e72542522cece6ca816}{H\+I\+T\+B\+O\+X\+\_\+\+C\+O\+M\+ET}~16
+\item 
+\#define \hyperlink{_values_8h_ae2a0333dda76f42ca89aefb9ae9e279d}{H\+I\+T\+B\+O\+X\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}~16
+\item 
+\#define \hyperlink{_values_8h_ab31599b93ecea898b4221b8bb59f9cbb}{M\+I\+N\+\_\+\+C\+H\+A\+N\+C\+E\+\_\+\+S\+P\+A\+W\+N\+\_\+\+E\+N\+N\+E\+MY}~0
+\item 
+\#define \hyperlink{_values_8h_a9001ed8c876b1acc257a79746929e24b}{M\+A\+X\+\_\+\+C\+H\+A\+N\+C\+E\+\_\+\+S\+P\+A\+W\+N\+\_\+\+E\+N\+N\+E\+MY}~100
+\item 
+\#define \hyperlink{_values_8h_a6657d42f4fc81a589c9637b5630877d9}{S\+P\+A\+W\+N\+\_\+\+C\+H\+A\+N\+C\+E\+\_\+\+E\+N\+N\+E\+MY}~2
+\item 
+\#define \hyperlink{_values_8h_ad80b50596b4b12c4ddb2a175865c83b9}{C\+H\+A\+N\+C\+E\+\_\+\+S\+B\+I\+RE}~60
+\item 
+\#define \hyperlink{_values_8h_ab9bde23e08f2f349d85e55d63e927be2}{C\+H\+A\+N\+C\+E\+\_\+\+S\+I\+N\+US}~(15 + \hyperlink{_values_8h_ad80b50596b4b12c4ddb2a175865c83b9}{C\+H\+A\+N\+C\+E\+\_\+\+S\+B\+I\+RE})
+\item 
+\#define \hyperlink{_values_8h_ad5cd4e4f9795e4edad124eb50d973ef7}{C\+H\+A\+N\+C\+E\+\_\+\+S\+N\+I\+P\+ER}~(8 + \hyperlink{_values_8h_ab9bde23e08f2f349d85e55d63e927be2}{C\+H\+A\+N\+C\+E\+\_\+\+S\+I\+N\+US})
+\item 
+\#define \hyperlink{_values_8h_a22820e1e6463760ddb27c319ea60b663}{C\+H\+A\+N\+C\+E\+\_\+\+B\+O\+M\+B\+ER}~(5 + \hyperlink{_values_8h_ad5cd4e4f9795e4edad124eb50d973ef7}{C\+H\+A\+N\+C\+E\+\_\+\+S\+N\+I\+P\+ER})
+\item 
+\#define \hyperlink{_values_8h_a7dd2e95db622e6f4988b942218eb17d5}{C\+H\+A\+N\+C\+E\+\_\+\+G\+A\+T\+L\+I\+NG}~(2 + \hyperlink{_values_8h_a22820e1e6463760ddb27c319ea60b663}{C\+H\+A\+N\+C\+E\+\_\+\+B\+O\+M\+B\+ER})
+\item 
+\#define \hyperlink{_values_8h_aca1de4ddaaba4caa7069b1c019a3008a}{C\+H\+A\+N\+C\+E\+\_\+\+C\+O\+M\+ET}~(10 + \hyperlink{_values_8h_a7dd2e95db622e6f4988b942218eb17d5}{C\+H\+A\+N\+C\+E\+\_\+\+G\+A\+T\+L\+I\+NG})
+\item 
+\#define \hyperlink{_values_8h_ae42a4016a03b98b6767f66358c575ead}{C\+H\+A\+N\+C\+E\+\_\+\+E\+N\+N\+E\+MY}~\hyperlink{_values_8h_aca1de4ddaaba4caa7069b1c019a3008a}{C\+H\+A\+N\+C\+E\+\_\+\+C\+O\+M\+ET}
+\item 
+\#define \hyperlink{_values_8h_a6d8332cec87cea4a8e9b46cb360d1fb0}{M\+A\+X\+\_\+\+S\+T\+AR}~300
+\item 
+\#define \hyperlink{_values_8h_aaa9f7d95217e36bb9a24e9b45d461933}{M\+A\+X\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+T\+A\+RS}~8
+\item 
+\#define \hyperlink{_values_8h_af65686ac5d21322097c526db71b51ef9}{M\+I\+N\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+T\+A\+RS}~2
+\item 
+\#define \hyperlink{_values_8h_aff11ddeddca703e927bfa7b53d8a5b1f}{M\+A\+X\+\_\+\+S\+P\+E\+E\+D\+\_\+\+S\+T\+A\+RS}~2
+\item 
+\#define \hyperlink{_values_8h_a6139c40bd5f4d5b1616f09116ca8a099}{T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+C\+Y\+\_\+\+S\+T\+A\+RS}~4
+\item 
+\#define \hyperlink{_values_8h_a7005d7c3eb26aae71a4eb0613a25892a}{T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+C\+Y\+\_\+\+S\+T\+A\+R\+S\+\_\+\+F\+A\+C\+T\+OR}~60
+\item 
+\#define \hyperlink{_values_8h_aa483e9cedf2bda548780e525d06230bc}{S\+T\+A\+R\+\_\+\+R\+A\+ND}~5
+\item 
+\#define \hyperlink{_values_8h_a0ccacc3ecbbc935176fd11454ecb79d6}{N\+B\+\_\+\+B\+O\+N\+US}~4
+\item 
+\#define \hyperlink{_values_8h_ab8d503dfba05f8a8e15c65956b87c765}{T\+I\+M\+E\+\_\+\+H\+E\+AL}~1
+\item 
+\#define \hyperlink{_values_8h_a8fc057322b8a5d737ada1ce39e968b3f}{T\+I\+M\+E\+\_\+\+S\+H\+I\+E\+LD}~(\hyperlink{_values_8h_a84142cd3e3bf14c4ecd4b6707a808c39}{F\+R\+E\+Q\+U\+E\+N\+CY} $\ast$ 5) /$\ast$seconds$\ast$/
+\item 
+\#define \hyperlink{_values_8h_a1aa876368acde14e8c15d3fbb9629f93}{T\+I\+M\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+S\+H\+OT}~(\hyperlink{_values_8h_a84142cd3e3bf14c4ecd4b6707a808c39}{F\+R\+E\+Q\+U\+E\+N\+CY} $\ast$ 8) /$\ast$seconds$\ast$/
+\item 
+\#define \hyperlink{_values_8h_abbbc492a37f4443c1194628006d0db42}{T\+I\+M\+E\+\_\+\+N\+I\+T\+RO}~(\hyperlink{_values_8h_a84142cd3e3bf14c4ecd4b6707a808c39}{F\+R\+E\+Q\+U\+E\+N\+CY} $\ast$ 10) /$\ast$seconds$\ast$/
+\item 
+\#define \hyperlink{_values_8h_a5e70a61b5cf0faf9ee030fee37f7066d}{S\+P\+R\+I\+T\+E\+\_\+\+B\+O\+N\+U\+S\+\_\+\+S\+I\+ZE}~10
+\item 
+\#define \hyperlink{_values_8h_aa44aca8319f80668dced49a807a2f4cd}{H\+I\+T\+B\+O\+X\+\_\+\+B\+O\+N\+U\+S\+\_\+\+S\+I\+ZE}~10
+\item 
+\#define \hyperlink{_values_8h_aa84b097d8f64b381b46716b85c63f857}{N\+I\+T\+R\+O\+\_\+\+S\+P\+E\+E\+D\+\_\+\+F\+A\+C\+T\+OR}~2
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{_values_8h_a8f9fcedca9f2f9318215294c30504cae}{bonus\+\_\+type} \hyperlink{_values_8h_a49bda12b1a33f2261caaf3f914078c4c}{Bonus\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_values_8h_a8f9fcedca9f2f9318215294c30504cae}{bonus\+\_\+type} \{ \newline
+\hyperlink{_values_8h_a8f9fcedca9f2f9318215294c30504caeaffdd98146fb0c71b3381f94b036a100f}{S\+H\+I\+E\+LD} = 12, 
+\hyperlink{_values_8h_a8f9fcedca9f2f9318215294c30504caeabb9fb5962c8d829b60b6d124bb4fca50}{H\+E\+AL} = 13, 
+\hyperlink{_values_8h_a8f9fcedca9f2f9318215294c30504caea5aa14e54dc0d7e81bdd119eeebda59b9}{N\+I\+T\+RO} = 14, 
+\hyperlink{_values_8h_a8f9fcedca9f2f9318215294c30504caea81d9d52c2ae385a3113e503fc2ac4c90}{T\+R\+I\+P\+L\+E\+\_\+\+S\+H\+OT} = 15, 
+\newline
+\hyperlink{_values_8h_a8f9fcedca9f2f9318215294c30504caea862416fc9ff789d76a36bf83badc3a63}{N\+O\+T\+\_\+\+A\+\_\+\+B\+O\+N\+US} = 16
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_values_8h_a4bb1b05f2dff9824e5b844bf07ebbc07}\label{_values_8h_a4bb1b05f2dff9824e5b844bf07ebbc07}} 
+\index{Values.\+h@{Values.\+h}!A\+L\+L\+Y\+\_\+\+C\+L\+AN@{A\+L\+L\+Y\+\_\+\+C\+L\+AN}}
+\index{A\+L\+L\+Y\+\_\+\+C\+L\+AN@{A\+L\+L\+Y\+\_\+\+C\+L\+AN}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{A\+L\+L\+Y\+\_\+\+C\+L\+AN}{ALLY\_CLAN}}
+{\footnotesize\ttfamily \#define A\+L\+L\+Y\+\_\+\+C\+L\+AN~0}
+
+
+
+Definition at line 21 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a5b726f13483f65046a6f572fdbe482bc}\label{_values_8h_a5b726f13483f65046a6f572fdbe482bc}} 
+\index{Values.\+h@{Values.\+h}!B\+O\+M\+B\+ER@{B\+O\+M\+B\+ER}}
+\index{B\+O\+M\+B\+ER@{B\+O\+M\+B\+ER}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{B\+O\+M\+B\+ER}{BOMBER}}
+{\footnotesize\ttfamily \#define B\+O\+M\+B\+ER~4}
+
+
+
+Definition at line 34 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a96a9822fa134450197dd454b1478a193}\label{_values_8h_a96a9822fa134450197dd454b1478a193}} 
+\index{Values.\+h@{Values.\+h}!B\+O\+N\+US@{B\+O\+N\+US}}
+\index{B\+O\+N\+US@{B\+O\+N\+US}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{B\+O\+N\+US}{BONUS}}
+{\footnotesize\ttfamily \#define B\+O\+N\+US~30}
+
+
+
+Definition at line 27 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a78a87d092595473bcb2a60d4ac6a622b}\label{_values_8h_a78a87d092595473bcb2a60d4ac6a622b}} 
+\index{Values.\+h@{Values.\+h}!B\+O\+SS@{B\+O\+SS}}
+\index{B\+O\+SS@{B\+O\+SS}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{B\+O\+SS}{BOSS}}
+{\footnotesize\ttfamily \#define B\+O\+SS~25}
+
+
+
+Definition at line 45 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a22820e1e6463760ddb27c319ea60b663}\label{_values_8h_a22820e1e6463760ddb27c319ea60b663}} 
+\index{Values.\+h@{Values.\+h}!C\+H\+A\+N\+C\+E\+\_\+\+B\+O\+M\+B\+ER@{C\+H\+A\+N\+C\+E\+\_\+\+B\+O\+M\+B\+ER}}
+\index{C\+H\+A\+N\+C\+E\+\_\+\+B\+O\+M\+B\+ER@{C\+H\+A\+N\+C\+E\+\_\+\+B\+O\+M\+B\+ER}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{C\+H\+A\+N\+C\+E\+\_\+\+B\+O\+M\+B\+ER}{CHANCE\_BOMBER}}
+{\footnotesize\ttfamily \#define C\+H\+A\+N\+C\+E\+\_\+\+B\+O\+M\+B\+ER~(5 + \hyperlink{_values_8h_ad5cd4e4f9795e4edad124eb50d973ef7}{C\+H\+A\+N\+C\+E\+\_\+\+S\+N\+I\+P\+ER})}
+
+
+
+Definition at line 175 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_aca1de4ddaaba4caa7069b1c019a3008a}\label{_values_8h_aca1de4ddaaba4caa7069b1c019a3008a}} 
+\index{Values.\+h@{Values.\+h}!C\+H\+A\+N\+C\+E\+\_\+\+C\+O\+M\+ET@{C\+H\+A\+N\+C\+E\+\_\+\+C\+O\+M\+ET}}
+\index{C\+H\+A\+N\+C\+E\+\_\+\+C\+O\+M\+ET@{C\+H\+A\+N\+C\+E\+\_\+\+C\+O\+M\+ET}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{C\+H\+A\+N\+C\+E\+\_\+\+C\+O\+M\+ET}{CHANCE\_COMET}}
+{\footnotesize\ttfamily \#define C\+H\+A\+N\+C\+E\+\_\+\+C\+O\+M\+ET~(10 + \hyperlink{_values_8h_a7dd2e95db622e6f4988b942218eb17d5}{C\+H\+A\+N\+C\+E\+\_\+\+G\+A\+T\+L\+I\+NG})}
+
+
+
+Definition at line 177 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_ae42a4016a03b98b6767f66358c575ead}\label{_values_8h_ae42a4016a03b98b6767f66358c575ead}} 
+\index{Values.\+h@{Values.\+h}!C\+H\+A\+N\+C\+E\+\_\+\+E\+N\+N\+E\+MY@{C\+H\+A\+N\+C\+E\+\_\+\+E\+N\+N\+E\+MY}}
+\index{C\+H\+A\+N\+C\+E\+\_\+\+E\+N\+N\+E\+MY@{C\+H\+A\+N\+C\+E\+\_\+\+E\+N\+N\+E\+MY}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{C\+H\+A\+N\+C\+E\+\_\+\+E\+N\+N\+E\+MY}{CHANCE\_ENNEMY}}
+{\footnotesize\ttfamily \#define C\+H\+A\+N\+C\+E\+\_\+\+E\+N\+N\+E\+MY~\hyperlink{_values_8h_aca1de4ddaaba4caa7069b1c019a3008a}{C\+H\+A\+N\+C\+E\+\_\+\+C\+O\+M\+ET}}
+
+
+
+Definition at line 178 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a7dd2e95db622e6f4988b942218eb17d5}\label{_values_8h_a7dd2e95db622e6f4988b942218eb17d5}} 
+\index{Values.\+h@{Values.\+h}!C\+H\+A\+N\+C\+E\+\_\+\+G\+A\+T\+L\+I\+NG@{C\+H\+A\+N\+C\+E\+\_\+\+G\+A\+T\+L\+I\+NG}}
+\index{C\+H\+A\+N\+C\+E\+\_\+\+G\+A\+T\+L\+I\+NG@{C\+H\+A\+N\+C\+E\+\_\+\+G\+A\+T\+L\+I\+NG}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{C\+H\+A\+N\+C\+E\+\_\+\+G\+A\+T\+L\+I\+NG}{CHANCE\_GATLING}}
+{\footnotesize\ttfamily \#define C\+H\+A\+N\+C\+E\+\_\+\+G\+A\+T\+L\+I\+NG~(2 + \hyperlink{_values_8h_a22820e1e6463760ddb27c319ea60b663}{C\+H\+A\+N\+C\+E\+\_\+\+B\+O\+M\+B\+ER})}
+
+
+
+Definition at line 176 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_ad80b50596b4b12c4ddb2a175865c83b9}\label{_values_8h_ad80b50596b4b12c4ddb2a175865c83b9}} 
+\index{Values.\+h@{Values.\+h}!C\+H\+A\+N\+C\+E\+\_\+\+S\+B\+I\+RE@{C\+H\+A\+N\+C\+E\+\_\+\+S\+B\+I\+RE}}
+\index{C\+H\+A\+N\+C\+E\+\_\+\+S\+B\+I\+RE@{C\+H\+A\+N\+C\+E\+\_\+\+S\+B\+I\+RE}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{C\+H\+A\+N\+C\+E\+\_\+\+S\+B\+I\+RE}{CHANCE\_SBIRE}}
+{\footnotesize\ttfamily \#define C\+H\+A\+N\+C\+E\+\_\+\+S\+B\+I\+RE~60}
+
+
+
+Definition at line 172 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_ab9bde23e08f2f349d85e55d63e927be2}\label{_values_8h_ab9bde23e08f2f349d85e55d63e927be2}} 
+\index{Values.\+h@{Values.\+h}!C\+H\+A\+N\+C\+E\+\_\+\+S\+I\+N\+US@{C\+H\+A\+N\+C\+E\+\_\+\+S\+I\+N\+US}}
+\index{C\+H\+A\+N\+C\+E\+\_\+\+S\+I\+N\+US@{C\+H\+A\+N\+C\+E\+\_\+\+S\+I\+N\+US}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{C\+H\+A\+N\+C\+E\+\_\+\+S\+I\+N\+US}{CHANCE\_SINUS}}
+{\footnotesize\ttfamily \#define C\+H\+A\+N\+C\+E\+\_\+\+S\+I\+N\+US~(15 + \hyperlink{_values_8h_ad80b50596b4b12c4ddb2a175865c83b9}{C\+H\+A\+N\+C\+E\+\_\+\+S\+B\+I\+RE})}
+
+
+
+Definition at line 173 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_ad5cd4e4f9795e4edad124eb50d973ef7}\label{_values_8h_ad5cd4e4f9795e4edad124eb50d973ef7}} 
+\index{Values.\+h@{Values.\+h}!C\+H\+A\+N\+C\+E\+\_\+\+S\+N\+I\+P\+ER@{C\+H\+A\+N\+C\+E\+\_\+\+S\+N\+I\+P\+ER}}
+\index{C\+H\+A\+N\+C\+E\+\_\+\+S\+N\+I\+P\+ER@{C\+H\+A\+N\+C\+E\+\_\+\+S\+N\+I\+P\+ER}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{C\+H\+A\+N\+C\+E\+\_\+\+S\+N\+I\+P\+ER}{CHANCE\_SNIPER}}
+{\footnotesize\ttfamily \#define C\+H\+A\+N\+C\+E\+\_\+\+S\+N\+I\+P\+ER~(8 + \hyperlink{_values_8h_ab9bde23e08f2f349d85e55d63e927be2}{C\+H\+A\+N\+C\+E\+\_\+\+S\+I\+N\+US})}
+
+
+
+Definition at line 174 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_aae56dbc42850117ca0ec29ad0043b37b}\label{_values_8h_aae56dbc42850117ca0ec29ad0043b37b}} 
+\index{Values.\+h@{Values.\+h}!C\+O\+M\+ET@{C\+O\+M\+ET}}
+\index{C\+O\+M\+ET@{C\+O\+M\+ET}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+M\+ET}{COMET}}
+{\footnotesize\ttfamily \#define C\+O\+M\+ET~6}
+
+
+
+Definition at line 36 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a71895bb7ecc1bdc1e04e0d7e2dfc2fe3}\label{_values_8h_a71895bb7ecc1bdc1e04e0d7e2dfc2fe3}} 
+\index{Values.\+h@{Values.\+h}!C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+B\+O\+M\+B\+ER@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+B\+O\+M\+B\+ER}}
+\index{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+B\+O\+M\+B\+ER@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+B\+O\+M\+B\+ER}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+B\+O\+M\+B\+ER}{COOLDOWN\_BOMBER}}
+{\footnotesize\ttfamily \#define C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+B\+O\+M\+B\+ER~0}
+
+
+
+Definition at line 95 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a1cc56078dcf47d6793247aa0dfdf5eb4}\label{_values_8h_a1cc56078dcf47d6793247aa0dfdf5eb4}} 
+\index{Values.\+h@{Values.\+h}!C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+1@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+1}}
+\index{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+1@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+1}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+1}{COOLDOWN\_BOSS\_SHOT\_1}}
+{\footnotesize\ttfamily \#define C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+1~40}
+
+
+
+Definition at line 112 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a3d85996e1734ca43a8183399be4424f6}\label{_values_8h_a3d85996e1734ca43a8183399be4424f6}} 
+\index{Values.\+h@{Values.\+h}!C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+2@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+2}}
+\index{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+2@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+2}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+2}{COOLDOWN\_BOSS\_SHOT\_2}}
+{\footnotesize\ttfamily \#define C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+2~20}
+
+
+
+Definition at line 113 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_abfa103cf2ef52c845fe447d55fad8fbd}\label{_values_8h_abfa103cf2ef52c845fe447d55fad8fbd}} 
+\index{Values.\+h@{Values.\+h}!C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+C\+O\+M\+ET@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+C\+O\+M\+ET}}
+\index{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+C\+O\+M\+ET@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+C\+O\+M\+ET}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+C\+O\+M\+ET}{COOLDOWN\_COMET}}
+{\footnotesize\ttfamily \#define C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+C\+O\+M\+ET~0}
+
+
+
+Definition at line 106 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a02aef5e587b1a1365157aa36d8bf8169}\label{_values_8h_a02aef5e587b1a1365157aa36d8bf8169}} 
+\index{Values.\+h@{Values.\+h}!C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+G\+A\+T\+L\+I\+NG@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+G\+A\+T\+L\+I\+NG}}
+\index{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+G\+A\+T\+L\+I\+NG@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+G\+A\+T\+L\+I\+NG}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+G\+A\+T\+L\+I\+NG}{COOLDOWN\_GATLING}}
+{\footnotesize\ttfamily \#define C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+G\+A\+T\+L\+I\+NG~50}
+
+
+
+Definition at line 101 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_abe78b1830b52e3d5e821a0fd3d2c7bf2}\label{_values_8h_abe78b1830b52e3d5e821a0fd3d2c7bf2}} 
+\index{Values.\+h@{Values.\+h}!C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}}
+\index{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}{COOLDOWN\_GATLING\_SHOT}}
+{\footnotesize\ttfamily \#define C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT~0}
+
+
+
+Definition at line 56 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_ac3fad480163be45f034d832a24c7bdc4}\label{_values_8h_ac3fad480163be45f034d832a24c7bdc4}} 
+\index{Values.\+h@{Values.\+h}!C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+B\+I\+RE@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+B\+I\+RE}}
+\index{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+B\+I\+RE@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+B\+I\+RE}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+B\+I\+RE}{COOLDOWN\_SBIRE}}
+{\footnotesize\ttfamily \#define C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+B\+I\+RE~50}
+
+
+
+Definition at line 80 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a8cfbc3b2365cf646c44892e53fb23e4d}\label{_values_8h_a8cfbc3b2365cf646c44892e53fb23e4d}} 
+\index{Values.\+h@{Values.\+h}!C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}}
+\index{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}{COOLDOWN\_SBIRE\_SHOT}}
+{\footnotesize\ttfamily \#define C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT~0}
+
+
+
+Definition at line 50 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_ab944ac8b66f903b45070c341ea9c65b1}\label{_values_8h_ab944ac8b66f903b45070c341ea9c65b1}} 
+\index{Values.\+h@{Values.\+h}!C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}}
+\index{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}{COOLDOWN\_SHIP\_SHOT}}
+{\footnotesize\ttfamily \#define C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT~0}
+
+
+
+Definition at line 74 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a193ab799325d69724cc0f75bf2739442}\label{_values_8h_a193ab799325d69724cc0f75bf2739442}} 
+\index{Values.\+h@{Values.\+h}!C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+I\+N\+US@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+I\+N\+US}}
+\index{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+I\+N\+US@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+I\+N\+US}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+I\+N\+US}{COOLDOWN\_SINUS}}
+{\footnotesize\ttfamily \#define C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+I\+N\+US~50}
+
+
+
+Definition at line 85 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_aa3a917e04671c85f375d320e6d164520}\label{_values_8h_aa3a917e04671c85f375d320e6d164520}} 
+\index{Values.\+h@{Values.\+h}!C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}}
+\index{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}{COOLDOWN\_SINUS\_SHOT}}
+{\footnotesize\ttfamily \#define C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT~100}
+
+
+
+Definition at line 68 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_aa56aac525bdbbedbb606be2024bc82d0}\label{_values_8h_aa56aac525bdbbedbb606be2024bc82d0}} 
+\index{Values.\+h@{Values.\+h}!C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+N\+I\+P\+ER@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+N\+I\+P\+ER}}
+\index{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+N\+I\+P\+ER@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+N\+I\+P\+ER}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+N\+I\+P\+ER}{COOLDOWN\_SNIPER}}
+{\footnotesize\ttfamily \#define C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+N\+I\+P\+ER~50}
+
+
+
+Definition at line 90 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a937d7d549d632ca11e011a9a9cf87ebc}\label{_values_8h_a937d7d549d632ca11e011a9a9cf87ebc}} 
+\index{Values.\+h@{Values.\+h}!C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}}
+\index{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT@{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}{COOLDOWN\_SNIPER\_SHOT}}
+{\footnotesize\ttfamily \#define C\+O\+O\+L\+D\+O\+W\+N\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT~0}
+
+
+
+Definition at line 62 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a0832f7df9033a483785bb38dc7eeca3c}\label{_values_8h_a0832f7df9033a483785bb38dc7eeca3c}} 
+\index{Values.\+h@{Values.\+h}!D\+A\+M\+A\+G\+E\+\_\+\+B\+O\+M\+B\+ER@{D\+A\+M\+A\+G\+E\+\_\+\+B\+O\+M\+B\+ER}}
+\index{D\+A\+M\+A\+G\+E\+\_\+\+B\+O\+M\+B\+ER@{D\+A\+M\+A\+G\+E\+\_\+\+B\+O\+M\+B\+ER}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{D\+A\+M\+A\+G\+E\+\_\+\+B\+O\+M\+B\+ER}{DAMAGE\_BOMBER}}
+{\footnotesize\ttfamily \#define D\+A\+M\+A\+G\+E\+\_\+\+B\+O\+M\+B\+ER~2}
+
+
+
+Definition at line 96 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a95c0d67a97a5108bfca38e85f67ad47a}\label{_values_8h_a95c0d67a97a5108bfca38e85f67ad47a}} 
+\index{Values.\+h@{Values.\+h}!D\+A\+M\+A\+G\+E\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+1@{D\+A\+M\+A\+G\+E\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+1}}
+\index{D\+A\+M\+A\+G\+E\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+1@{D\+A\+M\+A\+G\+E\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+1}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{D\+A\+M\+A\+G\+E\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+1}{DAMAGE\_BOSS\_SHOT\_1}}
+{\footnotesize\ttfamily \#define D\+A\+M\+A\+G\+E\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+1~1}
+
+
+
+Definition at line 114 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_ac86d81e2a037841b8b19cf293d6122dc}\label{_values_8h_ac86d81e2a037841b8b19cf293d6122dc}} 
+\index{Values.\+h@{Values.\+h}!D\+A\+M\+A\+G\+E\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+2@{D\+A\+M\+A\+G\+E\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+2}}
+\index{D\+A\+M\+A\+G\+E\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+2@{D\+A\+M\+A\+G\+E\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+2}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{D\+A\+M\+A\+G\+E\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+2}{DAMAGE\_BOSS\_SHOT\_2}}
+{\footnotesize\ttfamily \#define D\+A\+M\+A\+G\+E\+\_\+\+B\+O\+S\+S\+\_\+\+S\+H\+O\+T\+\_\+2~2}
+
+
+
+Definition at line 115 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a7cd5524cef238cf466f50889b9338498}\label{_values_8h_a7cd5524cef238cf466f50889b9338498}} 
+\index{Values.\+h@{Values.\+h}!D\+A\+M\+A\+G\+E\+\_\+\+C\+O\+M\+ET@{D\+A\+M\+A\+G\+E\+\_\+\+C\+O\+M\+ET}}
+\index{D\+A\+M\+A\+G\+E\+\_\+\+C\+O\+M\+ET@{D\+A\+M\+A\+G\+E\+\_\+\+C\+O\+M\+ET}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{D\+A\+M\+A\+G\+E\+\_\+\+C\+O\+M\+ET}{DAMAGE\_COMET}}
+{\footnotesize\ttfamily \#define D\+A\+M\+A\+G\+E\+\_\+\+C\+O\+M\+ET~1}
+
+
+
+Definition at line 107 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a24fc336188c4ae6a933d311b34cee5a8}\label{_values_8h_a24fc336188c4ae6a933d311b34cee5a8}} 
+\index{Values.\+h@{Values.\+h}!D\+A\+M\+A\+G\+E\+\_\+\+G\+A\+T\+L\+I\+NG@{D\+A\+M\+A\+G\+E\+\_\+\+G\+A\+T\+L\+I\+NG}}
+\index{D\+A\+M\+A\+G\+E\+\_\+\+G\+A\+T\+L\+I\+NG@{D\+A\+M\+A\+G\+E\+\_\+\+G\+A\+T\+L\+I\+NG}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{D\+A\+M\+A\+G\+E\+\_\+\+G\+A\+T\+L\+I\+NG}{DAMAGE\_GATLING}}
+{\footnotesize\ttfamily \#define D\+A\+M\+A\+G\+E\+\_\+\+G\+A\+T\+L\+I\+NG~1}
+
+
+
+Definition at line 102 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a9edb4c2df31bdc6043513545c80ed974}\label{_values_8h_a9edb4c2df31bdc6043513545c80ed974}} 
+\index{Values.\+h@{Values.\+h}!D\+A\+M\+A\+G\+E\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT@{D\+A\+M\+A\+G\+E\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}}
+\index{D\+A\+M\+A\+G\+E\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT@{D\+A\+M\+A\+G\+E\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{D\+A\+M\+A\+G\+E\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}{DAMAGE\_GATLING\_SHOT}}
+{\footnotesize\ttfamily \#define D\+A\+M\+A\+G\+E\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT~1}
+
+
+
+Definition at line 57 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a544d052a69d4ae4508a55a8ebcc67ee8}\label{_values_8h_a544d052a69d4ae4508a55a8ebcc67ee8}} 
+\index{Values.\+h@{Values.\+h}!D\+A\+M\+A\+G\+E\+\_\+\+S\+B\+I\+RE@{D\+A\+M\+A\+G\+E\+\_\+\+S\+B\+I\+RE}}
+\index{D\+A\+M\+A\+G\+E\+\_\+\+S\+B\+I\+RE@{D\+A\+M\+A\+G\+E\+\_\+\+S\+B\+I\+RE}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{D\+A\+M\+A\+G\+E\+\_\+\+S\+B\+I\+RE}{DAMAGE\_SBIRE}}
+{\footnotesize\ttfamily \#define D\+A\+M\+A\+G\+E\+\_\+\+S\+B\+I\+RE~1}
+
+
+
+Definition at line 81 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a04a67f3624d2fbfb3a6a865126c48c51}\label{_values_8h_a04a67f3624d2fbfb3a6a865126c48c51}} 
+\index{Values.\+h@{Values.\+h}!D\+A\+M\+A\+G\+E\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT@{D\+A\+M\+A\+G\+E\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}}
+\index{D\+A\+M\+A\+G\+E\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT@{D\+A\+M\+A\+G\+E\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{D\+A\+M\+A\+G\+E\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}{DAMAGE\_SBIRE\_SHOT}}
+{\footnotesize\ttfamily \#define D\+A\+M\+A\+G\+E\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT~1}
+
+
+
+Definition at line 51 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a307432b5363a14fb4c1e24db8286d60c}\label{_values_8h_a307432b5363a14fb4c1e24db8286d60c}} 
+\index{Values.\+h@{Values.\+h}!D\+A\+M\+A\+G\+E\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT@{D\+A\+M\+A\+G\+E\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}}
+\index{D\+A\+M\+A\+G\+E\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT@{D\+A\+M\+A\+G\+E\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{D\+A\+M\+A\+G\+E\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}{DAMAGE\_SHIP\_SHOT}}
+{\footnotesize\ttfamily \#define D\+A\+M\+A\+G\+E\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT~1}
+
+
+
+Definition at line 75 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_aed644547929015faa39048ddfa88a9c2}\label{_values_8h_aed644547929015faa39048ddfa88a9c2}} 
+\index{Values.\+h@{Values.\+h}!D\+A\+M\+A\+G\+E\+\_\+\+S\+I\+N\+US@{D\+A\+M\+A\+G\+E\+\_\+\+S\+I\+N\+US}}
+\index{D\+A\+M\+A\+G\+E\+\_\+\+S\+I\+N\+US@{D\+A\+M\+A\+G\+E\+\_\+\+S\+I\+N\+US}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{D\+A\+M\+A\+G\+E\+\_\+\+S\+I\+N\+US}{DAMAGE\_SINUS}}
+{\footnotesize\ttfamily \#define D\+A\+M\+A\+G\+E\+\_\+\+S\+I\+N\+US~1}
+
+
+
+Definition at line 86 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a4bc91b7320158815d2efbfdfe69df640}\label{_values_8h_a4bc91b7320158815d2efbfdfe69df640}} 
+\index{Values.\+h@{Values.\+h}!D\+A\+M\+A\+G\+E\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT@{D\+A\+M\+A\+G\+E\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}}
+\index{D\+A\+M\+A\+G\+E\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT@{D\+A\+M\+A\+G\+E\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{D\+A\+M\+A\+G\+E\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}{DAMAGE\_SINUS\_SHOT}}
+{\footnotesize\ttfamily \#define D\+A\+M\+A\+G\+E\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT~1}
+
+
+
+Definition at line 69 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a79322922eef1b0834521911bb39ee8a5}\label{_values_8h_a79322922eef1b0834521911bb39ee8a5}} 
+\index{Values.\+h@{Values.\+h}!D\+A\+M\+A\+G\+E\+\_\+\+S\+N\+I\+P\+ER@{D\+A\+M\+A\+G\+E\+\_\+\+S\+N\+I\+P\+ER}}
+\index{D\+A\+M\+A\+G\+E\+\_\+\+S\+N\+I\+P\+ER@{D\+A\+M\+A\+G\+E\+\_\+\+S\+N\+I\+P\+ER}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{D\+A\+M\+A\+G\+E\+\_\+\+S\+N\+I\+P\+ER}{DAMAGE\_SNIPER}}
+{\footnotesize\ttfamily \#define D\+A\+M\+A\+G\+E\+\_\+\+S\+N\+I\+P\+ER~1}
+
+
+
+Definition at line 91 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a80701af477cd524e790522f18589a8f2}\label{_values_8h_a80701af477cd524e790522f18589a8f2}} 
+\index{Values.\+h@{Values.\+h}!D\+A\+M\+A\+G\+E\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT@{D\+A\+M\+A\+G\+E\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}}
+\index{D\+A\+M\+A\+G\+E\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT@{D\+A\+M\+A\+G\+E\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{D\+A\+M\+A\+G\+E\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}{DAMAGE\_SNIPER\_SHOT}}
+{\footnotesize\ttfamily \#define D\+A\+M\+A\+G\+E\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT~1}
+
+
+
+Definition at line 63 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_ad32e1595b3f30efd2b680e1ca9975d20}\label{_values_8h_ad32e1595b3f30efd2b680e1ca9975d20}} 
+\index{Values.\+h@{Values.\+h}!D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT@{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}}
+\index{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT@{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}{DIRECTION\_GATLING\_SHOT}}
+{\footnotesize\ttfamily \#define D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT~\hyperlink{_values_8h_a655c84af1b0034986ff56e12e84f983d}{N\+O\+NE}}
+
+
+
+Definition at line 58 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a704cbb57612b4bc4fb01545d3ad20aae}\label{_values_8h_a704cbb57612b4bc4fb01545d3ad20aae}} 
+\index{Values.\+h@{Values.\+h}!D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT@{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}}
+\index{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT@{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}{DIRECTION\_SBIRE\_SHOT}}
+{\footnotesize\ttfamily \#define D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT~\hyperlink{_values_8h_a655c84af1b0034986ff56e12e84f983d}{N\+O\+NE}}
+
+
+
+Definition at line 52 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_af449373a200616b0c037a56d90720d24}\label{_values_8h_af449373a200616b0c037a56d90720d24}} 
+\index{Values.\+h@{Values.\+h}!D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT@{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}}
+\index{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT@{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}{DIRECTION\_SHIP\_SHOT}}
+{\footnotesize\ttfamily \#define D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT~(-\/\hyperlink{_values_8h_a598a3330b3c21701223ee0ca14316eca}{PI}/2)}
+
+
+
+Definition at line 76 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_aa9476a6ab113d0fc93e4bccce79227d6}\label{_values_8h_aa9476a6ab113d0fc93e4bccce79227d6}} 
+\index{Values.\+h@{Values.\+h}!D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT@{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}}
+\index{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT@{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}{DIRECTION\_SINUS\_SHOT}}
+{\footnotesize\ttfamily \#define D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT~\hyperlink{_values_8h_a655c84af1b0034986ff56e12e84f983d}{N\+O\+NE}}
+
+
+
+Definition at line 70 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_af60732a89347e96ec017b95675b481fb}\label{_values_8h_af60732a89347e96ec017b95675b481fb}} 
+\index{Values.\+h@{Values.\+h}!D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT@{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}}
+\index{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT@{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}{DIRECTION\_SNIPER\_SHOT}}
+{\footnotesize\ttfamily \#define D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT~\hyperlink{_values_8h_a655c84af1b0034986ff56e12e84f983d}{N\+O\+NE}}
+
+
+
+Definition at line 64 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a7a21998f1c72fc84d22075ad141cad6e}\label{_values_8h_a7a21998f1c72fc84d22075ad141cad6e}} 
+\index{Values.\+h@{Values.\+h}!E\+N\+N\+E\+MY@{E\+N\+N\+E\+MY}}
+\index{E\+N\+N\+E\+MY@{E\+N\+N\+E\+MY}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{E\+N\+N\+E\+MY}{ENNEMY}}
+{\footnotesize\ttfamily \#define E\+N\+N\+E\+MY~1}
+
+
+
+Definition at line 26 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_aba3015842818b8b181b0590cecbfcaeb}\label{_values_8h_aba3015842818b8b181b0590cecbfcaeb}} 
+\index{Values.\+h@{Values.\+h}!E\+N\+N\+E\+M\+Y\+\_\+\+C\+L\+AN@{E\+N\+N\+E\+M\+Y\+\_\+\+C\+L\+AN}}
+\index{E\+N\+N\+E\+M\+Y\+\_\+\+C\+L\+AN@{E\+N\+N\+E\+M\+Y\+\_\+\+C\+L\+AN}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{E\+N\+N\+E\+M\+Y\+\_\+\+C\+L\+AN}{ENNEMY\_CLAN}}
+{\footnotesize\ttfamily \#define E\+N\+N\+E\+M\+Y\+\_\+\+C\+L\+AN~1}
+
+
+
+Definition at line 22 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_ac91445e4ad0b40fc554754bb1aa20317}\label{_values_8h_ac91445e4ad0b40fc554754bb1aa20317}} 
+\index{Values.\+h@{Values.\+h}!E\+R\+R\+O\+R\+\_\+\+R\+E\+T\+U\+RN@{E\+R\+R\+O\+R\+\_\+\+R\+E\+T\+U\+RN}}
+\index{E\+R\+R\+O\+R\+\_\+\+R\+E\+T\+U\+RN@{E\+R\+R\+O\+R\+\_\+\+R\+E\+T\+U\+RN}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{E\+R\+R\+O\+R\+\_\+\+R\+E\+T\+U\+RN}{ERROR\_RETURN}}
+{\footnotesize\ttfamily \#define E\+R\+R\+O\+R\+\_\+\+R\+E\+T\+U\+RN~0}
+
+
+
+Definition at line 131 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_aa93f0eb578d23995850d61f7d61c55c1}\label{_values_8h_aa93f0eb578d23995850d61f7d61c55c1}} 
+\index{Values.\+h@{Values.\+h}!F\+A\+L\+SE@{F\+A\+L\+SE}}
+\index{F\+A\+L\+SE@{F\+A\+L\+SE}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{F\+A\+L\+SE}{FALSE}}
+{\footnotesize\ttfamily \#define F\+A\+L\+SE~0}
+
+
+
+Definition at line 19 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a84142cd3e3bf14c4ecd4b6707a808c39}\label{_values_8h_a84142cd3e3bf14c4ecd4b6707a808c39}} 
+\index{Values.\+h@{Values.\+h}!F\+R\+E\+Q\+U\+E\+N\+CY@{F\+R\+E\+Q\+U\+E\+N\+CY}}
+\index{F\+R\+E\+Q\+U\+E\+N\+CY@{F\+R\+E\+Q\+U\+E\+N\+CY}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{F\+R\+E\+Q\+U\+E\+N\+CY}{FREQUENCY}}
+{\footnotesize\ttfamily \#define F\+R\+E\+Q\+U\+E\+N\+CY~60}
+
+
+
+Definition at line 14 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_ae140e7c9dbec484f931895a7e769f321}\label{_values_8h_ae140e7c9dbec484f931895a7e769f321}} 
+\index{Values.\+h@{Values.\+h}!G\+A\+T\+L\+I\+NG@{G\+A\+T\+L\+I\+NG}}
+\index{G\+A\+T\+L\+I\+NG@{G\+A\+T\+L\+I\+NG}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{G\+A\+T\+L\+I\+NG}{GATLING}}
+{\footnotesize\ttfamily \#define G\+A\+T\+L\+I\+NG~5}
+
+
+
+Definition at line 35 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_ad3f87cc0f456827b15ba7fa3a563358c}\label{_values_8h_ad3f87cc0f456827b15ba7fa3a563358c}} 
+\index{Values.\+h@{Values.\+h}!G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT@{G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}}
+\index{G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT@{G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}{GATLING\_SHOT}}
+{\footnotesize\ttfamily \#define G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT~11}
+
+
+
+Definition at line 41 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_aed89bd71aee8be823e8a20ec4e093c1e}\label{_values_8h_aed89bd71aee8be823e8a20ec4e093c1e}} 
+\index{Values.\+h@{Values.\+h}!H\+E\+I\+G\+HT@{H\+E\+I\+G\+HT}}
+\index{H\+E\+I\+G\+HT@{H\+E\+I\+G\+HT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+E\+I\+G\+HT}{HEIGHT}}
+{\footnotesize\ttfamily \#define H\+E\+I\+G\+HT~(M\+L\+V\+\_\+get\+\_\+desktop\+\_\+height())}
+
+
+
+Definition at line 12 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a3f443554f181e44da650f9328c076a0c}\label{_values_8h_a3f443554f181e44da650f9328c076a0c}} 
+\index{Values.\+h@{Values.\+h}!H\+I\+T\+B\+O\+X\+\_\+\+B\+O\+M\+B\+ER@{H\+I\+T\+B\+O\+X\+\_\+\+B\+O\+M\+B\+ER}}
+\index{H\+I\+T\+B\+O\+X\+\_\+\+B\+O\+M\+B\+ER@{H\+I\+T\+B\+O\+X\+\_\+\+B\+O\+M\+B\+ER}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+I\+T\+B\+O\+X\+\_\+\+B\+O\+M\+B\+ER}{HITBOX\_BOMBER}}
+{\footnotesize\ttfamily \#define H\+I\+T\+B\+O\+X\+\_\+\+B\+O\+M\+B\+ER~24}
+
+
+
+Definition at line 155 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_aa44aca8319f80668dced49a807a2f4cd}\label{_values_8h_aa44aca8319f80668dced49a807a2f4cd}} 
+\index{Values.\+h@{Values.\+h}!H\+I\+T\+B\+O\+X\+\_\+\+B\+O\+N\+U\+S\+\_\+\+S\+I\+ZE@{H\+I\+T\+B\+O\+X\+\_\+\+B\+O\+N\+U\+S\+\_\+\+S\+I\+ZE}}
+\index{H\+I\+T\+B\+O\+X\+\_\+\+B\+O\+N\+U\+S\+\_\+\+S\+I\+ZE@{H\+I\+T\+B\+O\+X\+\_\+\+B\+O\+N\+U\+S\+\_\+\+S\+I\+ZE}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+I\+T\+B\+O\+X\+\_\+\+B\+O\+N\+U\+S\+\_\+\+S\+I\+ZE}{HITBOX\_BONUS\_SIZE}}
+{\footnotesize\ttfamily \#define H\+I\+T\+B\+O\+X\+\_\+\+B\+O\+N\+U\+S\+\_\+\+S\+I\+ZE~10}
+
+
+
+Definition at line 194 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_ade2024415d0a6e72542522cece6ca816}\label{_values_8h_ade2024415d0a6e72542522cece6ca816}} 
+\index{Values.\+h@{Values.\+h}!H\+I\+T\+B\+O\+X\+\_\+\+C\+O\+M\+ET@{H\+I\+T\+B\+O\+X\+\_\+\+C\+O\+M\+ET}}
+\index{H\+I\+T\+B\+O\+X\+\_\+\+C\+O\+M\+ET@{H\+I\+T\+B\+O\+X\+\_\+\+C\+O\+M\+ET}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+I\+T\+B\+O\+X\+\_\+\+C\+O\+M\+ET}{HITBOX\_COMET}}
+{\footnotesize\ttfamily \#define H\+I\+T\+B\+O\+X\+\_\+\+C\+O\+M\+ET~16}
+
+
+
+Definition at line 161 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a8ad81e9d56e283a3da6a1cf7f003029a}\label{_values_8h_a8ad81e9d56e283a3da6a1cf7f003029a}} 
+\index{Values.\+h@{Values.\+h}!H\+I\+T\+B\+O\+X\+\_\+\+G\+A\+T\+L\+I\+NG@{H\+I\+T\+B\+O\+X\+\_\+\+G\+A\+T\+L\+I\+NG}}
+\index{H\+I\+T\+B\+O\+X\+\_\+\+G\+A\+T\+L\+I\+NG@{H\+I\+T\+B\+O\+X\+\_\+\+G\+A\+T\+L\+I\+NG}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+I\+T\+B\+O\+X\+\_\+\+G\+A\+T\+L\+I\+NG}{HITBOX\_GATLING}}
+{\footnotesize\ttfamily \#define H\+I\+T\+B\+O\+X\+\_\+\+G\+A\+T\+L\+I\+NG~16}
+
+
+
+Definition at line 160 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_ae2a0333dda76f42ca89aefb9ae9e279d}\label{_values_8h_ae2a0333dda76f42ca89aefb9ae9e279d}} 
+\index{Values.\+h@{Values.\+h}!H\+I\+T\+B\+O\+X\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT@{H\+I\+T\+B\+O\+X\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}}
+\index{H\+I\+T\+B\+O\+X\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT@{H\+I\+T\+B\+O\+X\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+I\+T\+B\+O\+X\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}{HITBOX\_GATLING\_SHOT}}
+{\footnotesize\ttfamily \#define H\+I\+T\+B\+O\+X\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT~16}
+
+
+
+Definition at line 162 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a46755735cfa3d33d048e98dbd9adc06e}\label{_values_8h_a46755735cfa3d33d048e98dbd9adc06e}} 
+\index{Values.\+h@{Values.\+h}!H\+I\+T\+B\+O\+X\+\_\+\+S\+B\+I\+RE@{H\+I\+T\+B\+O\+X\+\_\+\+S\+B\+I\+RE}}
+\index{H\+I\+T\+B\+O\+X\+\_\+\+S\+B\+I\+RE@{H\+I\+T\+B\+O\+X\+\_\+\+S\+B\+I\+RE}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+I\+T\+B\+O\+X\+\_\+\+S\+B\+I\+RE}{HITBOX\_SBIRE}}
+{\footnotesize\ttfamily \#define H\+I\+T\+B\+O\+X\+\_\+\+S\+B\+I\+RE~16}
+
+
+
+Definition at line 152 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_adc2c0d1ffa5b2c110d8512ffd5df5ffe}\label{_values_8h_adc2c0d1ffa5b2c110d8512ffd5df5ffe}} 
+\index{Values.\+h@{Values.\+h}!H\+I\+T\+B\+O\+X\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT@{H\+I\+T\+B\+O\+X\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}}
+\index{H\+I\+T\+B\+O\+X\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT@{H\+I\+T\+B\+O\+X\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+I\+T\+B\+O\+X\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}{HITBOX\_SBIRE\_SHOT}}
+{\footnotesize\ttfamily \#define H\+I\+T\+B\+O\+X\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT~16}
+
+
+
+Definition at line 157 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_afa5e9a3453367ad8e25ec221058e818f}\label{_values_8h_afa5e9a3453367ad8e25ec221058e818f}} 
+\index{Values.\+h@{Values.\+h}!H\+I\+T\+B\+O\+X\+\_\+\+S\+H\+IP@{H\+I\+T\+B\+O\+X\+\_\+\+S\+H\+IP}}
+\index{H\+I\+T\+B\+O\+X\+\_\+\+S\+H\+IP@{H\+I\+T\+B\+O\+X\+\_\+\+S\+H\+IP}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+I\+T\+B\+O\+X\+\_\+\+S\+H\+IP}{HITBOX\_SHIP}}
+{\footnotesize\ttfamily \#define H\+I\+T\+B\+O\+X\+\_\+\+S\+H\+IP~8}
+
+
+
+Definition at line 151 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a0ba8cd1574537ae7b4fe8b60c31c2af6}\label{_values_8h_a0ba8cd1574537ae7b4fe8b60c31c2af6}} 
+\index{Values.\+h@{Values.\+h}!H\+I\+T\+B\+O\+X\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT@{H\+I\+T\+B\+O\+X\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}}
+\index{H\+I\+T\+B\+O\+X\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT@{H\+I\+T\+B\+O\+X\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+I\+T\+B\+O\+X\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}{HITBOX\_SHIP\_SHOT}}
+{\footnotesize\ttfamily \#define H\+I\+T\+B\+O\+X\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT~16}
+
+
+
+Definition at line 156 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a8f9564ec4dd5ee46a1fed906bca19a8b}\label{_values_8h_a8f9564ec4dd5ee46a1fed906bca19a8b}} 
+\index{Values.\+h@{Values.\+h}!H\+I\+T\+B\+O\+X\+\_\+\+S\+I\+N\+US@{H\+I\+T\+B\+O\+X\+\_\+\+S\+I\+N\+US}}
+\index{H\+I\+T\+B\+O\+X\+\_\+\+S\+I\+N\+US@{H\+I\+T\+B\+O\+X\+\_\+\+S\+I\+N\+US}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+I\+T\+B\+O\+X\+\_\+\+S\+I\+N\+US}{HITBOX\_SINUS}}
+{\footnotesize\ttfamily \#define H\+I\+T\+B\+O\+X\+\_\+\+S\+I\+N\+US~32}
+
+
+
+Definition at line 153 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_ae6b7add0821945acfca81550d986528c}\label{_values_8h_ae6b7add0821945acfca81550d986528c}} 
+\index{Values.\+h@{Values.\+h}!H\+I\+T\+B\+O\+X\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT@{H\+I\+T\+B\+O\+X\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}}
+\index{H\+I\+T\+B\+O\+X\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT@{H\+I\+T\+B\+O\+X\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+I\+T\+B\+O\+X\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}{HITBOX\_SINUS\_SHOT}}
+{\footnotesize\ttfamily \#define H\+I\+T\+B\+O\+X\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT~16}
+
+
+
+Definition at line 158 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a6ff7f7b05559a6642f7bb3f8781b9173}\label{_values_8h_a6ff7f7b05559a6642f7bb3f8781b9173}} 
+\index{Values.\+h@{Values.\+h}!H\+I\+T\+B\+O\+X\+\_\+\+S\+N\+I\+P\+ER@{H\+I\+T\+B\+O\+X\+\_\+\+S\+N\+I\+P\+ER}}
+\index{H\+I\+T\+B\+O\+X\+\_\+\+S\+N\+I\+P\+ER@{H\+I\+T\+B\+O\+X\+\_\+\+S\+N\+I\+P\+ER}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+I\+T\+B\+O\+X\+\_\+\+S\+N\+I\+P\+ER}{HITBOX\_SNIPER}}
+{\footnotesize\ttfamily \#define H\+I\+T\+B\+O\+X\+\_\+\+S\+N\+I\+P\+ER~16}
+
+
+
+Definition at line 154 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a56bf2c8d9e86d80a80c5b2e169eb1e85}\label{_values_8h_a56bf2c8d9e86d80a80c5b2e169eb1e85}} 
+\index{Values.\+h@{Values.\+h}!H\+I\+T\+B\+O\+X\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT@{H\+I\+T\+B\+O\+X\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}}
+\index{H\+I\+T\+B\+O\+X\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT@{H\+I\+T\+B\+O\+X\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+I\+T\+B\+O\+X\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}{HITBOX\_SNIPER\_SHOT}}
+{\footnotesize\ttfamily \#define H\+I\+T\+B\+O\+X\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT~8}
+
+
+
+Definition at line 159 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a7e3df374d7c0b91f09498f8e56fa2cee}\label{_values_8h_a7e3df374d7c0b91f09498f8e56fa2cee}} 
+\index{Values.\+h@{Values.\+h}!H\+P\+\_\+\+B\+O\+M\+B\+ER@{H\+P\+\_\+\+B\+O\+M\+B\+ER}}
+\index{H\+P\+\_\+\+B\+O\+M\+B\+ER@{H\+P\+\_\+\+B\+O\+M\+B\+ER}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+P\+\_\+\+B\+O\+M\+B\+ER}{HP\_BOMBER}}
+{\footnotesize\ttfamily \#define H\+P\+\_\+\+B\+O\+M\+B\+ER~1}
+
+
+
+Definition at line 93 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_ae0e6c44a2b15ead43f5011f4e63a9dd5}\label{_values_8h_ae0e6c44a2b15ead43f5011f4e63a9dd5}} 
+\index{Values.\+h@{Values.\+h}!H\+P\+\_\+\+B\+O\+SS@{H\+P\+\_\+\+B\+O\+SS}}
+\index{H\+P\+\_\+\+B\+O\+SS@{H\+P\+\_\+\+B\+O\+SS}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+P\+\_\+\+B\+O\+SS}{HP\_BOSS}}
+{\footnotesize\ttfamily \#define H\+P\+\_\+\+B\+O\+SS~20}
+
+
+
+Definition at line 109 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_ad682a1b61c7d5893775d99857d8ba0cc}\label{_values_8h_ad682a1b61c7d5893775d99857d8ba0cc}} 
+\index{Values.\+h@{Values.\+h}!H\+P\+\_\+\+C\+O\+M\+ET@{H\+P\+\_\+\+C\+O\+M\+ET}}
+\index{H\+P\+\_\+\+C\+O\+M\+ET@{H\+P\+\_\+\+C\+O\+M\+ET}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+P\+\_\+\+C\+O\+M\+ET}{HP\_COMET}}
+{\footnotesize\ttfamily \#define H\+P\+\_\+\+C\+O\+M\+ET~3}
+
+
+
+Definition at line 104 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a806714ea8905edbaffc646348b6ed8b0}\label{_values_8h_a806714ea8905edbaffc646348b6ed8b0}} 
+\index{Values.\+h@{Values.\+h}!H\+P\+\_\+\+G\+A\+T\+L\+I\+NG@{H\+P\+\_\+\+G\+A\+T\+L\+I\+NG}}
+\index{H\+P\+\_\+\+G\+A\+T\+L\+I\+NG@{H\+P\+\_\+\+G\+A\+T\+L\+I\+NG}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+P\+\_\+\+G\+A\+T\+L\+I\+NG}{HP\_GATLING}}
+{\footnotesize\ttfamily \#define H\+P\+\_\+\+G\+A\+T\+L\+I\+NG~1}
+
+
+
+Definition at line 99 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a094c54fa87f4d3d321500722f1a8697a}\label{_values_8h_a094c54fa87f4d3d321500722f1a8697a}} 
+\index{Values.\+h@{Values.\+h}!H\+P\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT@{H\+P\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}}
+\index{H\+P\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT@{H\+P\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+P\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}{HP\_GATLING\_SHOT}}
+{\footnotesize\ttfamily \#define H\+P\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT~1}
+
+
+
+Definition at line 54 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a7f69274ae1fac82bf9d8141095152781}\label{_values_8h_a7f69274ae1fac82bf9d8141095152781}} 
+\index{Values.\+h@{Values.\+h}!H\+P\+\_\+\+S\+B\+I\+RE@{H\+P\+\_\+\+S\+B\+I\+RE}}
+\index{H\+P\+\_\+\+S\+B\+I\+RE@{H\+P\+\_\+\+S\+B\+I\+RE}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+P\+\_\+\+S\+B\+I\+RE}{HP\_SBIRE}}
+{\footnotesize\ttfamily \#define H\+P\+\_\+\+S\+B\+I\+RE~1}
+
+
+
+Definition at line 78 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a0baae6eae682ed77fe9c35aafe1a3e0b}\label{_values_8h_a0baae6eae682ed77fe9c35aafe1a3e0b}} 
+\index{Values.\+h@{Values.\+h}!H\+P\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT@{H\+P\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}}
+\index{H\+P\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT@{H\+P\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+P\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}{HP\_SBIRE\_SHOT}}
+{\footnotesize\ttfamily \#define H\+P\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT~1}
+
+
+
+Definition at line 48 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_ac0a5e0555cc1dbda17eea240eea588ef}\label{_values_8h_ac0a5e0555cc1dbda17eea240eea588ef}} 
+\index{Values.\+h@{Values.\+h}!H\+P\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT@{H\+P\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}}
+\index{H\+P\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT@{H\+P\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+P\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}{HP\_SHIP\_SHOT}}
+{\footnotesize\ttfamily \#define H\+P\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT~1}
+
+
+
+Definition at line 72 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_addc01da2c5bc3a2890881c9988e853ad}\label{_values_8h_addc01da2c5bc3a2890881c9988e853ad}} 
+\index{Values.\+h@{Values.\+h}!H\+P\+\_\+\+S\+I\+N\+US@{H\+P\+\_\+\+S\+I\+N\+US}}
+\index{H\+P\+\_\+\+S\+I\+N\+US@{H\+P\+\_\+\+S\+I\+N\+US}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+P\+\_\+\+S\+I\+N\+US}{HP\_SINUS}}
+{\footnotesize\ttfamily \#define H\+P\+\_\+\+S\+I\+N\+US~3}
+
+
+
+Definition at line 83 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a2c531238a2af56fe75a04108fc5bf05f}\label{_values_8h_a2c531238a2af56fe75a04108fc5bf05f}} 
+\index{Values.\+h@{Values.\+h}!H\+P\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT@{H\+P\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}}
+\index{H\+P\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT@{H\+P\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+P\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}{HP\_SINUS\_SHOT}}
+{\footnotesize\ttfamily \#define H\+P\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT~1}
+
+
+
+Definition at line 66 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_aa51ecfaa18ac33f012de98521a5fbf12}\label{_values_8h_aa51ecfaa18ac33f012de98521a5fbf12}} 
+\index{Values.\+h@{Values.\+h}!H\+P\+\_\+\+S\+N\+I\+P\+ER@{H\+P\+\_\+\+S\+N\+I\+P\+ER}}
+\index{H\+P\+\_\+\+S\+N\+I\+P\+ER@{H\+P\+\_\+\+S\+N\+I\+P\+ER}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+P\+\_\+\+S\+N\+I\+P\+ER}{HP\_SNIPER}}
+{\footnotesize\ttfamily \#define H\+P\+\_\+\+S\+N\+I\+P\+ER~1}
+
+
+
+Definition at line 88 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a6b01dc57f3b82a8d2c06fe0f61a9a51b}\label{_values_8h_a6b01dc57f3b82a8d2c06fe0f61a9a51b}} 
+\index{Values.\+h@{Values.\+h}!H\+P\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT@{H\+P\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}}
+\index{H\+P\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT@{H\+P\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{H\+P\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}{HP\_SNIPER\_SHOT}}
+{\footnotesize\ttfamily \#define H\+P\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT~1}
+
+
+
+Definition at line 60 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a92d4823d7ffcecaa938fbc4c99d300d3}\label{_values_8h_a92d4823d7ffcecaa938fbc4c99d300d3}} 
+\index{Values.\+h@{Values.\+h}!I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+D@{I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+D}}
+\index{I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+D@{I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+D}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+D}{INERTIE\_SCALE\_SHIP\_D}}
+{\footnotesize\ttfamily \#define I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+D~0.\+3}
+
+
+
+Definition at line 126 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a2ff6c865fc94a66f0e2f71acbff955d6}\label{_values_8h_a2ff6c865fc94a66f0e2f71acbff955d6}} 
+\index{Values.\+h@{Values.\+h}!I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+Q@{I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+Q}}
+\index{I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+Q@{I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+Q}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+Q}{INERTIE\_SCALE\_SHIP\_Q}}
+{\footnotesize\ttfamily \#define I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+Q~0.\+3}
+
+
+
+Definition at line 125 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_aeb88ce45cc1df26777ee4dc0f2c6e020}\label{_values_8h_aeb88ce45cc1df26777ee4dc0f2c6e020}} 
+\index{Values.\+h@{Values.\+h}!I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+S@{I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+S}}
+\index{I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+S@{I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+S}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+S}{INERTIE\_SCALE\_SHIP\_S}}
+{\footnotesize\ttfamily \#define I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+S~0.\+3}
+
+
+
+Definition at line 124 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_aefb16b63302add31f45987d9a2294ef5}\label{_values_8h_aefb16b63302add31f45987d9a2294ef5}} 
+\index{Values.\+h@{Values.\+h}!I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+Z@{I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+Z}}
+\index{I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+Z@{I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+Z}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+Z}{INERTIE\_SCALE\_SHIP\_Z}}
+{\footnotesize\ttfamily \#define I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+C\+A\+L\+E\+\_\+\+S\+H\+I\+P\+\_\+Z~0.\+3}
+
+
+
+Definition at line 123 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_af2655d7fd2d58c80a683f72bed649e9b}\label{_values_8h_af2655d7fd2d58c80a683f72bed649e9b}} 
+\index{Values.\+h@{Values.\+h}!I\+T\+E\+M\+\_\+\+C\+L\+AN@{I\+T\+E\+M\+\_\+\+C\+L\+AN}}
+\index{I\+T\+E\+M\+\_\+\+C\+L\+AN@{I\+T\+E\+M\+\_\+\+C\+L\+AN}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{I\+T\+E\+M\+\_\+\+C\+L\+AN}{ITEM\_CLAN}}
+{\footnotesize\ttfamily \#define I\+T\+E\+M\+\_\+\+C\+L\+AN~30}
+
+
+
+Definition at line 23 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a9001ed8c876b1acc257a79746929e24b}\label{_values_8h_a9001ed8c876b1acc257a79746929e24b}} 
+\index{Values.\+h@{Values.\+h}!M\+A\+X\+\_\+\+C\+H\+A\+N\+C\+E\+\_\+\+S\+P\+A\+W\+N\+\_\+\+E\+N\+N\+E\+MY@{M\+A\+X\+\_\+\+C\+H\+A\+N\+C\+E\+\_\+\+S\+P\+A\+W\+N\+\_\+\+E\+N\+N\+E\+MY}}
+\index{M\+A\+X\+\_\+\+C\+H\+A\+N\+C\+E\+\_\+\+S\+P\+A\+W\+N\+\_\+\+E\+N\+N\+E\+MY@{M\+A\+X\+\_\+\+C\+H\+A\+N\+C\+E\+\_\+\+S\+P\+A\+W\+N\+\_\+\+E\+N\+N\+E\+MY}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+C\+H\+A\+N\+C\+E\+\_\+\+S\+P\+A\+W\+N\+\_\+\+E\+N\+N\+E\+MY}{MAX\_CHANCE\_SPAWN\_ENNEMY}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+C\+H\+A\+N\+C\+E\+\_\+\+S\+P\+A\+W\+N\+\_\+\+E\+N\+N\+E\+MY~100}
+
+
+
+Definition at line 165 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a755074b1866b13e4f3fbc82fd5ef0824}\label{_values_8h_a755074b1866b13e4f3fbc82fd5ef0824}} 
+\index{Values.\+h@{Values.\+h}!M\+A\+X\+\_\+\+I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+H\+IP@{M\+A\+X\+\_\+\+I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+H\+IP}}
+\index{M\+A\+X\+\_\+\+I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+H\+IP@{M\+A\+X\+\_\+\+I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+H\+IP}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+H\+IP}{MAX\_INERTIE\_SHIP}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+I\+N\+E\+R\+T\+I\+E\+\_\+\+S\+H\+IP~10}
+
+
+
+Definition at line 127 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_aaa9f7d95217e36bb9a24e9b45d461933}\label{_values_8h_aaa9f7d95217e36bb9a24e9b45d461933}} 
+\index{Values.\+h@{Values.\+h}!M\+A\+X\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+T\+A\+RS@{M\+A\+X\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+T\+A\+RS}}
+\index{M\+A\+X\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+T\+A\+RS@{M\+A\+X\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+T\+A\+RS}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+T\+A\+RS}{MAX\_SIZE\_STARS}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+T\+A\+RS~8}
+
+
+
+Definition at line 181 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_aff11ddeddca703e927bfa7b53d8a5b1f}\label{_values_8h_aff11ddeddca703e927bfa7b53d8a5b1f}} 
+\index{Values.\+h@{Values.\+h}!M\+A\+X\+\_\+\+S\+P\+E\+E\+D\+\_\+\+S\+T\+A\+RS@{M\+A\+X\+\_\+\+S\+P\+E\+E\+D\+\_\+\+S\+T\+A\+RS}}
+\index{M\+A\+X\+\_\+\+S\+P\+E\+E\+D\+\_\+\+S\+T\+A\+RS@{M\+A\+X\+\_\+\+S\+P\+E\+E\+D\+\_\+\+S\+T\+A\+RS}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+S\+P\+E\+E\+D\+\_\+\+S\+T\+A\+RS}{MAX\_SPEED\_STARS}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+S\+P\+E\+E\+D\+\_\+\+S\+T\+A\+RS~2}
+
+
+
+Definition at line 183 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a6d8332cec87cea4a8e9b46cb360d1fb0}\label{_values_8h_a6d8332cec87cea4a8e9b46cb360d1fb0}} 
+\index{Values.\+h@{Values.\+h}!M\+A\+X\+\_\+\+S\+T\+AR@{M\+A\+X\+\_\+\+S\+T\+AR}}
+\index{M\+A\+X\+\_\+\+S\+T\+AR@{M\+A\+X\+\_\+\+S\+T\+AR}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+S\+T\+AR}{MAX\_STAR}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+S\+T\+AR~300}
+
+
+
+Definition at line 180 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_ab31599b93ecea898b4221b8bb59f9cbb}\label{_values_8h_ab31599b93ecea898b4221b8bb59f9cbb}} 
+\index{Values.\+h@{Values.\+h}!M\+I\+N\+\_\+\+C\+H\+A\+N\+C\+E\+\_\+\+S\+P\+A\+W\+N\+\_\+\+E\+N\+N\+E\+MY@{M\+I\+N\+\_\+\+C\+H\+A\+N\+C\+E\+\_\+\+S\+P\+A\+W\+N\+\_\+\+E\+N\+N\+E\+MY}}
+\index{M\+I\+N\+\_\+\+C\+H\+A\+N\+C\+E\+\_\+\+S\+P\+A\+W\+N\+\_\+\+E\+N\+N\+E\+MY@{M\+I\+N\+\_\+\+C\+H\+A\+N\+C\+E\+\_\+\+S\+P\+A\+W\+N\+\_\+\+E\+N\+N\+E\+MY}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{M\+I\+N\+\_\+\+C\+H\+A\+N\+C\+E\+\_\+\+S\+P\+A\+W\+N\+\_\+\+E\+N\+N\+E\+MY}{MIN\_CHANCE\_SPAWN\_ENNEMY}}
+{\footnotesize\ttfamily \#define M\+I\+N\+\_\+\+C\+H\+A\+N\+C\+E\+\_\+\+S\+P\+A\+W\+N\+\_\+\+E\+N\+N\+E\+MY~0}
+
+
+
+Definition at line 164 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_af65686ac5d21322097c526db71b51ef9}\label{_values_8h_af65686ac5d21322097c526db71b51ef9}} 
+\index{Values.\+h@{Values.\+h}!M\+I\+N\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+T\+A\+RS@{M\+I\+N\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+T\+A\+RS}}
+\index{M\+I\+N\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+T\+A\+RS@{M\+I\+N\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+T\+A\+RS}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{M\+I\+N\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+T\+A\+RS}{MIN\_SIZE\_STARS}}
+{\footnotesize\ttfamily \#define M\+I\+N\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+T\+A\+RS~2}
+
+
+
+Definition at line 182 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a0ccacc3ecbbc935176fd11454ecb79d6}\label{_values_8h_a0ccacc3ecbbc935176fd11454ecb79d6}} 
+\index{Values.\+h@{Values.\+h}!N\+B\+\_\+\+B\+O\+N\+US@{N\+B\+\_\+\+B\+O\+N\+US}}
+\index{N\+B\+\_\+\+B\+O\+N\+US@{N\+B\+\_\+\+B\+O\+N\+US}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{N\+B\+\_\+\+B\+O\+N\+US}{NB\_BONUS}}
+{\footnotesize\ttfamily \#define N\+B\+\_\+\+B\+O\+N\+US~4}
+
+
+
+Definition at line 188 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_aa84b097d8f64b381b46716b85c63f857}\label{_values_8h_aa84b097d8f64b381b46716b85c63f857}} 
+\index{Values.\+h@{Values.\+h}!N\+I\+T\+R\+O\+\_\+\+S\+P\+E\+E\+D\+\_\+\+F\+A\+C\+T\+OR@{N\+I\+T\+R\+O\+\_\+\+S\+P\+E\+E\+D\+\_\+\+F\+A\+C\+T\+OR}}
+\index{N\+I\+T\+R\+O\+\_\+\+S\+P\+E\+E\+D\+\_\+\+F\+A\+C\+T\+OR@{N\+I\+T\+R\+O\+\_\+\+S\+P\+E\+E\+D\+\_\+\+F\+A\+C\+T\+OR}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{N\+I\+T\+R\+O\+\_\+\+S\+P\+E\+E\+D\+\_\+\+F\+A\+C\+T\+OR}{NITRO\_SPEED\_FACTOR}}
+{\footnotesize\ttfamily \#define N\+I\+T\+R\+O\+\_\+\+S\+P\+E\+E\+D\+\_\+\+F\+A\+C\+T\+OR~2}
+
+
+
+Definition at line 195 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a655c84af1b0034986ff56e12e84f983d}\label{_values_8h_a655c84af1b0034986ff56e12e84f983d}} 
+\index{Values.\+h@{Values.\+h}!N\+O\+NE@{N\+O\+NE}}
+\index{N\+O\+NE@{N\+O\+NE}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{N\+O\+NE}{NONE}}
+{\footnotesize\ttfamily \#define N\+O\+NE~-\/1}
+
+
+
+Definition at line 29 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a598a3330b3c21701223ee0ca14316eca}\label{_values_8h_a598a3330b3c21701223ee0ca14316eca}} 
+\index{Values.\+h@{Values.\+h}!PI@{PI}}
+\index{PI@{PI}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{PI}{PI}}
+{\footnotesize\ttfamily \#define PI~3.\+14159}
+
+
+
+Definition at line 16 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a47d2dc1993e18b0bc7791828480708ea}\label{_values_8h_a47d2dc1993e18b0bc7791828480708ea}} 
+\index{Values.\+h@{Values.\+h}!R\+A\+N\+G\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+B\+O\+M\+B\+ER@{R\+A\+N\+G\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+B\+O\+M\+B\+ER}}
+\index{R\+A\+N\+G\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+B\+O\+M\+B\+ER@{R\+A\+N\+G\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+B\+O\+M\+B\+ER}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{R\+A\+N\+G\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+B\+O\+M\+B\+ER}{RANGE\_SIZE\_BOMBER}}
+{\footnotesize\ttfamily \#define R\+A\+N\+G\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+B\+O\+M\+B\+ER~(\hyperlink{_values_8h_a241aeeb764887ae5e3de58b98f04b16d}{W\+I\+D\+TH} / 2)}
+
+
+
+Definition at line 97 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a7a85be4cf839a2f34e64fb00f3d7d358}\label{_values_8h_a7a85be4cf839a2f34e64fb00f3d7d358}} 
+\index{Values.\+h@{Values.\+h}!S\+B\+I\+RE@{S\+B\+I\+RE}}
+\index{S\+B\+I\+RE@{S\+B\+I\+RE}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+B\+I\+RE}{SBIRE}}
+{\footnotesize\ttfamily \#define S\+B\+I\+RE~1}
+
+
+
+Definition at line 31 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_aca8fc7469f5e29d49aba2f50b0cb3e70}\label{_values_8h_aca8fc7469f5e29d49aba2f50b0cb3e70}} 
+\index{Values.\+h@{Values.\+h}!S\+B\+I\+R\+E\+\_\+\+S\+H\+OT@{S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}}
+\index{S\+B\+I\+R\+E\+\_\+\+S\+H\+OT@{S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}{SBIRE\_SHOT}}
+{\footnotesize\ttfamily \#define S\+B\+I\+R\+E\+\_\+\+S\+H\+OT~8}
+
+
+
+Definition at line 38 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a3c600f26b1d8c4acd4f82102473569bb}\label{_values_8h_a3c600f26b1d8c4acd4f82102473569bb}} 
+\index{Values.\+h@{Values.\+h}!S\+H\+IP@{S\+H\+IP}}
+\index{S\+H\+IP@{S\+H\+IP}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+IP}{SHIP}}
+{\footnotesize\ttfamily \#define S\+H\+IP~0}
+
+
+
+Definition at line 30 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_aa2f64ccbdca397f15a34e71a0f976185}\label{_values_8h_aa2f64ccbdca397f15a34e71a0f976185}} 
+\index{Values.\+h@{Values.\+h}!S\+H\+I\+P\+\_\+\+C\+O\+O\+L\+D\+O\+WN@{S\+H\+I\+P\+\_\+\+C\+O\+O\+L\+D\+O\+WN}}
+\index{S\+H\+I\+P\+\_\+\+C\+O\+O\+L\+D\+O\+WN@{S\+H\+I\+P\+\_\+\+C\+O\+O\+L\+D\+O\+WN}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+I\+P\+\_\+\+C\+O\+O\+L\+D\+O\+WN}{SHIP\_COOLDOWN}}
+{\footnotesize\ttfamily \#define S\+H\+I\+P\+\_\+\+C\+O\+O\+L\+D\+O\+WN~5}
+
+
+
+Definition at line 121 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a46ae7736840eb130ff7cb23587679745}\label{_values_8h_a46ae7736840eb130ff7cb23587679745}} 
+\index{Values.\+h@{Values.\+h}!S\+H\+I\+P\+\_\+\+D\+A\+M\+A\+GE@{S\+H\+I\+P\+\_\+\+D\+A\+M\+A\+GE}}
+\index{S\+H\+I\+P\+\_\+\+D\+A\+M\+A\+GE@{S\+H\+I\+P\+\_\+\+D\+A\+M\+A\+GE}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+I\+P\+\_\+\+D\+A\+M\+A\+GE}{SHIP\_DAMAGE}}
+{\footnotesize\ttfamily \#define S\+H\+I\+P\+\_\+\+D\+A\+M\+A\+GE~1}
+
+
+
+Definition at line 122 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_aa8f113c0791961413962e01b5d6a7568}\label{_values_8h_aa8f113c0791961413962e01b5d6a7568}} 
+\index{Values.\+h@{Values.\+h}!S\+H\+I\+P\+\_\+\+HP@{S\+H\+I\+P\+\_\+\+HP}}
+\index{S\+H\+I\+P\+\_\+\+HP@{S\+H\+I\+P\+\_\+\+HP}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+I\+P\+\_\+\+HP}{SHIP\_HP}}
+{\footnotesize\ttfamily \#define S\+H\+I\+P\+\_\+\+HP~10}
+
+
+
+Definition at line 119 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a735b0d6e7d5b4d45ad6d9bf4f1c133ed}\label{_values_8h_a735b0d6e7d5b4d45ad6d9bf4f1c133ed}} 
+\index{Values.\+h@{Values.\+h}!S\+H\+I\+P\+\_\+\+S\+H\+OT@{S\+H\+I\+P\+\_\+\+S\+H\+OT}}
+\index{S\+H\+I\+P\+\_\+\+S\+H\+OT@{S\+H\+I\+P\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+I\+P\+\_\+\+S\+H\+OT}{SHIP\_SHOT}}
+{\footnotesize\ttfamily \#define S\+H\+I\+P\+\_\+\+S\+H\+OT~7}
+
+
+
+Definition at line 37 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a557d2870d09c1fddd11260a36397e35d}\label{_values_8h_a557d2870d09c1fddd11260a36397e35d}} 
+\index{Values.\+h@{Values.\+h}!S\+H\+I\+P\+\_\+\+V\+E\+L\+O\+C\+I\+TY@{S\+H\+I\+P\+\_\+\+V\+E\+L\+O\+C\+I\+TY}}
+\index{S\+H\+I\+P\+\_\+\+V\+E\+L\+O\+C\+I\+TY@{S\+H\+I\+P\+\_\+\+V\+E\+L\+O\+C\+I\+TY}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+I\+P\+\_\+\+V\+E\+L\+O\+C\+I\+TY}{SHIP\_VELOCITY}}
+{\footnotesize\ttfamily \#define S\+H\+I\+P\+\_\+\+V\+E\+L\+O\+C\+I\+TY~5}
+
+
+
+Definition at line 120 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a2b335160f45acc4784c8b1484a6a660f}\label{_values_8h_a2b335160f45acc4784c8b1484a6a660f}} 
+\index{Values.\+h@{Values.\+h}!S\+H\+I\+P\+\_\+X@{S\+H\+I\+P\+\_\+X}}
+\index{S\+H\+I\+P\+\_\+X@{S\+H\+I\+P\+\_\+X}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+I\+P\+\_\+X}{SHIP\_X}}
+{\footnotesize\ttfamily \#define S\+H\+I\+P\+\_\+X~100}
+
+
+
+Definition at line 117 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a089f3a92ac976f064f3d5dd12c0a7647}\label{_values_8h_a089f3a92ac976f064f3d5dd12c0a7647}} 
+\index{Values.\+h@{Values.\+h}!S\+H\+I\+P\+\_\+Y@{S\+H\+I\+P\+\_\+Y}}
+\index{S\+H\+I\+P\+\_\+Y@{S\+H\+I\+P\+\_\+Y}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+I\+P\+\_\+Y}{SHIP\_Y}}
+{\footnotesize\ttfamily \#define S\+H\+I\+P\+\_\+Y~100}
+
+
+
+Definition at line 118 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_acb4c529f7ae988b2912f05ac254b2cba}\label{_values_8h_acb4c529f7ae988b2912f05ac254b2cba}} 
+\index{Values.\+h@{Values.\+h}!S\+H\+OT@{S\+H\+OT}}
+\index{S\+H\+OT@{S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+H\+OT}{SHOT}}
+{\footnotesize\ttfamily \#define S\+H\+OT~7}
+
+
+
+Definition at line 25 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a425e624419b9a0bf090b79f0a4fc8e30}\label{_values_8h_a425e624419b9a0bf090b79f0a4fc8e30}} 
+\index{Values.\+h@{Values.\+h}!S\+I\+N\+US@{S\+I\+N\+US}}
+\index{S\+I\+N\+US@{S\+I\+N\+US}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+I\+N\+US}{SINUS}}
+{\footnotesize\ttfamily \#define S\+I\+N\+US~2}
+
+
+
+Definition at line 32 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a0466fc2e11d286d23392ad34f2b4e358}\label{_values_8h_a0466fc2e11d286d23392ad34f2b4e358}} 
+\index{Values.\+h@{Values.\+h}!S\+I\+N\+U\+S\+\_\+\+S\+H\+OT@{S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}}
+\index{S\+I\+N\+U\+S\+\_\+\+S\+H\+OT@{S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}{SINUS\_SHOT}}
+{\footnotesize\ttfamily \#define S\+I\+N\+U\+S\+\_\+\+S\+H\+OT~10}
+
+
+
+Definition at line 40 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a479041a42773c50c855b3de46d4c024c}\label{_values_8h_a479041a42773c50c855b3de46d4c024c}} 
+\index{Values.\+h@{Values.\+h}!S\+N\+I\+P\+ER@{S\+N\+I\+P\+ER}}
+\index{S\+N\+I\+P\+ER@{S\+N\+I\+P\+ER}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+N\+I\+P\+ER}{SNIPER}}
+{\footnotesize\ttfamily \#define S\+N\+I\+P\+ER~3}
+
+
+
+Definition at line 33 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a23279d273bddc9ffa323b2598b323715}\label{_values_8h_a23279d273bddc9ffa323b2598b323715}} 
+\index{Values.\+h@{Values.\+h}!S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT@{S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}}
+\index{S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT@{S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}{SNIPER\_SHOT}}
+{\footnotesize\ttfamily \#define S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT~9}
+
+
+
+Definition at line 39 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a6657d42f4fc81a589c9637b5630877d9}\label{_values_8h_a6657d42f4fc81a589c9637b5630877d9}} 
+\index{Values.\+h@{Values.\+h}!S\+P\+A\+W\+N\+\_\+\+C\+H\+A\+N\+C\+E\+\_\+\+E\+N\+N\+E\+MY@{S\+P\+A\+W\+N\+\_\+\+C\+H\+A\+N\+C\+E\+\_\+\+E\+N\+N\+E\+MY}}
+\index{S\+P\+A\+W\+N\+\_\+\+C\+H\+A\+N\+C\+E\+\_\+\+E\+N\+N\+E\+MY@{S\+P\+A\+W\+N\+\_\+\+C\+H\+A\+N\+C\+E\+\_\+\+E\+N\+N\+E\+MY}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+A\+W\+N\+\_\+\+C\+H\+A\+N\+C\+E\+\_\+\+E\+N\+N\+E\+MY}{SPAWN\_CHANCE\_ENNEMY}}
+{\footnotesize\ttfamily \#define S\+P\+A\+W\+N\+\_\+\+C\+H\+A\+N\+C\+E\+\_\+\+E\+N\+N\+E\+MY~2}
+
+
+
+Definition at line 169 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a5e70a61b5cf0faf9ee030fee37f7066d}\label{_values_8h_a5e70a61b5cf0faf9ee030fee37f7066d}} 
+\index{Values.\+h@{Values.\+h}!S\+P\+R\+I\+T\+E\+\_\+\+B\+O\+N\+U\+S\+\_\+\+S\+I\+ZE@{S\+P\+R\+I\+T\+E\+\_\+\+B\+O\+N\+U\+S\+\_\+\+S\+I\+ZE}}
+\index{S\+P\+R\+I\+T\+E\+\_\+\+B\+O\+N\+U\+S\+\_\+\+S\+I\+ZE@{S\+P\+R\+I\+T\+E\+\_\+\+B\+O\+N\+U\+S\+\_\+\+S\+I\+ZE}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+R\+I\+T\+E\+\_\+\+B\+O\+N\+U\+S\+\_\+\+S\+I\+ZE}{SPRITE\_BONUS\_SIZE}}
+{\footnotesize\ttfamily \#define S\+P\+R\+I\+T\+E\+\_\+\+B\+O\+N\+U\+S\+\_\+\+S\+I\+ZE~10}
+
+
+
+Definition at line 193 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a401b907dce13b4b990ddf51b7aa60d25}\label{_values_8h_a401b907dce13b4b990ddf51b7aa60d25}} 
+\index{Values.\+h@{Values.\+h}!S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+B\+O\+M\+B\+ER@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+B\+O\+M\+B\+ER}}
+\index{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+B\+O\+M\+B\+ER@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+B\+O\+M\+B\+ER}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+B\+O\+M\+B\+ER}{SPRITE\_SIZE\_BOMBER}}
+{\footnotesize\ttfamily \#define S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+B\+O\+M\+B\+ER~16}
+
+
+
+Definition at line 138 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a4465c962eb1ca11ccdf03553d38c921c}\label{_values_8h_a4465c962eb1ca11ccdf03553d38c921c}} 
+\index{Values.\+h@{Values.\+h}!S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+C\+O\+M\+ET@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+C\+O\+M\+ET}}
+\index{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+C\+O\+M\+ET@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+C\+O\+M\+ET}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+C\+O\+M\+ET}{SPRITE\_SIZE\_COMET}}
+{\footnotesize\ttfamily \#define S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+C\+O\+M\+ET~64}
+
+
+
+Definition at line 144 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a5f96c236f7d70daa4751c6a1c1327c8c}\label{_values_8h_a5f96c236f7d70daa4751c6a1c1327c8c}} 
+\index{Values.\+h@{Values.\+h}!S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+G\+A\+T\+L\+I\+NG@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+G\+A\+T\+L\+I\+NG}}
+\index{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+G\+A\+T\+L\+I\+NG@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+G\+A\+T\+L\+I\+NG}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+G\+A\+T\+L\+I\+NG}{SPRITE\_SIZE\_GATLING}}
+{\footnotesize\ttfamily \#define S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+G\+A\+T\+L\+I\+NG~56}
+
+
+
+Definition at line 143 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a8922964e72621f61a3cea47d9c2d1a5e}\label{_values_8h_a8922964e72621f61a3cea47d9c2d1a5e}} 
+\index{Values.\+h@{Values.\+h}!S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}}
+\index{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}{SPRITE\_SIZE\_GATLING\_SHOT}}
+{\footnotesize\ttfamily \#define S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT~16}
+
+
+
+Definition at line 145 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a5dbc70159f2ee2232f031109eccb64ac}\label{_values_8h_a5dbc70159f2ee2232f031109eccb64ac}} 
+\index{Values.\+h@{Values.\+h}!S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+H\+E\+AL@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+H\+E\+AL}}
+\index{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+H\+E\+AL@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+H\+E\+AL}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+H\+E\+AL}{SPRITE\_SIZE\_HEAL}}
+{\footnotesize\ttfamily \#define S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+H\+E\+AL~56}
+
+
+
+Definition at line 146 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a7816b2d2e0c417ce9a4c88740c94bc64}\label{_values_8h_a7816b2d2e0c417ce9a4c88740c94bc64}} 
+\index{Values.\+h@{Values.\+h}!S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+N\+I\+T\+RO@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+N\+I\+T\+RO}}
+\index{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+N\+I\+T\+RO@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+N\+I\+T\+RO}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+N\+I\+T\+RO}{SPRITE\_SIZE\_NITRO}}
+{\footnotesize\ttfamily \#define S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+N\+I\+T\+RO~56}
+
+
+
+Definition at line 149 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_ad721de7f9e75853658d1cec3931d7a31}\label{_values_8h_ad721de7f9e75853658d1cec3931d7a31}} 
+\index{Values.\+h@{Values.\+h}!S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+B\+I\+RE@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+B\+I\+RE}}
+\index{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+B\+I\+RE@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+B\+I\+RE}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+B\+I\+RE}{SPRITE\_SIZE\_SBIRE}}
+{\footnotesize\ttfamily \#define S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+B\+I\+RE~32}
+
+
+
+Definition at line 135 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a517546231c88ea67bc2e98190dca9748}\label{_values_8h_a517546231c88ea67bc2e98190dca9748}} 
+\index{Values.\+h@{Values.\+h}!S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}}
+\index{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}{SPRITE\_SIZE\_SBIRE\_SHOT}}
+{\footnotesize\ttfamily \#define S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT~16}
+
+
+
+Definition at line 140 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_ac8270f787de0e5fc07f7c3e17ff08a85}\label{_values_8h_ac8270f787de0e5fc07f7c3e17ff08a85}} 
+\index{Values.\+h@{Values.\+h}!S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+E\+LD@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+E\+LD}}
+\index{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+E\+LD@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+E\+LD}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+E\+LD}{SPRITE\_SIZE\_SHIELD}}
+{\footnotesize\ttfamily \#define S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+E\+LD~56}
+
+
+
+Definition at line 147 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a4169f443ac4d16a319740e0fdfbfd9cc}\label{_values_8h_a4169f443ac4d16a319740e0fdfbfd9cc}} 
+\index{Values.\+h@{Values.\+h}!S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+IP@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+IP}}
+\index{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+IP@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+IP}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+IP}{SPRITE\_SIZE\_SHIP}}
+{\footnotesize\ttfamily \#define S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+IP~32}
+
+
+
+Definition at line 134 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a6757c7c5506b6fb582cbf0937ab84cf9}\label{_values_8h_a6757c7c5506b6fb582cbf0937ab84cf9}} 
+\index{Values.\+h@{Values.\+h}!S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}}
+\index{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}{SPRITE\_SIZE\_SHIP\_SHOT}}
+{\footnotesize\ttfamily \#define S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT~16}
+
+
+
+Definition at line 139 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a338344cce9d6c045c6e1b0d3d8584442}\label{_values_8h_a338344cce9d6c045c6e1b0d3d8584442}} 
+\index{Values.\+h@{Values.\+h}!S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+I\+N\+US@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+I\+N\+US}}
+\index{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+I\+N\+US@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+I\+N\+US}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+I\+N\+US}{SPRITE\_SIZE\_SINUS}}
+{\footnotesize\ttfamily \#define S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+I\+N\+US~48}
+
+
+
+Definition at line 136 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_af5b0f446113ca46f495e8cd64032bbe5}\label{_values_8h_af5b0f446113ca46f495e8cd64032bbe5}} 
+\index{Values.\+h@{Values.\+h}!S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}}
+\index{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}{SPRITE\_SIZE\_SINUS\_SHOT}}
+{\footnotesize\ttfamily \#define S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT~24}
+
+
+
+Definition at line 141 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a328ad3bbc17e68dc3a1fe8eb4ba90031}\label{_values_8h_a328ad3bbc17e68dc3a1fe8eb4ba90031}} 
+\index{Values.\+h@{Values.\+h}!S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+N\+I\+P\+ER@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+N\+I\+P\+ER}}
+\index{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+N\+I\+P\+ER@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+N\+I\+P\+ER}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+N\+I\+P\+ER}{SPRITE\_SIZE\_SNIPER}}
+{\footnotesize\ttfamily \#define S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+N\+I\+P\+ER~48}
+
+
+
+Definition at line 137 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a8a85146c2eb2803c66bb7403e720b1b5}\label{_values_8h_a8a85146c2eb2803c66bb7403e720b1b5}} 
+\index{Values.\+h@{Values.\+h}!S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}}
+\index{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}{SPRITE\_SIZE\_SNIPER\_SHOT}}
+{\footnotesize\ttfamily \#define S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT~8}
+
+
+
+Definition at line 142 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a60da50e7020cf8e95e0edb831de313c3}\label{_values_8h_a60da50e7020cf8e95e0edb831de313c3}} 
+\index{Values.\+h@{Values.\+h}!S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+S\+H\+OT@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+S\+H\+OT}}
+\index{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+S\+H\+OT@{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+S\+H\+OT}{SPRITE\_SIZE\_TRIPLE\_SHOT}}
+{\footnotesize\ttfamily \#define S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+S\+H\+OT~56}
+
+
+
+Definition at line 148 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_aa483e9cedf2bda548780e525d06230bc}\label{_values_8h_aa483e9cedf2bda548780e525d06230bc}} 
+\index{Values.\+h@{Values.\+h}!S\+T\+A\+R\+\_\+\+R\+A\+ND@{S\+T\+A\+R\+\_\+\+R\+A\+ND}}
+\index{S\+T\+A\+R\+\_\+\+R\+A\+ND@{S\+T\+A\+R\+\_\+\+R\+A\+ND}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{S\+T\+A\+R\+\_\+\+R\+A\+ND}{STAR\_RAND}}
+{\footnotesize\ttfamily \#define S\+T\+A\+R\+\_\+\+R\+A\+ND~5}
+
+
+
+Definition at line 186 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_ab8d503dfba05f8a8e15c65956b87c765}\label{_values_8h_ab8d503dfba05f8a8e15c65956b87c765}} 
+\index{Values.\+h@{Values.\+h}!T\+I\+M\+E\+\_\+\+H\+E\+AL@{T\+I\+M\+E\+\_\+\+H\+E\+AL}}
+\index{T\+I\+M\+E\+\_\+\+H\+E\+AL@{T\+I\+M\+E\+\_\+\+H\+E\+AL}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{T\+I\+M\+E\+\_\+\+H\+E\+AL}{TIME\_HEAL}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+\_\+\+H\+E\+AL~1}
+
+
+
+Definition at line 189 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_abbbc492a37f4443c1194628006d0db42}\label{_values_8h_abbbc492a37f4443c1194628006d0db42}} 
+\index{Values.\+h@{Values.\+h}!T\+I\+M\+E\+\_\+\+N\+I\+T\+RO@{T\+I\+M\+E\+\_\+\+N\+I\+T\+RO}}
+\index{T\+I\+M\+E\+\_\+\+N\+I\+T\+RO@{T\+I\+M\+E\+\_\+\+N\+I\+T\+RO}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{T\+I\+M\+E\+\_\+\+N\+I\+T\+RO}{TIME\_NITRO}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+\_\+\+N\+I\+T\+RO~(\hyperlink{_values_8h_a84142cd3e3bf14c4ecd4b6707a808c39}{F\+R\+E\+Q\+U\+E\+N\+CY} $\ast$ 10) /$\ast$seconds$\ast$/}
+
+
+
+Definition at line 192 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a8fc057322b8a5d737ada1ce39e968b3f}\label{_values_8h_a8fc057322b8a5d737ada1ce39e968b3f}} 
+\index{Values.\+h@{Values.\+h}!T\+I\+M\+E\+\_\+\+S\+H\+I\+E\+LD@{T\+I\+M\+E\+\_\+\+S\+H\+I\+E\+LD}}
+\index{T\+I\+M\+E\+\_\+\+S\+H\+I\+E\+LD@{T\+I\+M\+E\+\_\+\+S\+H\+I\+E\+LD}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{T\+I\+M\+E\+\_\+\+S\+H\+I\+E\+LD}{TIME\_SHIELD}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+\_\+\+S\+H\+I\+E\+LD~(\hyperlink{_values_8h_a84142cd3e3bf14c4ecd4b6707a808c39}{F\+R\+E\+Q\+U\+E\+N\+CY} $\ast$ 5) /$\ast$seconds$\ast$/}
+
+
+
+Definition at line 190 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a1aa876368acde14e8c15d3fbb9629f93}\label{_values_8h_a1aa876368acde14e8c15d3fbb9629f93}} 
+\index{Values.\+h@{Values.\+h}!T\+I\+M\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+S\+H\+OT@{T\+I\+M\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+S\+H\+OT}}
+\index{T\+I\+M\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+S\+H\+OT@{T\+I\+M\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{T\+I\+M\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+S\+H\+OT}{TIME\_TRIPLE\_SHOT}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+\_\+\+T\+R\+I\+P\+L\+E\+\_\+\+S\+H\+OT~(\hyperlink{_values_8h_a84142cd3e3bf14c4ecd4b6707a808c39}{F\+R\+E\+Q\+U\+E\+N\+CY} $\ast$ 8) /$\ast$seconds$\ast$/}
+
+
+
+Definition at line 191 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a6139c40bd5f4d5b1616f09116ca8a099}\label{_values_8h_a6139c40bd5f4d5b1616f09116ca8a099}} 
+\index{Values.\+h@{Values.\+h}!T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+C\+Y\+\_\+\+S\+T\+A\+RS@{T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+C\+Y\+\_\+\+S\+T\+A\+RS}}
+\index{T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+C\+Y\+\_\+\+S\+T\+A\+RS@{T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+C\+Y\+\_\+\+S\+T\+A\+RS}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+C\+Y\+\_\+\+S\+T\+A\+RS}{TRANSPARENCY\_STARS}}
+{\footnotesize\ttfamily \#define T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+C\+Y\+\_\+\+S\+T\+A\+RS~4}
+
+
+
+Definition at line 184 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a7005d7c3eb26aae71a4eb0613a25892a}\label{_values_8h_a7005d7c3eb26aae71a4eb0613a25892a}} 
+\index{Values.\+h@{Values.\+h}!T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+C\+Y\+\_\+\+S\+T\+A\+R\+S\+\_\+\+F\+A\+C\+T\+OR@{T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+C\+Y\+\_\+\+S\+T\+A\+R\+S\+\_\+\+F\+A\+C\+T\+OR}}
+\index{T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+C\+Y\+\_\+\+S\+T\+A\+R\+S\+\_\+\+F\+A\+C\+T\+OR@{T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+C\+Y\+\_\+\+S\+T\+A\+R\+S\+\_\+\+F\+A\+C\+T\+OR}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+C\+Y\+\_\+\+S\+T\+A\+R\+S\+\_\+\+F\+A\+C\+T\+OR}{TRANSPARENCY\_STARS\_FACTOR}}
+{\footnotesize\ttfamily \#define T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+C\+Y\+\_\+\+S\+T\+A\+R\+S\+\_\+\+F\+A\+C\+T\+OR~60}
+
+
+
+Definition at line 185 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_aa8cecfc5c5c054d2875c03e77b7be15d}\label{_values_8h_aa8cecfc5c5c054d2875c03e77b7be15d}} 
+\index{Values.\+h@{Values.\+h}!T\+R\+UE@{T\+R\+UE}}
+\index{T\+R\+UE@{T\+R\+UE}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{T\+R\+UE}{TRUE}}
+{\footnotesize\ttfamily \#define T\+R\+UE~1}
+
+
+
+Definition at line 18 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_ac385c6517b88a49b4ff12a58b734d31d}\label{_values_8h_ac385c6517b88a49b4ff12a58b734d31d}} 
+\index{Values.\+h@{Values.\+h}!V\+A\+L\+I\+D\+\_\+\+R\+E\+T\+U\+RN@{V\+A\+L\+I\+D\+\_\+\+R\+E\+T\+U\+RN}}
+\index{V\+A\+L\+I\+D\+\_\+\+R\+E\+T\+U\+RN@{V\+A\+L\+I\+D\+\_\+\+R\+E\+T\+U\+RN}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{V\+A\+L\+I\+D\+\_\+\+R\+E\+T\+U\+RN}{VALID\_RETURN}}
+{\footnotesize\ttfamily \#define V\+A\+L\+I\+D\+\_\+\+R\+E\+T\+U\+RN~1}
+
+
+
+Definition at line 130 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a08f9b7d4215e0a76a4533be7eef6e955}\label{_values_8h_a08f9b7d4215e0a76a4533be7eef6e955}} 
+\index{Values.\+h@{Values.\+h}!V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+B\+O\+M\+B\+ER@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+B\+O\+M\+B\+ER}}
+\index{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+B\+O\+M\+B\+ER@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+B\+O\+M\+B\+ER}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+B\+O\+M\+B\+ER}{VELOCITY\_BOMBER}}
+{\footnotesize\ttfamily \#define V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+B\+O\+M\+B\+ER~2}
+
+
+
+Definition at line 94 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a378fa77c2014f89faea5d61f572eb253}\label{_values_8h_a378fa77c2014f89faea5d61f572eb253}} 
+\index{Values.\+h@{Values.\+h}!V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+B\+O\+S\+S\+\_\+\+P\+H\+A\+S\+E\+\_\+1@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+B\+O\+S\+S\+\_\+\+P\+H\+A\+S\+E\+\_\+1}}
+\index{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+B\+O\+S\+S\+\_\+\+P\+H\+A\+S\+E\+\_\+1@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+B\+O\+S\+S\+\_\+\+P\+H\+A\+S\+E\+\_\+1}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+B\+O\+S\+S\+\_\+\+P\+H\+A\+S\+E\+\_\+1}{VELOCITY\_BOSS\_PHASE\_1}}
+{\footnotesize\ttfamily \#define V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+B\+O\+S\+S\+\_\+\+P\+H\+A\+S\+E\+\_\+1~1}
+
+
+
+Definition at line 110 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a6f91f2ac36e7eb4a59f93c8ea14e5880}\label{_values_8h_a6f91f2ac36e7eb4a59f93c8ea14e5880}} 
+\index{Values.\+h@{Values.\+h}!V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+B\+O\+S\+S\+\_\+\+P\+H\+A\+S\+E\+\_\+2@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+B\+O\+S\+S\+\_\+\+P\+H\+A\+S\+E\+\_\+2}}
+\index{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+B\+O\+S\+S\+\_\+\+P\+H\+A\+S\+E\+\_\+2@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+B\+O\+S\+S\+\_\+\+P\+H\+A\+S\+E\+\_\+2}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+B\+O\+S\+S\+\_\+\+P\+H\+A\+S\+E\+\_\+2}{VELOCITY\_BOSS\_PHASE\_2}}
+{\footnotesize\ttfamily \#define V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+B\+O\+S\+S\+\_\+\+P\+H\+A\+S\+E\+\_\+2~0}
+
+
+
+Definition at line 111 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_aa1415acc7982d17cca9ac78eb7e43de5}\label{_values_8h_aa1415acc7982d17cca9ac78eb7e43de5}} 
+\index{Values.\+h@{Values.\+h}!V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+C\+O\+M\+ET@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+C\+O\+M\+ET}}
+\index{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+C\+O\+M\+ET@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+C\+O\+M\+ET}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+C\+O\+M\+ET}{VELOCITY\_COMET}}
+{\footnotesize\ttfamily \#define V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+C\+O\+M\+ET~2}
+
+
+
+Definition at line 105 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a28094b35982b9dffc00e4d02ce8c5220}\label{_values_8h_a28094b35982b9dffc00e4d02ce8c5220}} 
+\index{Values.\+h@{Values.\+h}!V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+G\+A\+T\+L\+I\+NG@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+G\+A\+T\+L\+I\+NG}}
+\index{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+G\+A\+T\+L\+I\+NG@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+G\+A\+T\+L\+I\+NG}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+G\+A\+T\+L\+I\+NG}{VELOCITY\_GATLING}}
+{\footnotesize\ttfamily \#define V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+G\+A\+T\+L\+I\+NG~2}
+
+
+
+Definition at line 100 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a7215f954dee500f1af2f8e76dd577cbd}\label{_values_8h_a7215f954dee500f1af2f8e76dd577cbd}} 
+\index{Values.\+h@{Values.\+h}!V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}}
+\index{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT}{VELOCITY\_GATLING\_SHOT}}
+{\footnotesize\ttfamily \#define V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+G\+A\+T\+L\+I\+N\+G\+\_\+\+S\+H\+OT~5}
+
+
+
+Definition at line 55 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a1649a9330211879e9b73b73ee8121bb6}\label{_values_8h_a1649a9330211879e9b73b73ee8121bb6}} 
+\index{Values.\+h@{Values.\+h}!V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+B\+I\+RE@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+B\+I\+RE}}
+\index{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+B\+I\+RE@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+B\+I\+RE}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+B\+I\+RE}{VELOCITY\_SBIRE}}
+{\footnotesize\ttfamily \#define V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+B\+I\+RE~1}
+
+
+
+Definition at line 79 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_ae641fcf7e70a136bdc9b70c4ad93af1b}\label{_values_8h_ae641fcf7e70a136bdc9b70c4ad93af1b}} 
+\index{Values.\+h@{Values.\+h}!V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}}
+\index{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT}{VELOCITY\_SBIRE\_SHOT}}
+{\footnotesize\ttfamily \#define V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+B\+I\+R\+E\+\_\+\+S\+H\+OT~4}
+
+
+
+Definition at line 49 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a31ae739ba152ec4b4bef772173f0c5a6}\label{_values_8h_a31ae739ba152ec4b4bef772173f0c5a6}} 
+\index{Values.\+h@{Values.\+h}!V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}}
+\index{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT}{VELOCITY\_SHIP\_SHOT}}
+{\footnotesize\ttfamily \#define V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+H\+I\+P\+\_\+\+S\+H\+OT~8}
+
+
+
+Definition at line 73 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a3df884e0d87edad6f69509de8378a6d2}\label{_values_8h_a3df884e0d87edad6f69509de8378a6d2}} 
+\index{Values.\+h@{Values.\+h}!V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+I\+N\+US@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+I\+N\+US}}
+\index{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+I\+N\+US@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+I\+N\+US}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+I\+N\+US}{VELOCITY\_SINUS}}
+{\footnotesize\ttfamily \#define V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+I\+N\+US~1}
+
+
+
+Definition at line 84 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a9621eb109424394406187aca5601fa3d}\label{_values_8h_a9621eb109424394406187aca5601fa3d}} 
+\index{Values.\+h@{Values.\+h}!V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}}
+\index{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT}{VELOCITY\_SINUS\_SHOT}}
+{\footnotesize\ttfamily \#define V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+I\+N\+U\+S\+\_\+\+S\+H\+OT~2}
+
+
+
+Definition at line 67 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a01ee470f95b61f5f319e9ebb8a4a2638}\label{_values_8h_a01ee470f95b61f5f319e9ebb8a4a2638}} 
+\index{Values.\+h@{Values.\+h}!V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+N\+I\+P\+ER@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+N\+I\+P\+ER}}
+\index{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+N\+I\+P\+ER@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+N\+I\+P\+ER}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+N\+I\+P\+ER}{VELOCITY\_SNIPER}}
+{\footnotesize\ttfamily \#define V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+N\+I\+P\+ER~2}
+
+
+
+Definition at line 89 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a1b28fab832578ebbacd737ef33672882}\label{_values_8h_a1b28fab832578ebbacd737ef33672882}} 
+\index{Values.\+h@{Values.\+h}!V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}}
+\index{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT@{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT}{VELOCITY\_SNIPER\_SHOT}}
+{\footnotesize\ttfamily \#define V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+N\+I\+P\+E\+R\+\_\+\+S\+H\+OT~8}
+
+
+
+Definition at line 61 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a416fffc7f9564cff9abf18d22648bb73}\label{_values_8h_a416fffc7f9564cff9abf18d22648bb73}} 
+\index{Values.\+h@{Values.\+h}!V\+O\+I\+D\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON@{V\+O\+I\+D\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON}}
+\index{V\+O\+I\+D\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON@{V\+O\+I\+D\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{V\+O\+I\+D\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON}{VOID\_EXCEPTION}}
+{\footnotesize\ttfamily \#define V\+O\+I\+D\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON~-\/1}
+
+
+
+Definition at line 129 of file Values.\+h.
+
+\mbox{\Hypertarget{_values_8h_a241aeeb764887ae5e3de58b98f04b16d}\label{_values_8h_a241aeeb764887ae5e3de58b98f04b16d}} 
+\index{Values.\+h@{Values.\+h}!W\+I\+D\+TH@{W\+I\+D\+TH}}
+\index{W\+I\+D\+TH@{W\+I\+D\+TH}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{W\+I\+D\+TH}{WIDTH}}
+{\footnotesize\ttfamily \#define W\+I\+D\+TH~(M\+L\+V\+\_\+get\+\_\+desktop\+\_\+width())}
+
+
+
+Definition at line 11 of file Values.\+h.
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{_values_8h_a49bda12b1a33f2261caaf3f914078c4c}\label{_values_8h_a49bda12b1a33f2261caaf3f914078c4c}} 
+\index{Values.\+h@{Values.\+h}!Bonus\+\_\+type@{Bonus\+\_\+type}}
+\index{Bonus\+\_\+type@{Bonus\+\_\+type}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{Bonus\+\_\+type}{Bonus\_type}}
+{\footnotesize\ttfamily typedef enum \hyperlink{_values_8h_a8f9fcedca9f2f9318215294c30504cae}{bonus\+\_\+type}  \hyperlink{_values_8h_a49bda12b1a33f2261caaf3f914078c4c}{Bonus\+\_\+type}}
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_values_8h_a8f9fcedca9f2f9318215294c30504cae}\label{_values_8h_a8f9fcedca9f2f9318215294c30504cae}} 
+\index{Values.\+h@{Values.\+h}!bonus\+\_\+type@{bonus\+\_\+type}}
+\index{bonus\+\_\+type@{bonus\+\_\+type}!Values.\+h@{Values.\+h}}
+\subsubsection{\texorpdfstring{bonus\+\_\+type}{bonus\_type}}
+{\footnotesize\ttfamily enum \hyperlink{_values_8h_a8f9fcedca9f2f9318215294c30504cae}{bonus\+\_\+type}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+H\+I\+E\+LD@{S\+H\+I\+E\+LD}!Values.\+h@{Values.\+h}}\index{Values.\+h@{Values.\+h}!S\+H\+I\+E\+LD@{S\+H\+I\+E\+LD}}}\mbox{\Hypertarget{_values_8h_a8f9fcedca9f2f9318215294c30504caeaffdd98146fb0c71b3381f94b036a100f}\label{_values_8h_a8f9fcedca9f2f9318215294c30504caeaffdd98146fb0c71b3381f94b036a100f}} 
+S\+H\+I\+E\+LD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{H\+E\+AL@{H\+E\+AL}!Values.\+h@{Values.\+h}}\index{Values.\+h@{Values.\+h}!H\+E\+AL@{H\+E\+AL}}}\mbox{\Hypertarget{_values_8h_a8f9fcedca9f2f9318215294c30504caeabb9fb5962c8d829b60b6d124bb4fca50}\label{_values_8h_a8f9fcedca9f2f9318215294c30504caeabb9fb5962c8d829b60b6d124bb4fca50}} 
+H\+E\+AL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+I\+T\+RO@{N\+I\+T\+RO}!Values.\+h@{Values.\+h}}\index{Values.\+h@{Values.\+h}!N\+I\+T\+RO@{N\+I\+T\+RO}}}\mbox{\Hypertarget{_values_8h_a8f9fcedca9f2f9318215294c30504caea5aa14e54dc0d7e81bdd119eeebda59b9}\label{_values_8h_a8f9fcedca9f2f9318215294c30504caea5aa14e54dc0d7e81bdd119eeebda59b9}} 
+N\+I\+T\+RO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+R\+I\+P\+L\+E\+\_\+\+S\+H\+OT@{T\+R\+I\+P\+L\+E\+\_\+\+S\+H\+OT}!Values.\+h@{Values.\+h}}\index{Values.\+h@{Values.\+h}!T\+R\+I\+P\+L\+E\+\_\+\+S\+H\+OT@{T\+R\+I\+P\+L\+E\+\_\+\+S\+H\+OT}}}\mbox{\Hypertarget{_values_8h_a8f9fcedca9f2f9318215294c30504caea81d9d52c2ae385a3113e503fc2ac4c90}\label{_values_8h_a8f9fcedca9f2f9318215294c30504caea81d9d52c2ae385a3113e503fc2ac4c90}} 
+T\+R\+I\+P\+L\+E\+\_\+\+S\+H\+OT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+O\+T\+\_\+\+A\+\_\+\+B\+O\+N\+US@{N\+O\+T\+\_\+\+A\+\_\+\+B\+O\+N\+US}!Values.\+h@{Values.\+h}}\index{Values.\+h@{Values.\+h}!N\+O\+T\+\_\+\+A\+\_\+\+B\+O\+N\+US@{N\+O\+T\+\_\+\+A\+\_\+\+B\+O\+N\+US}}}\mbox{\Hypertarget{_values_8h_a8f9fcedca9f2f9318215294c30504caea862416fc9ff789d76a36bf83badc3a63}\label{_values_8h_a8f9fcedca9f2f9318215294c30504caea862416fc9ff789d76a36bf83badc3a63}} 
+N\+O\+T\+\_\+\+A\+\_\+\+B\+O\+N\+US&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 42 of file Values.\+h.
+

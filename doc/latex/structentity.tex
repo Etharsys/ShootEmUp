@@ -1,0 +1,241 @@
+\hypertarget{structentity}{}\section{entity Struct Reference}
+\label{structentity}\index{entity@{entity}}
+
+
+{\ttfamily \#include $<$Entity.\+h$>$}
+
+
+
+Collaboration diagram for entity\+:
+% FIG 0
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{structentity_ad0da36b2558901e21e7a30f6c227a45e}{x}
+\item 
+float \hyperlink{structentity_aa4f0d3eebc3c443f9be81bf48561a217}{y}
+\item 
+int \hyperlink{structentity_a9aa790f93d2d067a4f5608fdb8409f94}{hp}
+\item 
+float \hyperlink{structentity_ac46e821ae08930cc9e257642e34275a3}{velocity}
+\item 
+int \hyperlink{structentity_af6120b55f42d5cb6044788bba68b9521}{cooldown}
+\item 
+int \hyperlink{structentity_af3f30fa8b50e44df12b56cd7b0033da0}{clan}
+\item 
+int \hyperlink{structentity_ac765329451135abec74c45e1897abf26}{type}
+\item 
+float \hyperlink{structentity_a8f54e9f41016004732115c10e844deb8}{direction}
+\item 
+int \hyperlink{structentity_a9b39867abc3f09243fcdc739bd9e6c90}{damage}
+\item 
+struct \hyperlink{structentity}{entity} $\ast$ \hyperlink{structentity_a003db4878d2160d7c60c600d716094b2}{next}
+\item 
+struct \hyperlink{structentity}{entity} $\ast$ \hyperlink{structentity_abdec4e7d3433b984eebbdbb4606e293a}{previous}
+\item 
+int \hyperlink{structentity_aef160b7437d94056f1dc59646cd5b87d}{score}
+\item 
+int \hyperlink{structentity_adf58bef654884ab6c521153b0f99a82e}{hitbox}
+\item 
+int \hyperlink{structentity_a42715f65f02da52edc5b22021d8ae670}{time}
+\item 
+\hyperlink{_values_8h_a49bda12b1a33f2261caaf3f914078c4c}{Bonus\+\_\+type} \hyperlink{structentity_ac6032b9a092ec0123e235376f915abf7}{bonus}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The structure entity representing a ship, an ennemy, a shot. 
+\begin{DoxyParams}{Parameters}
+{\em x} & The position x \\
+\hline
+{\em y} & The position y \\
+\hline
+{\em hp} & The health point of the entity \\
+\hline
+{\em velocity} & The speed (acceleration) \\
+\hline
+{\em cooldown} & The dps (shoot per seconds) \\
+\hline
+{\em clan} & The clan (ally, ennemy, bonus) \\
+\hline
+{\em type} & The type (ship, sbire, sinus...) \\
+\hline
+{\em direction} & The actual direction for the entity \\
+\hline
+{\em damage} & The body to body damage (if collision) \\
+\hline
+{\em next} & The next entity \\
+\hline
+{\em previous} & The previous entity \\
+\hline
+{\em score} & The score of the entity (for ship) \\
+\hline
+{\em hitbox} & The hitbox (px) \\
+\hline
+{\em time} & The time before go on the next sequence of the entity \\
+\hline
+{\em bonus} & The bonus value (enum bonus) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file Entity.\+h.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structentity_ac6032b9a092ec0123e235376f915abf7}\label{structentity_ac6032b9a092ec0123e235376f915abf7}} 
+\index{entity@{entity}!bonus@{bonus}}
+\index{bonus@{bonus}!entity@{entity}}
+\subsubsection{\texorpdfstring{bonus}{bonus}}
+{\footnotesize\ttfamily \hyperlink{_values_8h_a49bda12b1a33f2261caaf3f914078c4c}{Bonus\+\_\+type} bonus}
+
+
+
+Definition at line 46 of file Entity.\+h.
+
+\mbox{\Hypertarget{structentity_af3f30fa8b50e44df12b56cd7b0033da0}\label{structentity_af3f30fa8b50e44df12b56cd7b0033da0}} 
+\index{entity@{entity}!clan@{clan}}
+\index{clan@{clan}!entity@{entity}}
+\subsubsection{\texorpdfstring{clan}{clan}}
+{\footnotesize\ttfamily int clan}
+
+
+
+Definition at line 36 of file Entity.\+h.
+
+\mbox{\Hypertarget{structentity_af6120b55f42d5cb6044788bba68b9521}\label{structentity_af6120b55f42d5cb6044788bba68b9521}} 
+\index{entity@{entity}!cooldown@{cooldown}}
+\index{cooldown@{cooldown}!entity@{entity}}
+\subsubsection{\texorpdfstring{cooldown}{cooldown}}
+{\footnotesize\ttfamily int cooldown}
+
+
+
+Definition at line 35 of file Entity.\+h.
+
+\mbox{\Hypertarget{structentity_a9b39867abc3f09243fcdc739bd9e6c90}\label{structentity_a9b39867abc3f09243fcdc739bd9e6c90}} 
+\index{entity@{entity}!damage@{damage}}
+\index{damage@{damage}!entity@{entity}}
+\subsubsection{\texorpdfstring{damage}{damage}}
+{\footnotesize\ttfamily int damage}
+
+
+
+Definition at line 39 of file Entity.\+h.
+
+\mbox{\Hypertarget{structentity_a8f54e9f41016004732115c10e844deb8}\label{structentity_a8f54e9f41016004732115c10e844deb8}} 
+\index{entity@{entity}!direction@{direction}}
+\index{direction@{direction}!entity@{entity}}
+\subsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily float direction}
+
+
+
+Definition at line 38 of file Entity.\+h.
+
+\mbox{\Hypertarget{structentity_adf58bef654884ab6c521153b0f99a82e}\label{structentity_adf58bef654884ab6c521153b0f99a82e}} 
+\index{entity@{entity}!hitbox@{hitbox}}
+\index{hitbox@{hitbox}!entity@{entity}}
+\subsubsection{\texorpdfstring{hitbox}{hitbox}}
+{\footnotesize\ttfamily int hitbox}
+
+
+
+Definition at line 43 of file Entity.\+h.
+
+\mbox{\Hypertarget{structentity_a9aa790f93d2d067a4f5608fdb8409f94}\label{structentity_a9aa790f93d2d067a4f5608fdb8409f94}} 
+\index{entity@{entity}!hp@{hp}}
+\index{hp@{hp}!entity@{entity}}
+\subsubsection{\texorpdfstring{hp}{hp}}
+{\footnotesize\ttfamily int hp}
+
+
+
+Definition at line 33 of file Entity.\+h.
+
+\mbox{\Hypertarget{structentity_a003db4878d2160d7c60c600d716094b2}\label{structentity_a003db4878d2160d7c60c600d716094b2}} 
+\index{entity@{entity}!next@{next}}
+\index{next@{next}!entity@{entity}}
+\subsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily struct \hyperlink{structentity}{entity}$\ast$ next}
+
+
+
+Definition at line 40 of file Entity.\+h.
+
+\mbox{\Hypertarget{structentity_abdec4e7d3433b984eebbdbb4606e293a}\label{structentity_abdec4e7d3433b984eebbdbb4606e293a}} 
+\index{entity@{entity}!previous@{previous}}
+\index{previous@{previous}!entity@{entity}}
+\subsubsection{\texorpdfstring{previous}{previous}}
+{\footnotesize\ttfamily struct \hyperlink{structentity}{entity}$\ast$ previous}
+
+
+
+Definition at line 41 of file Entity.\+h.
+
+\mbox{\Hypertarget{structentity_aef160b7437d94056f1dc59646cd5b87d}\label{structentity_aef160b7437d94056f1dc59646cd5b87d}} 
+\index{entity@{entity}!score@{score}}
+\index{score@{score}!entity@{entity}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int score}
+
+
+
+Definition at line 42 of file Entity.\+h.
+
+\mbox{\Hypertarget{structentity_a42715f65f02da52edc5b22021d8ae670}\label{structentity_a42715f65f02da52edc5b22021d8ae670}} 
+\index{entity@{entity}!time@{time}}
+\index{time@{time}!entity@{entity}}
+\subsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily int time}
+
+
+
+Definition at line 45 of file Entity.\+h.
+
+\mbox{\Hypertarget{structentity_ac765329451135abec74c45e1897abf26}\label{structentity_ac765329451135abec74c45e1897abf26}} 
+\index{entity@{entity}!type@{type}}
+\index{type@{type}!entity@{entity}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily int type}
+
+
+
+Definition at line 37 of file Entity.\+h.
+
+\mbox{\Hypertarget{structentity_ac46e821ae08930cc9e257642e34275a3}\label{structentity_ac46e821ae08930cc9e257642e34275a3}} 
+\index{entity@{entity}!velocity@{velocity}}
+\index{velocity@{velocity}!entity@{entity}}
+\subsubsection{\texorpdfstring{velocity}{velocity}}
+{\footnotesize\ttfamily float velocity}
+
+
+
+Definition at line 34 of file Entity.\+h.
+
+\mbox{\Hypertarget{structentity_ad0da36b2558901e21e7a30f6c227a45e}\label{structentity_ad0da36b2558901e21e7a30f6c227a45e}} 
+\index{entity@{entity}!x@{x}}
+\index{x@{x}!entity@{entity}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily float x}
+
+
+
+Definition at line 32 of file Entity.\+h.
+
+\mbox{\Hypertarget{structentity_aa4f0d3eebc3c443f9be81bf48561a217}\label{structentity_aa4f0d3eebc3c443f9be81bf48561a217}} 
+\index{entity@{entity}!y@{y}}
+\index{y@{y}!entity@{entity}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily float y}
+
+
+
+Definition at line 32 of file Entity.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_entity_8h}{Entity.\+h}\end{DoxyCompactItemize}

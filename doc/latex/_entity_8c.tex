@@ -1,0 +1,257 @@
+\hypertarget{_entity_8c}{}\section{src/\+Entity.c File Reference}
+\label{_entity_8c}\index{src/\+Entity.\+c@{src/\+Entity.\+c}}
+{\ttfamily \#include \char`\"{}../include/\+Entity.\+h\char`\"{}}\newline
+Include dependency graph for Entity.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_entity_8c_a00f1fa3b045a016da58501d6aa79b3c8}{initialize\+\_\+ship} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$ship)
+\item 
+int \hyperlink{_entity_8c_aaf2f8f86a6cf0ee734295c3068237c16}{printf\+\_\+ennemy} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} ennemy)
+\item 
+int \hyperlink{_entity_8c_ab452492f34cf9b4e8d1e0ac9f60ac37e}{delete\+\_\+entity} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$head, \hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$\hyperlink{structentity}{entity})
+\item 
+\hyperlink{_entity_8h_a1589a38510abb7e93ad03d8a9a736d9a}{Entity} $\ast$ \hyperlink{_entity_8c_a85a4936ade50c5f395eaa40a29b428c4}{initialize\+\_\+entity} (float x, float y, int hp, float direction, float velocity, int cooldown, int damage, int type, int clan, int score, int hitbox)
+\item 
+int \hyperlink{_entity_8c_ae471fe3bf8a4e718ce1c88b6bdddcd4e}{add\+\_\+entity\+\_\+to\+\_\+list} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$\hyperlink{structentity}{entity}, float x, float y, int hp, float direction, float velocity, int cooldown, int damage, int type, int clan, int score, int hitbox)
+\item 
+int \hyperlink{_entity_8c_adc8027f3b789d4bc6cd4e8371ab20adf}{type\+\_\+enity} (int type)
+\item 
+int \hyperlink{_entity_8c_ad659bfac24f4e0c5f6681bc0281e4880}{delete\+\_\+die\+\_\+entities} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$\hyperlink{structentity}{entity}, int $\ast$score\+\_\+ship)
+\item 
+int \hyperlink{_entity_8c_aff9a80108150330d898f5a280bfd08bf}{delete\+\_\+all\+\_\+entities} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$entities)
+\item 
+int \hyperlink{_entity_8c_a8d093c4e39e4e4db91de68fee60f5d98}{become\+\_\+bonus} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$tmp\+\_\+entity)
+\item 
+int \hyperlink{_entity_8c_a06704c1300a8e24d308a8a513e98e75d}{manage\+\_\+bonus} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$\hyperlink{structentity}{entity})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_entity_8c_ae471fe3bf8a4e718ce1c88b6bdddcd4e}\label{_entity_8c_ae471fe3bf8a4e718ce1c88b6bdddcd4e}} 
+\index{Entity.\+c@{Entity.\+c}!add\+\_\+entity\+\_\+to\+\_\+list@{add\+\_\+entity\+\_\+to\+\_\+list}}
+\index{add\+\_\+entity\+\_\+to\+\_\+list@{add\+\_\+entity\+\_\+to\+\_\+list}!Entity.\+c@{Entity.\+c}}
+\subsubsection{\texorpdfstring{add\+\_\+entity\+\_\+to\+\_\+list()}{add\_entity\_to\_list()}}
+{\footnotesize\ttfamily int add\+\_\+entity\+\_\+to\+\_\+list (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{entity,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{int}]{hp,  }\item[{float}]{direction,  }\item[{float}]{velocity,  }\item[{int}]{cooldown,  }\item[{int}]{damage,  }\item[{int}]{type,  }\item[{int}]{clan,  }\item[{int}]{score,  }\item[{int}]{hitbox }\end{DoxyParamCaption})}
+
+Add a new entity following the initialisation plan to a entity list 
+\begin{DoxyParams}{Parameters}
+{\em entity} & The list to append the new entity \\
+\hline
+{\em x} & The position x \\
+\hline
+{\em y} & The position y \\
+\hline
+{\em hp} & The entity health point \\
+\hline
+{\em direction} & The direction of the entity \\
+\hline
+{\em velocity} & The entity speed \\
+\hline
+{\em cooldown} & The entity dps \\
+\hline
+{\em damage} & The entity damage (body to body) \\
+\hline
+{\em type} & The entity type (sniper, sbire, ...) \\
+\hline
+{\em clan} & The entity clan (ennemy, ally, bonus) \\
+\hline
+{\em score} & The initial score (for ship essentialy) \\
+\hline
+{\em hitbox} & The entity hitbox \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the entity created well, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 122 of file Entity.\+c.
+
+\mbox{\Hypertarget{_entity_8c_a8d093c4e39e4e4db91de68fee60f5d98}\label{_entity_8c_a8d093c4e39e4e4db91de68fee60f5d98}} 
+\index{Entity.\+c@{Entity.\+c}!become\+\_\+bonus@{become\+\_\+bonus}}
+\index{become\+\_\+bonus@{become\+\_\+bonus}!Entity.\+c@{Entity.\+c}}
+\subsubsection{\texorpdfstring{become\+\_\+bonus()}{become\_bonus()}}
+{\footnotesize\ttfamily int become\+\_\+bonus (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{tmp\+\_\+entity }\end{DoxyParamCaption})}
+
+Swap a entity to a bonus 
+\begin{DoxyParams}{Parameters}
+{\em tmp\+\_\+entity} & The entity which need to become a bonus \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the entity became a bonus, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 189 of file Entity.\+c.
+
+\mbox{\Hypertarget{_entity_8c_aff9a80108150330d898f5a280bfd08bf}\label{_entity_8c_aff9a80108150330d898f5a280bfd08bf}} 
+\index{Entity.\+c@{Entity.\+c}!delete\+\_\+all\+\_\+entities@{delete\+\_\+all\+\_\+entities}}
+\index{delete\+\_\+all\+\_\+entities@{delete\+\_\+all\+\_\+entities}!Entity.\+c@{Entity.\+c}}
+\subsubsection{\texorpdfstring{delete\+\_\+all\+\_\+entities()}{delete\_all\_entities()}}
+{\footnotesize\ttfamily int delete\+\_\+all\+\_\+entities (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{entities }\end{DoxyParamCaption})}
+
+Delete every entities on the screen 
+\begin{DoxyParams}{Parameters}
+{\em entities} & A list of entities \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if every entities deleted well, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 177 of file Entity.\+c.
+
+\mbox{\Hypertarget{_entity_8c_ad659bfac24f4e0c5f6681bc0281e4880}\label{_entity_8c_ad659bfac24f4e0c5f6681bc0281e4880}} 
+\index{Entity.\+c@{Entity.\+c}!delete\+\_\+die\+\_\+entities@{delete\+\_\+die\+\_\+entities}}
+\index{delete\+\_\+die\+\_\+entities@{delete\+\_\+die\+\_\+entities}!Entity.\+c@{Entity.\+c}}
+\subsubsection{\texorpdfstring{delete\+\_\+die\+\_\+entities()}{delete\_die\_entities()}}
+{\footnotesize\ttfamily int delete\+\_\+die\+\_\+entities (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{entity,  }\item[{int $\ast$}]{score\+\_\+ship }\end{DoxyParamCaption})}
+
+Delete every entities which have hp bellow 0 
+\begin{DoxyParams}{Parameters}
+{\em entity} & The entity list \\
+\hline
+{\em score\+\_\+ship} & The actual score of the ship \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if all entities deleted well, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 153 of file Entity.\+c.
+
+\mbox{\Hypertarget{_entity_8c_ab452492f34cf9b4e8d1e0ac9f60ac37e}\label{_entity_8c_ab452492f34cf9b4e8d1e0ac9f60ac37e}} 
+\index{Entity.\+c@{Entity.\+c}!delete\+\_\+entity@{delete\+\_\+entity}}
+\index{delete\+\_\+entity@{delete\+\_\+entity}!Entity.\+c@{Entity.\+c}}
+\subsubsection{\texorpdfstring{delete\+\_\+entity()}{delete\_entity()}}
+{\footnotesize\ttfamily int delete\+\_\+entity (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{head,  }\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{entity }\end{DoxyParamCaption})}
+
+Delete a entity of a list of entities 
+\begin{DoxyParams}{Parameters}
+{\em head} & The head of the list \\
+\hline
+{\em entity} & A copy to the entity to delete \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the entity is well delete, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 45 of file Entity.\+c.
+
+\mbox{\Hypertarget{_entity_8c_a85a4936ade50c5f395eaa40a29b428c4}\label{_entity_8c_a85a4936ade50c5f395eaa40a29b428c4}} 
+\index{Entity.\+c@{Entity.\+c}!initialize\+\_\+entity@{initialize\+\_\+entity}}
+\index{initialize\+\_\+entity@{initialize\+\_\+entity}!Entity.\+c@{Entity.\+c}}
+\subsubsection{\texorpdfstring{initialize\+\_\+entity()}{initialize\_entity()}}
+{\footnotesize\ttfamily \hyperlink{_entity_8h_a1589a38510abb7e93ad03d8a9a736d9a}{Entity}$\ast$ initialize\+\_\+entity (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{int}]{hp,  }\item[{float}]{direction,  }\item[{float}]{velocity,  }\item[{int}]{cooldown,  }\item[{int}]{damage,  }\item[{int}]{type,  }\item[{int}]{clan,  }\item[{int}]{score,  }\item[{int}]{hitbox }\end{DoxyParamCaption})}
+
+Initialize a new entity following the initialisation plan 
+\begin{DoxyParams}{Parameters}
+{\em x} & The position x \\
+\hline
+{\em y} & The position y \\
+\hline
+{\em hp} & The entity health point \\
+\hline
+{\em direction} & The direction of the entity \\
+\hline
+{\em velocity} & The entity speed \\
+\hline
+{\em cooldown} & The entity dps \\
+\hline
+{\em damage} & The entity damage (body to body) \\
+\hline
+{\em type} & The entity type (sniper, sbire, ...) \\
+\hline
+{\em clan} & The entity clan (ennemy, ally, bonus) \\
+\hline
+{\em score} & The initial score (for ship essentialy) \\
+\hline
+{\em hitbox} & The entity hitbox \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the entity created well, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 97 of file Entity.\+c.
+
+\mbox{\Hypertarget{_entity_8c_a00f1fa3b045a016da58501d6aa79b3c8}\label{_entity_8c_a00f1fa3b045a016da58501d6aa79b3c8}} 
+\index{Entity.\+c@{Entity.\+c}!initialize\+\_\+ship@{initialize\+\_\+ship}}
+\index{initialize\+\_\+ship@{initialize\+\_\+ship}!Entity.\+c@{Entity.\+c}}
+\subsubsection{\texorpdfstring{initialize\+\_\+ship()}{initialize\_ship()}}
+{\footnotesize\ttfamily int initialize\+\_\+ship (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{ship }\end{DoxyParamCaption})}
+
+Initialize the ship following the initialisation plan 
+\begin{DoxyParams}{Parameters}
+{\em ship} & The ship entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the entity ship created well, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 7 of file Entity.\+c.
+
+\mbox{\Hypertarget{_entity_8c_a06704c1300a8e24d308a8a513e98e75d}\label{_entity_8c_a06704c1300a8e24d308a8a513e98e75d}} 
+\index{Entity.\+c@{Entity.\+c}!manage\+\_\+bonus@{manage\+\_\+bonus}}
+\index{manage\+\_\+bonus@{manage\+\_\+bonus}!Entity.\+c@{Entity.\+c}}
+\subsubsection{\texorpdfstring{manage\+\_\+bonus()}{manage\_bonus()}}
+{\footnotesize\ttfamily int manage\+\_\+bonus (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{entity }\end{DoxyParamCaption})}
+
+Manage actuals bonus on the ship with bonus rules 
+\begin{DoxyParams}{Parameters}
+{\em entity} & The bonus entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the bonus is not null, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 210 of file Entity.\+c.
+
+\mbox{\Hypertarget{_entity_8c_aaf2f8f86a6cf0ee734295c3068237c16}\label{_entity_8c_aaf2f8f86a6cf0ee734295c3068237c16}} 
+\index{Entity.\+c@{Entity.\+c}!printf\+\_\+ennemy@{printf\+\_\+ennemy}}
+\index{printf\+\_\+ennemy@{printf\+\_\+ennemy}!Entity.\+c@{Entity.\+c}}
+\subsubsection{\texorpdfstring{printf\+\_\+ennemy()}{printf\_ennemy()}}
+{\footnotesize\ttfamily int printf\+\_\+ennemy (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities}}]{ennemy }\end{DoxyParamCaption})}
+
+Print the ennemy list 
+\begin{DoxyParams}{Parameters}
+{\em ennemy} & An entities list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the list printed well, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 31 of file Entity.\+c.
+
+\mbox{\Hypertarget{_entity_8c_adc8027f3b789d4bc6cd4e8371ab20adf}\label{_entity_8c_adc8027f3b789d4bc6cd4e8371ab20adf}} 
+\index{Entity.\+c@{Entity.\+c}!type\+\_\+enity@{type\+\_\+enity}}
+\index{type\+\_\+enity@{type\+\_\+enity}!Entity.\+c@{Entity.\+c}}
+\subsubsection{\texorpdfstring{type\+\_\+enity()}{type\_enity()}}
+{\footnotesize\ttfamily int type\+\_\+enity (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})}
+
+Check a type to have a clan 
+\begin{DoxyParams}{Parameters}
+{\em type} & The type to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the clan of the type 
+\end{DoxyReturn}
+
+
+Definition at line 146 of file Entity.\+c.
+

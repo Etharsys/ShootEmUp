@@ -1,0 +1,83 @@
+\hypertarget{_collision_8c}{}\section{src/\+Collision.c File Reference}
+\label{_collision_8c}\index{src/\+Collision.\+c@{src/\+Collision.\+c}}
+{\ttfamily \#include \char`\"{}../include/\+Collision.\+h\char`\"{}}\newline
+Include dependency graph for Collision.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_collision_8c_ad5db5e3911c30c08c161bd67a8e50451}{in\+\_\+range} (int x, int y, int target\+\_\+x, int target\+\_\+y, int range, int hitbox\+\_\+size)
+\item 
+int \hyperlink{_collision_8c_a1d65a5c00f47432aa667ce5ee01ed74b}{in\+\_\+collision} (int xa, int ya, int xb, int yb, int hitbox\+\_\+size\+\_\+a, int hitbox\+\_\+size\+\_\+b)
+\item 
+int \hyperlink{_collision_8c_ad2a8ccc844a45b531c17acdf2d24a572}{collision\+\_\+entities} (Entities $\ast$entity\+\_\+a, Entities $\ast$entity\+\_\+b)
+\item 
+int \hyperlink{_collision_8c_a5f294f47cd2b5dacb51bd71752da15dd}{border\+\_\+collision} (int hitbox\+\_\+size, int new\+\_\+x, int new\+\_\+y)
+\item 
+int \hyperlink{_collision_8c_af89792f288fdfd8172d78f1b0748d9ef}{border\+\_\+collision\+\_\+entities} (Entities $\ast$entity, Entities $\ast$ship)
+\item 
+int \hyperlink{_collision_8c_a423fce9bb8515b2db939e02e3b012b99}{manage\+\_\+collision} (Entities $\ast$ship, Entities $\ast$ennemy, Entities $\ast$shot)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_collision_8c_a5f294f47cd2b5dacb51bd71752da15dd}\label{_collision_8c_a5f294f47cd2b5dacb51bd71752da15dd}} 
+\index{Collision.\+c@{Collision.\+c}!border\+\_\+collision@{border\+\_\+collision}}
+\index{border\+\_\+collision@{border\+\_\+collision}!Collision.\+c@{Collision.\+c}}
+\subsubsection{\texorpdfstring{border\+\_\+collision()}{border\_collision()}}
+{\footnotesize\ttfamily int border\+\_\+collision (\begin{DoxyParamCaption}\item[{int}]{hitbox\+\_\+size,  }\item[{int}]{new\+\_\+x,  }\item[{int}]{new\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+Definition at line 61 of file Collision.\+c.
+
+\mbox{\Hypertarget{_collision_8c_af89792f288fdfd8172d78f1b0748d9ef}\label{_collision_8c_af89792f288fdfd8172d78f1b0748d9ef}} 
+\index{Collision.\+c@{Collision.\+c}!border\+\_\+collision\+\_\+entities@{border\+\_\+collision\+\_\+entities}}
+\index{border\+\_\+collision\+\_\+entities@{border\+\_\+collision\+\_\+entities}!Collision.\+c@{Collision.\+c}}
+\subsubsection{\texorpdfstring{border\+\_\+collision\+\_\+entities()}{border\_collision\_entities()}}
+{\footnotesize\ttfamily int border\+\_\+collision\+\_\+entities (\begin{DoxyParamCaption}\item[{Entities $\ast$}]{entity,  }\item[{Entities $\ast$}]{ship }\end{DoxyParamCaption})}
+
+
+
+Definition at line 71 of file Collision.\+c.
+
+\mbox{\Hypertarget{_collision_8c_ad2a8ccc844a45b531c17acdf2d24a572}\label{_collision_8c_ad2a8ccc844a45b531c17acdf2d24a572}} 
+\index{Collision.\+c@{Collision.\+c}!collision\+\_\+entities@{collision\+\_\+entities}}
+\index{collision\+\_\+entities@{collision\+\_\+entities}!Collision.\+c@{Collision.\+c}}
+\subsubsection{\texorpdfstring{collision\+\_\+entities()}{collision\_entities()}}
+{\footnotesize\ttfamily int collision\+\_\+entities (\begin{DoxyParamCaption}\item[{Entities $\ast$}]{entity\+\_\+a,  }\item[{Entities $\ast$}]{entity\+\_\+b }\end{DoxyParamCaption})}
+
+
+
+Definition at line 17 of file Collision.\+c.
+
+\mbox{\Hypertarget{_collision_8c_a1d65a5c00f47432aa667ce5ee01ed74b}\label{_collision_8c_a1d65a5c00f47432aa667ce5ee01ed74b}} 
+\index{Collision.\+c@{Collision.\+c}!in\+\_\+collision@{in\+\_\+collision}}
+\index{in\+\_\+collision@{in\+\_\+collision}!Collision.\+c@{Collision.\+c}}
+\subsubsection{\texorpdfstring{in\+\_\+collision()}{in\_collision()}}
+{\footnotesize\ttfamily int in\+\_\+collision (\begin{DoxyParamCaption}\item[{int}]{xa,  }\item[{int}]{ya,  }\item[{int}]{xb,  }\item[{int}]{yb,  }\item[{int}]{hitbox\+\_\+size\+\_\+a,  }\item[{int}]{hitbox\+\_\+size\+\_\+b }\end{DoxyParamCaption})}
+
+
+
+Definition at line 10 of file Collision.\+c.
+
+\mbox{\Hypertarget{_collision_8c_ad5db5e3911c30c08c161bd67a8e50451}\label{_collision_8c_ad5db5e3911c30c08c161bd67a8e50451}} 
+\index{Collision.\+c@{Collision.\+c}!in\+\_\+range@{in\+\_\+range}}
+\index{in\+\_\+range@{in\+\_\+range}!Collision.\+c@{Collision.\+c}}
+\subsubsection{\texorpdfstring{in\+\_\+range()}{in\_range()}}
+{\footnotesize\ttfamily int in\+\_\+range (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{target\+\_\+x,  }\item[{int}]{target\+\_\+y,  }\item[{int}]{range,  }\item[{int}]{hitbox\+\_\+size }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3 of file Collision.\+c.
+
+\mbox{\Hypertarget{_collision_8c_a423fce9bb8515b2db939e02e3b012b99}\label{_collision_8c_a423fce9bb8515b2db939e02e3b012b99}} 
+\index{Collision.\+c@{Collision.\+c}!manage\+\_\+collision@{manage\+\_\+collision}}
+\index{manage\+\_\+collision@{manage\+\_\+collision}!Collision.\+c@{Collision.\+c}}
+\subsubsection{\texorpdfstring{manage\+\_\+collision()}{manage\_collision()}}
+{\footnotesize\ttfamily int manage\+\_\+collision (\begin{DoxyParamCaption}\item[{Entities $\ast$}]{ship,  }\item[{Entities $\ast$}]{ennemy,  }\item[{Entities $\ast$}]{shot }\end{DoxyParamCaption})}
+
+
+
+Definition at line 111 of file Collision.\+c.
+

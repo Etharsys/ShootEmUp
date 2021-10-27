@@ -1,0 +1,207 @@
+\hypertarget{_spawn_8c}{}\section{src/\+Spawn.c File Reference}
+\label{_spawn_8c}\index{src/\+Spawn.\+c@{src/\+Spawn.\+c}}
+{\ttfamily \#include \char`\"{}../include/\+Spawn.\+h\char`\"{}}\newline
+Include dependency graph for Spawn.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_spawn_8c_a31044302280c0ec9eca89286f81127af}{rand\+\_\+a\+\_\+b} (int a, int b)
+\item 
+int \hyperlink{_spawn_8c_a7850cefdf4c3db192091b3adac818b76}{type\+\_\+of\+\_\+ennemy} (int rand\+\_\+100)
+\item 
+int \hyperlink{_spawn_8c_aaeb5e211df7bbf894d2ae049da2b7d7c}{type\+\_\+in\+\_\+ennemy} (int type, \hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} ennemy)
+\item 
+int \hyperlink{_spawn_8c_a13a67b005760bee29eaf69b01f0442ff}{spawn\+\_\+sbire} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$ennemy)
+\item 
+int \hyperlink{_spawn_8c_afb37c3970380d50582cbdb9b97be1e7b}{spawn\+\_\+sinus} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$ennemy)
+\item 
+int \hyperlink{_spawn_8c_a65572a41d6c0bd1cba79a68698491f0a}{spawn\+\_\+sniper} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$ennemy)
+\item 
+int \hyperlink{_spawn_8c_a71f33a7b1f368643c01282821b34700d}{spawn\+\_\+bomber} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$ennemy)
+\item 
+int \hyperlink{_spawn_8c_a4811ec8e6c7e19f63f64f32be8ec724f}{spawn\+\_\+gatling} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$ennemy)
+\item 
+int \hyperlink{_spawn_8c_a221da92ffd96be24f6b19d33c37c5783}{spawn\+\_\+comet} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$ennemy, int can\+\_\+spawn)
+\item 
+int \hyperlink{_spawn_8c_a76f23d8e9b7882dd2e5c10b37b00c5a4}{spawn\+\_\+random\+\_\+ennemy} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$ennemy)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_spawn_8c_a31044302280c0ec9eca89286f81127af}\label{_spawn_8c_a31044302280c0ec9eca89286f81127af}} 
+\index{Spawn.\+c@{Spawn.\+c}!rand\+\_\+a\+\_\+b@{rand\+\_\+a\+\_\+b}}
+\index{rand\+\_\+a\+\_\+b@{rand\+\_\+a\+\_\+b}!Spawn.\+c@{Spawn.\+c}}
+\subsubsection{\texorpdfstring{rand\+\_\+a\+\_\+b()}{rand\_a\_b()}}
+{\footnotesize\ttfamily int rand\+\_\+a\+\_\+b (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+Calcul a random between 2 numbers 
+\begin{DoxyParams}{Parameters}
+{\em a} & The minimum (include) \\
+\hline
+{\em b} & The maximum (not include) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the calculated random number 
+\end{DoxyReturn}
+
+
+Definition at line 3 of file Spawn.\+c.
+
+\mbox{\Hypertarget{_spawn_8c_a71f33a7b1f368643c01282821b34700d}\label{_spawn_8c_a71f33a7b1f368643c01282821b34700d}} 
+\index{Spawn.\+c@{Spawn.\+c}!spawn\+\_\+bomber@{spawn\+\_\+bomber}}
+\index{spawn\+\_\+bomber@{spawn\+\_\+bomber}!Spawn.\+c@{Spawn.\+c}}
+\subsubsection{\texorpdfstring{spawn\+\_\+bomber()}{spawn\_bomber()}}
+{\footnotesize\ttfamily int spawn\+\_\+bomber (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{ennemy }\end{DoxyParamCaption})}
+
+Spawn a ennemy in the list of ennemy with bomber spawn rules 
+\begin{DoxyParams}{Parameters}
+{\em ennemy} & The list of enemies \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if spawn gone well, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 73 of file Spawn.\+c.
+
+\mbox{\Hypertarget{_spawn_8c_a221da92ffd96be24f6b19d33c37c5783}\label{_spawn_8c_a221da92ffd96be24f6b19d33c37c5783}} 
+\index{Spawn.\+c@{Spawn.\+c}!spawn\+\_\+comet@{spawn\+\_\+comet}}
+\index{spawn\+\_\+comet@{spawn\+\_\+comet}!Spawn.\+c@{Spawn.\+c}}
+\subsubsection{\texorpdfstring{spawn\+\_\+comet()}{spawn\_comet()}}
+{\footnotesize\ttfamily int spawn\+\_\+comet (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{ennemy,  }\item[{int}]{can\+\_\+spawn }\end{DoxyParamCaption})}
+
+
+
+Definition at line 101 of file Spawn.\+c.
+
+\mbox{\Hypertarget{_spawn_8c_a4811ec8e6c7e19f63f64f32be8ec724f}\label{_spawn_8c_a4811ec8e6c7e19f63f64f32be8ec724f}} 
+\index{Spawn.\+c@{Spawn.\+c}!spawn\+\_\+gatling@{spawn\+\_\+gatling}}
+\index{spawn\+\_\+gatling@{spawn\+\_\+gatling}!Spawn.\+c@{Spawn.\+c}}
+\subsubsection{\texorpdfstring{spawn\+\_\+gatling()}{spawn\_gatling()}}
+{\footnotesize\ttfamily int spawn\+\_\+gatling (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{ennemy }\end{DoxyParamCaption})}
+
+Spawn a ennemy in the list of ennemy with gatling spawn rules 
+\begin{DoxyParams}{Parameters}
+{\em ennemy} & The list of enemies \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if spawn gone well, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 90 of file Spawn.\+c.
+
+\mbox{\Hypertarget{_spawn_8c_a76f23d8e9b7882dd2e5c10b37b00c5a4}\label{_spawn_8c_a76f23d8e9b7882dd2e5c10b37b00c5a4}} 
+\index{Spawn.\+c@{Spawn.\+c}!spawn\+\_\+random\+\_\+ennemy@{spawn\+\_\+random\+\_\+ennemy}}
+\index{spawn\+\_\+random\+\_\+ennemy@{spawn\+\_\+random\+\_\+ennemy}!Spawn.\+c@{Spawn.\+c}}
+\subsubsection{\texorpdfstring{spawn\+\_\+random\+\_\+ennemy()}{spawn\_random\_ennemy()}}
+{\footnotesize\ttfamily int spawn\+\_\+random\+\_\+ennemy (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{ennemy }\end{DoxyParamCaption})}
+
+Spawn a random ennemy in the list of enemies 
+\begin{DoxyParams}{Parameters}
+{\em ennemy} & The list of enemies \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 an ennemy is choose, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 124 of file Spawn.\+c.
+
+\mbox{\Hypertarget{_spawn_8c_a13a67b005760bee29eaf69b01f0442ff}\label{_spawn_8c_a13a67b005760bee29eaf69b01f0442ff}} 
+\index{Spawn.\+c@{Spawn.\+c}!spawn\+\_\+sbire@{spawn\+\_\+sbire}}
+\index{spawn\+\_\+sbire@{spawn\+\_\+sbire}!Spawn.\+c@{Spawn.\+c}}
+\subsubsection{\texorpdfstring{spawn\+\_\+sbire()}{spawn\_sbire()}}
+{\footnotesize\ttfamily int spawn\+\_\+sbire (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{ennemy }\end{DoxyParamCaption})}
+
+Spawn a ennemy in the list of ennemy with sbire spawn rules 
+\begin{DoxyParams}{Parameters}
+{\em ennemy} & The list of enemies \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if spawn gone well, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 40 of file Spawn.\+c.
+
+\mbox{\Hypertarget{_spawn_8c_afb37c3970380d50582cbdb9b97be1e7b}\label{_spawn_8c_afb37c3970380d50582cbdb9b97be1e7b}} 
+\index{Spawn.\+c@{Spawn.\+c}!spawn\+\_\+sinus@{spawn\+\_\+sinus}}
+\index{spawn\+\_\+sinus@{spawn\+\_\+sinus}!Spawn.\+c@{Spawn.\+c}}
+\subsubsection{\texorpdfstring{spawn\+\_\+sinus()}{spawn\_sinus()}}
+{\footnotesize\ttfamily int spawn\+\_\+sinus (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{ennemy }\end{DoxyParamCaption})}
+
+Spawn a ennemy in the list of ennemy with sinus spawn rules 
+\begin{DoxyParams}{Parameters}
+{\em ennemy} & The list of enemies \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if spawn gone well, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 51 of file Spawn.\+c.
+
+\mbox{\Hypertarget{_spawn_8c_a65572a41d6c0bd1cba79a68698491f0a}\label{_spawn_8c_a65572a41d6c0bd1cba79a68698491f0a}} 
+\index{Spawn.\+c@{Spawn.\+c}!spawn\+\_\+sniper@{spawn\+\_\+sniper}}
+\index{spawn\+\_\+sniper@{spawn\+\_\+sniper}!Spawn.\+c@{Spawn.\+c}}
+\subsubsection{\texorpdfstring{spawn\+\_\+sniper()}{spawn\_sniper()}}
+{\footnotesize\ttfamily int spawn\+\_\+sniper (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{ennemy }\end{DoxyParamCaption})}
+
+Spawn a ennemy in the list of ennemy with sniper spawn rules 
+\begin{DoxyParams}{Parameters}
+{\em ennemy} & The list of enemies \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if spawn gone well, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 62 of file Spawn.\+c.
+
+\mbox{\Hypertarget{_spawn_8c_aaeb5e211df7bbf894d2ae049da2b7d7c}\label{_spawn_8c_aaeb5e211df7bbf894d2ae049da2b7d7c}} 
+\index{Spawn.\+c@{Spawn.\+c}!type\+\_\+in\+\_\+ennemy@{type\+\_\+in\+\_\+ennemy}}
+\index{type\+\_\+in\+\_\+ennemy@{type\+\_\+in\+\_\+ennemy}!Spawn.\+c@{Spawn.\+c}}
+\subsubsection{\texorpdfstring{type\+\_\+in\+\_\+ennemy()}{type\_in\_ennemy()}}
+{\footnotesize\ttfamily int type\+\_\+in\+\_\+ennemy (\begin{DoxyParamCaption}\item[{int}]{type,  }\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities}}]{ennemy }\end{DoxyParamCaption})}
+
+Check if a type is in the list of enemies 
+\begin{DoxyParams}{Parameters}
+{\em type} & The type to check \\
+\hline
+{\em ennemy} & The list of ennemy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the type of ennemy, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 30 of file Spawn.\+c.
+
+\mbox{\Hypertarget{_spawn_8c_a7850cefdf4c3db192091b3adac818b76}\label{_spawn_8c_a7850cefdf4c3db192091b3adac818b76}} 
+\index{Spawn.\+c@{Spawn.\+c}!type\+\_\+of\+\_\+ennemy@{type\+\_\+of\+\_\+ennemy}}
+\index{type\+\_\+of\+\_\+ennemy@{type\+\_\+of\+\_\+ennemy}!Spawn.\+c@{Spawn.\+c}}
+\subsubsection{\texorpdfstring{type\+\_\+of\+\_\+ennemy()}{type\_of\_ennemy()}}
+{\footnotesize\ttfamily int type\+\_\+of\+\_\+ennemy (\begin{DoxyParamCaption}\item[{int}]{rand\+\_\+100 }\end{DoxyParamCaption})}
+
+Calcul a type for a ennemy with random values of balance 
+\begin{DoxyParams}{Parameters}
+{\em rand\+\_\+100} & A random number between 0 and 100 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the type of ennemy, -\/1 if not found 
+\end{DoxyReturn}
+
+
+Definition at line 7 of file Spawn.\+c.
+

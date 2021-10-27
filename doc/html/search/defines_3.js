@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['damage_5fbomber',['DAMAGE_BOMBER',['../_values_8h.html#a0832f7df9033a483785bb38dc7eeca3c',1,'Values.h']]],
+  ['damage_5fboss_5fshot_5f1',['DAMAGE_BOSS_SHOT_1',['../_values_8h.html#a95c0d67a97a5108bfca38e85f67ad47a',1,'Values.h']]],
+  ['damage_5fboss_5fshot_5f2',['DAMAGE_BOSS_SHOT_2',['../_values_8h.html#ac86d81e2a037841b8b19cf293d6122dc',1,'Values.h']]],
+  ['damage_5fcomet',['DAMAGE_COMET',['../_values_8h.html#a7cd5524cef238cf466f50889b9338498',1,'Values.h']]],
+  ['damage_5fgatling',['DAMAGE_GATLING',['../_values_8h.html#a24fc336188c4ae6a933d311b34cee5a8',1,'Values.h']]],
+  ['damage_5fgatling_5fshot',['DAMAGE_GATLING_SHOT',['../_values_8h.html#a9edb4c2df31bdc6043513545c80ed974',1,'Values.h']]],
+  ['damage_5fsbire',['DAMAGE_SBIRE',['../_values_8h.html#a544d052a69d4ae4508a55a8ebcc67ee8',1,'Values.h']]],
+  ['damage_5fsbire_5fshot',['DAMAGE_SBIRE_SHOT',['../_values_8h.html#a04a67f3624d2fbfb3a6a865126c48c51',1,'Values.h']]],
+  ['damage_5fship_5fshot',['DAMAGE_SHIP_SHOT',['../_values_8h.html#a307432b5363a14fb4c1e24db8286d60c',1,'Values.h']]],
+  ['damage_5fsinus',['DAMAGE_SINUS',['../_values_8h.html#aed644547929015faa39048ddfa88a9c2',1,'Values.h']]],
+  ['damage_5fsinus_5fshot',['DAMAGE_SINUS_SHOT',['../_values_8h.html#a4bc91b7320158815d2efbfdfe69df640',1,'Values.h']]],
+  ['damage_5fsniper',['DAMAGE_SNIPER',['../_values_8h.html#a79322922eef1b0834521911bb39ee8a5',1,'Values.h']]],
+  ['damage_5fsniper_5fshot',['DAMAGE_SNIPER_SHOT',['../_values_8h.html#a80701af477cd524e790522f18589a8f2',1,'Values.h']]],
+  ['direction_5fgatling_5fshot',['DIRECTION_GATLING_SHOT',['../_values_8h.html#ad32e1595b3f30efd2b680e1ca9975d20',1,'Values.h']]],
+  ['direction_5fsbire_5fshot',['DIRECTION_SBIRE_SHOT',['../_values_8h.html#a704cbb57612b4bc4fb01545d3ad20aae',1,'Values.h']]],
+  ['direction_5fship_5fshot',['DIRECTION_SHIP_SHOT',['../_values_8h.html#af449373a200616b0c037a56d90720d24',1,'Values.h']]],
+  ['direction_5fsinus_5fshot',['DIRECTION_SINUS_SHOT',['../_values_8h.html#aa9476a6ab113d0fc93e4bccce79227d6',1,'Values.h']]],
+  ['direction_5fsniper_5fshot',['DIRECTION_SNIPER_SHOT',['../_values_8h.html#af60732a89347e96ec017b95675b481fb',1,'Values.h']]]
+];

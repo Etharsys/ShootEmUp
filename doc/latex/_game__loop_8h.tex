@@ -1,0 +1,73 @@
+\hypertarget{_game__loop_8h}{}\section{include/\+Game\+\_\+loop.h File Reference}
+\label{_game__loop_8h}\index{include/\+Game\+\_\+loop.\+h@{include/\+Game\+\_\+loop.\+h}}
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$M\+L\+V/\+M\+L\+V\+\_\+all.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../include/\+Values.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/\+Graphic.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/\+Entity.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/\+Collision.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/\+Moove.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/\+Star.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/\+Spawn.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/\+Shoot.\+h\char`\"{}}\newline
+Include dependency graph for Game\+\_\+loop.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_game__loop_8h_a7272da27ca1c5af62b144318abc07ed7}{game\+\_\+pause} (M\+L\+V\+\_\+\+Keyboard\+\_\+button $\ast$keysym, M\+L\+V\+\_\+\+Button\+\_\+state state, int $\ast$pause)
+\item 
+int \hyperlink{_game__loop_8h_a544c25bb62c02c66f3fbf819329d5df3}{game\+\_\+loose} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$ship, \hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$shot, \hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$ennemy, M\+L\+V\+\_\+\+Keyboard\+\_\+button keysym)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_game__loop_8h_a544c25bb62c02c66f3fbf819329d5df3}\label{_game__loop_8h_a544c25bb62c02c66f3fbf819329d5df3}} 
+\index{Game\+\_\+loop.\+h@{Game\+\_\+loop.\+h}!game\+\_\+loose@{game\+\_\+loose}}
+\index{game\+\_\+loose@{game\+\_\+loose}!Game\+\_\+loop.\+h@{Game\+\_\+loop.\+h}}
+\subsubsection{\texorpdfstring{game\+\_\+loose()}{game\_loose()}}
+{\footnotesize\ttfamily int game\+\_\+loose (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{ship,  }\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{shot,  }\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{ennemy,  }\item[{M\+L\+V\+\_\+\+Keyboard\+\_\+button}]{keysym }\end{DoxyParamCaption})}
+
+Manage the end game (loose), by deleting entities 
+\begin{DoxyParams}{Parameters}
+{\em ship} & The ship entity \\
+\hline
+{\em shot} & The list of shots \\
+\hline
+{\em ennemy} & The ennemy list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the loose condition are complete, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 3 of file Game\+\_\+loop.\+c.
+
+\mbox{\Hypertarget{_game__loop_8h_a7272da27ca1c5af62b144318abc07ed7}\label{_game__loop_8h_a7272da27ca1c5af62b144318abc07ed7}} 
+\index{Game\+\_\+loop.\+h@{Game\+\_\+loop.\+h}!game\+\_\+pause@{game\+\_\+pause}}
+\index{game\+\_\+pause@{game\+\_\+pause}!Game\+\_\+loop.\+h@{Game\+\_\+loop.\+h}}
+\subsubsection{\texorpdfstring{game\+\_\+pause()}{game\_pause()}}
+{\footnotesize\ttfamily int game\+\_\+pause (\begin{DoxyParamCaption}\item[{M\+L\+V\+\_\+\+Keyboard\+\_\+button $\ast$}]{keysym,  }\item[{M\+L\+V\+\_\+\+Button\+\_\+state}]{state,  }\item[{int $\ast$}]{pause }\end{DoxyParamCaption})}
+
+Manage the pause and unpause button 
+\begin{DoxyParams}{Parameters}
+{\em keysym} & A symbol of keyboard \\
+\hline
+{\em state} & The state of the button on keysym \\
+\hline
+{\em pause} & A boolean value \+: 1 pause, 0 unpause \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the pause is called, 0 if the exit button is pressed 
+\end{DoxyReturn}
+
+
+Definition at line 23 of file Game\+\_\+loop.\+c.
+

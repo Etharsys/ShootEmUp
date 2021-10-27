@@ -1,0 +1,111 @@
+\hypertarget{_shoot_8c}{}\section{src/\+Shoot.c File Reference}
+\label{_shoot_8c}\index{src/\+Shoot.\+c@{src/\+Shoot.\+c}}
+{\ttfamily \#include \char`\"{}../include/\+Shoot.\+h\char`\"{}}\newline
+Include dependency graph for Shoot.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{_shoot_8c_adc4456dd41e8ab0d0672c90144059c54}{process\+\_\+direction\+\_\+shot} (int x\+\_\+target, int y\+\_\+target, int x, int y)
+\item 
+int \hyperlink{_shoot_8c_ac7565d8a7909cbb2596daf8396c83d51}{ennemy\+\_\+shoot} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$ennemy, \hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$shot, \hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} ship)
+\item 
+int \hyperlink{_shoot_8c_a263bf712e265d5acdc77e93fd1811fb3}{ship\+\_\+shoot} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$ship, \hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$shot, M\+L\+V\+\_\+\+Keyboard\+\_\+button keysym)
+\item 
+int \hyperlink{_shoot_8c_a0cdc56dc8ba94edb24b23ddd1380b553}{manage\+\_\+entities\+\_\+shoot} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$ship, \hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$ennemy, \hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$shot, M\+L\+V\+\_\+\+Keyboard\+\_\+button keysym)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_shoot_8c_ac7565d8a7909cbb2596daf8396c83d51}\label{_shoot_8c_ac7565d8a7909cbb2596daf8396c83d51}} 
+\index{Shoot.\+c@{Shoot.\+c}!ennemy\+\_\+shoot@{ennemy\+\_\+shoot}}
+\index{ennemy\+\_\+shoot@{ennemy\+\_\+shoot}!Shoot.\+c@{Shoot.\+c}}
+\subsubsection{\texorpdfstring{ennemy\+\_\+shoot()}{ennemy\_shoot()}}
+{\footnotesize\ttfamily int ennemy\+\_\+shoot (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{ennemy,  }\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{shot,  }\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities}}]{ship }\end{DoxyParamCaption})}
+
+Manage shot for ennemy (ennemy difficulty conditions) 
+\begin{DoxyParams}{Parameters}
+{\em ennemy} & The list of ennemy \\
+\hline
+{\em shot} & The list of shot \\
+\hline
+{\em ship} & The ship entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if all shot creation happened well, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 13 of file Shoot.\+c.
+
+\mbox{\Hypertarget{_shoot_8c_a0cdc56dc8ba94edb24b23ddd1380b553}\label{_shoot_8c_a0cdc56dc8ba94edb24b23ddd1380b553}} 
+\index{Shoot.\+c@{Shoot.\+c}!manage\+\_\+entities\+\_\+shoot@{manage\+\_\+entities\+\_\+shoot}}
+\index{manage\+\_\+entities\+\_\+shoot@{manage\+\_\+entities\+\_\+shoot}!Shoot.\+c@{Shoot.\+c}}
+\subsubsection{\texorpdfstring{manage\+\_\+entities\+\_\+shoot()}{manage\_entities\_shoot()}}
+{\footnotesize\ttfamily int manage\+\_\+entities\+\_\+shoot (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{ship,  }\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{ennemy,  }\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{shot,  }\item[{M\+L\+V\+\_\+\+Keyboard\+\_\+button}]{keysym }\end{DoxyParamCaption})}
+
+Manage functions of all shots creation 
+\begin{DoxyParams}{Parameters}
+{\em ship} & The ship entity \\
+\hline
+{\em ennemy} & The list of ennemy \\
+\hline
+{\em shot} & The list of shot \\
+\hline
+{\em keysym} & The value of keyboard \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if every call gone well, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 90 of file Shoot.\+c.
+
+\mbox{\Hypertarget{_shoot_8c_adc4456dd41e8ab0d0672c90144059c54}\label{_shoot_8c_adc4456dd41e8ab0d0672c90144059c54}} 
+\index{Shoot.\+c@{Shoot.\+c}!process\+\_\+direction\+\_\+shot@{process\+\_\+direction\+\_\+shot}}
+\index{process\+\_\+direction\+\_\+shot@{process\+\_\+direction\+\_\+shot}!Shoot.\+c@{Shoot.\+c}}
+\subsubsection{\texorpdfstring{process\+\_\+direction\+\_\+shot()}{process\_direction\_shot()}}
+{\footnotesize\ttfamily float process\+\_\+direction\+\_\+shot (\begin{DoxyParamCaption}\item[{int}]{x\+\_\+target,  }\item[{int}]{y\+\_\+target,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Calcul the direction with atan (need module math.\+h) 
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+target} & The position x to target \\
+\hline
+{\em y\+\_\+target} & The position y to target \\
+\hline
+{\em x} & The position x of the entity \\
+\hline
+{\em y} & The position y of the entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the direction to take for a shot 
+\end{DoxyReturn}
+
+
+Definition at line 3 of file Shoot.\+c.
+
+\mbox{\Hypertarget{_shoot_8c_a263bf712e265d5acdc77e93fd1811fb3}\label{_shoot_8c_a263bf712e265d5acdc77e93fd1811fb3}} 
+\index{Shoot.\+c@{Shoot.\+c}!ship\+\_\+shoot@{ship\+\_\+shoot}}
+\index{ship\+\_\+shoot@{ship\+\_\+shoot}!Shoot.\+c@{Shoot.\+c}}
+\subsubsection{\texorpdfstring{ship\+\_\+shoot()}{ship\_shoot()}}
+{\footnotesize\ttfamily int ship\+\_\+shoot (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{ship,  }\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} $\ast$}]{shot,  }\item[{M\+L\+V\+\_\+\+Keyboard\+\_\+button}]{keysym }\end{DoxyParamCaption})}
+
+Manage shot for ship (player actions) 
+\begin{DoxyParams}{Parameters}
+{\em ship} & The ship entity \\
+\hline
+{\em shot} & The list of shot \\
+\hline
+{\em keysym} & The value of keyboard \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the entity is not null (dont exist), 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 67 of file Shoot.\+c.
+

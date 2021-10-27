@@ -1,0 +1,193 @@
+\hypertarget{_graphic_8c}{}\section{src/\+Graphic.c File Reference}
+\label{_graphic_8c}\index{src/\+Graphic.\+c@{src/\+Graphic.\+c}}
+{\ttfamily \#include \char`\"{}../include/\+Graphic.\+h\char`\"{}}\newline
+Include dependency graph for Graphic.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_graphic_8c_a6752388aa466ce73a2a8fdb1fe34f43e}{init\+\_\+window} ()
+\item 
+int \hyperlink{_graphic_8c_a0ee315596e1a21172705e858b88ddf9c}{close\+\_\+window} ()
+\item 
+int \hyperlink{_graphic_8c_ac17757aa884ed7d0030d0f9064d684cd}{init\+\_\+graphic\+\_\+array} (\hyperlink{_graphic_8h_ae25957d37f465aa31e91671fcee6d850}{Graphic} \hyperlink{structgraphic}{graphic}\mbox{[}$\,$\mbox{]})
+\item 
+int \hyperlink{_graphic_8c_a4be81d2a5f0715fba837ad9e6da9035a}{print\+\_\+lives} (int hp)
+\item 
+int \hyperlink{_graphic_8c_a6962010d922e75078372f704e2dc8bec}{print\+\_\+score} (int score)
+\item 
+int \hyperlink{_graphic_8c_a5b01e6a3fa3d83ed1bb7f2597e180b23}{print\+\_\+interface} (int hp, int score)
+\item 
+int \hyperlink{_graphic_8c_a01424a3f773fb9f36ab62b7cf476c147}{print\+\_\+stars} (\hyperlink{_star_8h_aa8c45d0901c14026565b13e225f11c6b}{Stars} tab\+\_\+stars\mbox{[}$\,$\mbox{]})
+\item 
+int \hyperlink{_graphic_8c_af951c7c8dbe46f0e49d759debcd4f536}{display\+\_\+entity} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} \hyperlink{structentity}{entity}, \hyperlink{_graphic_8h_ae25957d37f465aa31e91671fcee6d850}{Graphic} \hyperlink{structgraphic}{graphic}\mbox{[}$\,$\mbox{]})
+\item 
+int \hyperlink{_graphic_8c_a1634c123afd4674759a464a528d1268a}{display\+\_\+manage} (\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} ship, \hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} ennemy, \hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities} shot, \hyperlink{_star_8h_aa8c45d0901c14026565b13e225f11c6b}{Stars} \hyperlink{structstars}{stars}\mbox{[}$\,$\mbox{]}, \hyperlink{_graphic_8h_ae25957d37f465aa31e91671fcee6d850}{Graphic} \hyperlink{structgraphic}{graphic}\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_graphic_8c_a0ee315596e1a21172705e858b88ddf9c}\label{_graphic_8c_a0ee315596e1a21172705e858b88ddf9c}} 
+\index{Graphic.\+c@{Graphic.\+c}!close\+\_\+window@{close\+\_\+window}}
+\index{close\+\_\+window@{close\+\_\+window}!Graphic.\+c@{Graphic.\+c}}
+\subsubsection{\texorpdfstring{close\+\_\+window()}{close\_window()}}
+{\footnotesize\ttfamily int close\+\_\+window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Close the M\+LV window \begin{DoxyReturn}{Returns}
+1 if the window closed well, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 8 of file Graphic.\+c.
+
+\mbox{\Hypertarget{_graphic_8c_af951c7c8dbe46f0e49d759debcd4f536}\label{_graphic_8c_af951c7c8dbe46f0e49d759debcd4f536}} 
+\index{Graphic.\+c@{Graphic.\+c}!display\+\_\+entity@{display\+\_\+entity}}
+\index{display\+\_\+entity@{display\+\_\+entity}!Graphic.\+c@{Graphic.\+c}}
+\subsubsection{\texorpdfstring{display\+\_\+entity()}{display\_entity()}}
+{\footnotesize\ttfamily int display\+\_\+entity (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities}}]{entity,  }\item[{\hyperlink{_graphic_8h_ae25957d37f465aa31e91671fcee6d850}{Graphic}}]{graphic\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Display every entities on the M\+LV window 
+\begin{DoxyParams}{Parameters}
+{\em hp} & The health point quantity \\
+\hline
+{\em graphic} & The array of sprite for entities \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the interface printed well, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 118 of file Graphic.\+c.
+
+\mbox{\Hypertarget{_graphic_8c_a1634c123afd4674759a464a528d1268a}\label{_graphic_8c_a1634c123afd4674759a464a528d1268a}} 
+\index{Graphic.\+c@{Graphic.\+c}!display\+\_\+manage@{display\+\_\+manage}}
+\index{display\+\_\+manage@{display\+\_\+manage}!Graphic.\+c@{Graphic.\+c}}
+\subsubsection{\texorpdfstring{display\+\_\+manage()}{display\_manage()}}
+{\footnotesize\ttfamily int display\+\_\+manage (\begin{DoxyParamCaption}\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities}}]{ship,  }\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities}}]{ennemy,  }\item[{\hyperlink{_entity_8h_add89e5cfa89b2b15e596721755efd3fb}{Entities}}]{shot,  }\item[{\hyperlink{_star_8h_aa8c45d0901c14026565b13e225f11c6b}{Stars}}]{stars\mbox{[}$\,$\mbox{]},  }\item[{\hyperlink{_graphic_8h_ae25957d37f465aa31e91671fcee6d850}{Graphic}}]{graphic\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Manage graphics needed display 
+\begin{DoxyParams}{Parameters}
+{\em ship} & The ship entity \\
+\hline
+{\em ennemy} & The ennemy list \\
+\hline
+{\em shot} & The shot list \\
+\hline
+{\em star} & The star array \\
+\hline
+{\em graphic} & The array of sprite for entities \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if every entities display well, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 128 of file Graphic.\+c.
+
+\mbox{\Hypertarget{_graphic_8c_ac17757aa884ed7d0030d0f9064d684cd}\label{_graphic_8c_ac17757aa884ed7d0030d0f9064d684cd}} 
+\index{Graphic.\+c@{Graphic.\+c}!init\+\_\+graphic\+\_\+array@{init\+\_\+graphic\+\_\+array}}
+\index{init\+\_\+graphic\+\_\+array@{init\+\_\+graphic\+\_\+array}!Graphic.\+c@{Graphic.\+c}}
+\subsubsection{\texorpdfstring{init\+\_\+graphic\+\_\+array()}{init\_graphic\_array()}}
+{\footnotesize\ttfamily int init\+\_\+graphic\+\_\+array (\begin{DoxyParamCaption}\item[{\hyperlink{_graphic_8h_ae25957d37f465aa31e91671fcee6d850}{Graphic}}]{graphic\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Charge all sprites for entities on a tab 
+\begin{DoxyParams}{Parameters}
+{\em graphic} & The array of sprite for entities \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if all sprites charged well, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 21 of file Graphic.\+c.
+
+\mbox{\Hypertarget{_graphic_8c_a6752388aa466ce73a2a8fdb1fe34f43e}\label{_graphic_8c_a6752388aa466ce73a2a8fdb1fe34f43e}} 
+\index{Graphic.\+c@{Graphic.\+c}!init\+\_\+window@{init\+\_\+window}}
+\index{init\+\_\+window@{init\+\_\+window}!Graphic.\+c@{Graphic.\+c}}
+\subsubsection{\texorpdfstring{init\+\_\+window()}{init\_window()}}
+{\footnotesize\ttfamily int init\+\_\+window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initiate a M\+LV window \begin{DoxyReturn}{Returns}
+1 if the window initiate well, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 3 of file Graphic.\+c.
+
+\mbox{\Hypertarget{_graphic_8c_a5b01e6a3fa3d83ed1bb7f2597e180b23}\label{_graphic_8c_a5b01e6a3fa3d83ed1bb7f2597e180b23}} 
+\index{Graphic.\+c@{Graphic.\+c}!print\+\_\+interface@{print\+\_\+interface}}
+\index{print\+\_\+interface@{print\+\_\+interface}!Graphic.\+c@{Graphic.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+interface()}{print\_interface()}}
+{\footnotesize\ttfamily int print\+\_\+interface (\begin{DoxyParamCaption}\item[{int}]{hp,  }\item[{int}]{score }\end{DoxyParamCaption})}
+
+Manage the interface display \+: score and health point 
+\begin{DoxyParams}{Parameters}
+{\em hp} & The health point quantity \\
+\hline
+{\em score} & The score count \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the interface printed well, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 102 of file Graphic.\+c.
+
+\mbox{\Hypertarget{_graphic_8c_a4be81d2a5f0715fba837ad9e6da9035a}\label{_graphic_8c_a4be81d2a5f0715fba837ad9e6da9035a}} 
+\index{Graphic.\+c@{Graphic.\+c}!print\+\_\+lives@{print\+\_\+lives}}
+\index{print\+\_\+lives@{print\+\_\+lives}!Graphic.\+c@{Graphic.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+lives()}{print\_lives()}}
+{\footnotesize\ttfamily int print\+\_\+lives (\begin{DoxyParamCaption}\item[{int}]{hp }\end{DoxyParamCaption})}
+
+Display the health point on the M\+LV window 
+\begin{DoxyParams}{Parameters}
+{\em hp} & The health point quantity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the lives printed well, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 58 of file Graphic.\+c.
+
+\mbox{\Hypertarget{_graphic_8c_a6962010d922e75078372f704e2dc8bec}\label{_graphic_8c_a6962010d922e75078372f704e2dc8bec}} 
+\index{Graphic.\+c@{Graphic.\+c}!print\+\_\+score@{print\+\_\+score}}
+\index{print\+\_\+score@{print\+\_\+score}!Graphic.\+c@{Graphic.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+score()}{print\_score()}}
+{\footnotesize\ttfamily int print\+\_\+score (\begin{DoxyParamCaption}\item[{int}]{score }\end{DoxyParamCaption})}
+
+Display the health point on the M\+LV window 
+\begin{DoxyParams}{Parameters}
+{\em score} & The score count \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the score printed well, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 82 of file Graphic.\+c.
+
+\mbox{\Hypertarget{_graphic_8c_a01424a3f773fb9f36ab62b7cf476c147}\label{_graphic_8c_a01424a3f773fb9f36ab62b7cf476c147}} 
+\index{Graphic.\+c@{Graphic.\+c}!print\+\_\+stars@{print\+\_\+stars}}
+\index{print\+\_\+stars@{print\+\_\+stars}!Graphic.\+c@{Graphic.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+stars()}{print\_stars()}}
+{\footnotesize\ttfamily int print\+\_\+stars (\begin{DoxyParamCaption}\item[{\hyperlink{_star_8h_aa8c45d0901c14026565b13e225f11c6b}{Stars}}]{tab\+\_\+stars\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Print the stars on the M\+LV window 
+\begin{DoxyParams}{Parameters}
+{\em tab\+\_\+stars} & The tab of stars \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if all stars printed well, 0 else 
+\end{DoxyReturn}
+
+
+Definition at line 108 of file Graphic.\+c.
+
